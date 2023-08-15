@@ -1,0 +1,350 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.content-body{
+  height:100vh;
+}
+
+.app-header{
+  height:10vh;
+}
+
+.menu-dropdown{
+  background:rgb(7, 65, 7)
+}
+
+
+
+
+.footer-copyright{
+  margin-left: 20px;
+
+}
+
+.footer{
+  
+}
+
+.home-subheading{
+  border-bottom: 1px solid gold;
+}
+
+<<<<<<< HEAD
+=======
+.home-subheading-dark{
+  border-bottom: 1px solid gold;
+  color:#a8d693
+}
+
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+.menu-item:hover{
+  cursor: pointer;
+  /* background:rgb(104, 201, 91); */
+  color:rgb(3, 46, 10)
+}
+
+.btnicon{
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-top: 6px;
+  margin-bottom: 10px;
+  background:rgb(6, 94, 3);
+  
+
+
+  /* border-right:1px solid brown; */
+}
+
+<<<<<<< HEAD
+=======
+.dark-btnicon{
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-top: 6px;
+  margin-bottom: 10px;
+  background:goldenrod;
+  
+
+
+  /* border-right:1px solid brown; */
+}
+
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
+.themeicon{
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:rgb(1, 8, 1);
+  
+
+
+  /* border-right:1px solid brown; */
+}
+
+.home-description{
+  margin-left: 5rem;
+}
+.home-span{
+ border-right:1px solid rgb(202, 175, 22); 
+ padding-right: 10px;
+
+ 
+}
+
+.body-heading{
+  margin-left:15px;
+  
+}
+
+.sidebar{
+  width:13rem;
+  /* height:100vh; */
+  background:#ffff
+}
+
+/* .sidebar-content{
+  height:100vh */
+/* } */
+.content-body{
+  display:flex;
+  height:100vh;
+
+  
+}
+.content-heading{
+  color:rgb(8, 102, 58);
+}
+<<<<<<< HEAD
+=======
+
+.content-heading-dark{
+  color:rgb(98, 158, 79);
+}
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+.c-body{
+
+display:flex;
+flex-direction: column;
+}
+
+<<<<<<< HEAD
+=======
+.spanspacer{
+  flex:0.9 1.9 auto;
+}
+
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+.menu-toggle{
+  /* margin-left: 20px; */
+  color: rgb(8, 102, 58);
+  cursor: pointer;
+}
+
+.fb-icon{
+  color:lightgray;
+}
+
+.linkedin-icon{
+  color:lightgray;
+  margin-left: 10px;
+}
+
+
+
+.fb-icon:hover ,.linkedin-icon:hover{
+  color:navy;
+  cursor: pointer;
+
+}
+
+.icon{
+  color:#ffff
+}
+
+.header-picture{
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.header{
+  /* background:rgb(252, 252, 252);
+  width:100hh; */
+
+ 
+ /* position:fixed; */
+}
+.head{
+  z-index: 999;
+  margin-bottom: 10rem;
+
+
+}
+
+.app-body{
+  overflow:auto
+}
+
+.menu-icon{
+  margin-left: 10px;
+}
+
+.home-content{
+  margin-top: 2%;
+ 
+
+  margin-left: 3%;
+  margin-right: 3%;
+  /* height:80%;
+  width:100%; */
+
+  /* height:fit-content; */
+
+}
+
+.heading{
+  margin-left: 300px;
+  font-style: italic;
+  color:rgb(158, 24, 125);
+
+
+}
+
+.heading-icon{
+  color: rgb(8, 102, 58);
+}
+
+
+.btn-more{
+  margin-left: 40%;
+  border:1px dashed green;
+  background:rgb(247, 245, 245);
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+<<<<<<< HEAD
+.btn-more:hover{
+=======
+.btn-more-dark{
+  margin-left: 40%;
+  background:rgb(77, 161, 120);
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
+}
+
+.btn-more:hover,.btn-more-dark:hover{
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+  margin-left: 40%;
+  /* border:1px dashed green; */
+  background:rgb(35, 119, 56);
+  color:#ffff;
+  cursor: pointer;
+}
+.footer-icon{
+ color: rgb(8, 102, 58);
+  justify-content: center;
+  margin-left: 2rem;
+}
+.footer-year{
+  margin-left: 5px;
+}
+
+
+.menu{
+  background: #ffff;
+  border-top: 1px solid rgb(218, 201, 155);
+  width:2000px;
+  /* position:fixed */
+  /* padding-left: 10px; */
+  /* padding-top: 5px; */
+}
+
+<<<<<<< HEAD
+=======
+
+.menu-dark{
+  background: #ffff;
+  border-top: 1px solid rgb(214, 213, 210);
+  width:2000px;
+  /* position:fixed */
+  /* padding-left: 10px; */
+  /* padding-top: 5px; */
+}
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+body{
+  font-size: 12px;
+}
+
+
+.menu-item{
+  margin-left: 15px;
+  font-size: 19px;
+  border-left: 1px solid rgb(114, 102, 102);
+  padding-left: 7px;
+  color:rgb(117, 119, 117)
+}
+
+.menu-item-dark-theme{
+  margin-left: 15px;
+  font-size: 19px;
+  border-left: 1px solid rgb(114, 102, 102);
+  padding-left: 7px;
+<<<<<<< HEAD
+  color:goldenrod;
+=======
+  color:rgb(160, 156, 147);
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+}
+
+.menu-item-dark-theme:hover{
+  color: #ffff;
+  cursor: pointer;
+}
+
+.dark-theme{
+<<<<<<< HEAD
+  background: rgba(0, 0, 0, 0.767);
+}
+
+=======
+  background: rgb(51, 50, 50);
+}
+
+.themeDarkIcon{
+  color:black
+}
+
+.themeLightIcon{
+  color:#ffff
+}
+
+
+.themeDarkIcon:hover , .themeLightIcon:hover{
+  cursor: pointer;
+}
+>>>>>>> 3390bd3 (theme interchangibility and About Us Page)
