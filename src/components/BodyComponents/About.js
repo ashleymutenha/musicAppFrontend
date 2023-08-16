@@ -1,33 +1,16 @@
-<<<<<<< HEAD
+
 import {BsInfoCircle} from 'react-icons/bs'
-=======
-import {BsInfoCircle,BsBuildings} from 'react-icons/bs'
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
+import {BsBuildings} from 'react-icons/bs'
 import {aboutInfo} from '../../resources/info.js'
 
 
 function About(){
 
-<<<<<<< HEAD
-   const data = aboutInfo
-    return (
-        <ul className ="list-group list-group-flush bg-white home-content">
-        <li className ="list-group-item">
-           <span className ="home-span"><span className ="fs-5  text-dark btnicon"
-           ><BsInfoCircle className='icon'/></span></span>
-           <span className ="fs-3 content-heading body-heading">About Us</span>
-
-           <div class = "home-description">
-             {data.about.map((_data,key)=>{
-                return <p id ={key}>
-                    {_data.paragraph}
-                </p>
-             })}
-=======
     const theme  = localStorage.getItem('theme')
 
    const data = aboutInfo
-    return (
+     return(
         <div>
 
             {/* light theme */}
@@ -87,16 +70,14 @@ function About(){
            <div className ="mb-1 text-muted fs-4 "><span className ="home-subheading">Gaborone Office</span>
             </div>
                <p>{data.offices.Gaborone}</p>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
             </div>
          
         </li>
 
         
-<<<<<<< HEAD
     </ul>
-=======
-    </ul>:null}
+
+    :null}
 
 {/* Dark theme */}
     {theme ==='dark' || theme===null?<ul className ="list-group list-group-flush dark-theme home-content">
@@ -144,13 +125,26 @@ function About(){
          
         </li>
 
+
+        <li className ="list-group-item" style={{background:"rgb(51, 50, 50)",color:"#ffff"}} >
+           <span className ="home-span"><span className ="fs-5  text-dark dark-btnicon"
+           ><BsBuildings className=''/></span></span>
+           <span className ="fs-3 content-heading-dark body-heading">Our Offices</span>
+
+           
+
+           <div className = "home-description">
+           <div className ="mb-1 text-muted fs-4 "><span className ="home-subheading-dark">Gaborone Office</span>
+            </div>
+               <p>{data.offices.Gaborone}</p>
+            </div>
+         
+        </li>
+
         
     </ul>:null}
-    
-    
-    
-    </div>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
+   </div>
     )
 }
 

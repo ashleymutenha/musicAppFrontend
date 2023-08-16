@@ -1,22 +1,19 @@
 import {BsInfoCircle} from 'react-icons/bs'
 import {homeInfo} from '../../resources/info.js'
-<<<<<<< HEAD
-import {BsBrightnessAltHigh,BsArrowDownCircle,BsArrowUpCircle} from 'react-icons/bs'
-import {useState,useEffect} from 'react'
-=======
+
 import {BsBrightnessAltHigh,BsArrowDownCircle,BsArrowUpCircle,BsEar} from 'react-icons/bs'
 import {useState,useEffect} from 'react'
+
+
 import { useLayoutEffect } from 'react'
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 function Home(){
 
    const data = homeInfo
    const [missionAndVision,changeHeight]=useState(false)
-<<<<<<< HEAD
-=======
+
 
    const theme  = localStorage.getItem('theme')
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
    
    
 
@@ -24,28 +21,24 @@ function Home(){
       changeHeight(!missionAndVision);
    }
 
-<<<<<<< HEAD
-    return (
-     
-        <ul className ="list-group list-group-flush bg-white home-content" >
-        <li className ="list-group-item">
-=======
+
+  
+
 
     return (
         <div>
          {/* home Light theme */}
         {theme ==='light'|| theme===null?<ul className ="list-group list-group-flush bg-white home-content">
         <li className ="list-group-item" >
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
            <span className ="home-span"><span className ="fs-5  text-dark btnicon"
            ><BsInfoCircle className ="icon"/></span></span>
            <span className ="fs-3 content-heading body-heading">Introduction</span>
 
-<<<<<<< HEAD
-           <div class = "home-description">
-=======
+
+          
+
            <div className = "home-description">
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
              {data.Introduction}
             </div>
         </li>
@@ -81,22 +74,22 @@ function Home(){
              
 
                if (typeof(_data.paragraph)!=='string'){
-<<<<<<< HEAD
+
                 return <p id ={key} style ={{marginLeft:"10px"}}>
-=======
-                return <p key ={key} style ={{marginLeft:"10px"}}>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
+              
+
                 
                 <strong>{_data.paragraph.keyPoint}</strong> {_data.paragraph.explanation}</p>
              }
 
              if (typeof(_data.paragraph)==='string') 
              {
-<<<<<<< HEAD
+
                 return <p id ={key}>
-=======
-                return <p key ={key}>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
+               
+
                 
                 {_data.paragraph}</p>
              }
@@ -112,14 +105,13 @@ function Home(){
 
         </li>
 
-<<<<<<< HEAD
+
         {/* <li className ="list-group-item mt-1">
            <span className ="home-span"><span className ="fs-5  text-dark btnicon"
            ><BsEye className ="icon"/></span></span>
        <span className ="fs-3 content-heading body-heading">Overview of Services</span>
         </li>  */}
-    </ul>
-=======
+ 
         <li className ="list-group-item mt-1">
            <span className ="home-span"><span className ="fs-5  text-dark btnicon"
            ><BsEar className ="icon"/></span></span>
@@ -201,7 +193,6 @@ function Home(){
        <span className ="fs-3 content-heading-dark body-heading">Overview of Services</span>
         </li> 
     </ul>:null}</div>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
   
     )
 }

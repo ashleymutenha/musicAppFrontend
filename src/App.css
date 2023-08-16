@@ -35,14 +35,12 @@
   border-bottom: 1px solid gold;
 }
 
-<<<<<<< HEAD
-=======
+
 .home-subheading-dark{
   border-bottom: 1px solid gold;
   color:#a8d693
 }
 
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 .menu-item:hover{
   cursor: pointer;
   /* background:rgb(104, 201, 91); */
@@ -65,8 +63,7 @@
   /* border-right:1px solid brown; */
 }
 
-<<<<<<< HEAD
-=======
+
 .dark-btnicon{
   border-radius: 50%;
   padding-top: 5px;
@@ -83,7 +80,6 @@
   /* border-right:1px solid brown; */
 }
 
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 
 .themeicon{
   border-radius: 50%;
@@ -134,26 +130,21 @@
 .content-heading{
   color:rgb(8, 102, 58);
 }
-<<<<<<< HEAD
-=======
+
 
 .content-heading-dark{
   color:rgb(98, 158, 79);
 }
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 .c-body{
 
 display:flex;
 flex-direction: column;
 }
 
-<<<<<<< HEAD
-=======
 .spanspacer{
   flex:0.9 1.9 auto;
 }
 
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 .menu-toggle{
   /* margin-left: 20px; */
   color: rgb(8, 102, 58);
@@ -244,9 +235,7 @@ flex-direction: column;
   padding-bottom: 5px;
 }
 
-<<<<<<< HEAD
-.btn-more:hover{
-=======
+
 .btn-more-dark{
   margin-left: 40%;
   background:rgb(77, 161, 120);
@@ -258,7 +247,6 @@ flex-direction: column;
 }
 
 .btn-more:hover,.btn-more-dark:hover{
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
   margin-left: 40%;
   /* border:1px dashed green; */
   background:rgb(35, 119, 56);
@@ -284,8 +272,6 @@ flex-direction: column;
   /* padding-top: 5px; */
 }
 
-<<<<<<< HEAD
-=======
 
 .menu-dark{
   background: #ffff;
@@ -295,7 +281,7 @@ flex-direction: column;
   /* padding-left: 10px; */
   /* padding-top: 5px; */
 }
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
 body{
   font-size: 12px;
 }
@@ -314,11 +300,8 @@ body{
   font-size: 19px;
   border-left: 1px solid rgb(114, 102, 102);
   padding-left: 7px;
-<<<<<<< HEAD
-  color:goldenrod;
-=======
+
   color:rgb(160, 156, 147);
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
 }
 
 .menu-item-dark-theme:hover{
@@ -327,13 +310,12 @@ body{
 }
 
 .dark-theme{
-<<<<<<< HEAD
-  background: rgba(0, 0, 0, 0.767);
-}
 
-=======
   background: rgb(51, 50, 50);
 }
+
+
+
 
 .themeDarkIcon{
   color:black
@@ -347,4 +329,3 @@ body{
 .themeDarkIcon:hover , .themeLightIcon:hover{
   cursor: pointer;
 }
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)

@@ -6,9 +6,9 @@ import About from './BodyComponents/About.js'
 function Body(){
    const  currentPage = localStorage.getItem('currentPage')
 
-<<<<<<< HEAD
+
    console.log(currentPage)
-=======
+
 
 
    const theme  = localStorage.getItem('theme')
@@ -26,28 +26,25 @@ if(theme ==='dark'){
 
 
 }
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
 
     return (
          
         <div>
             
         <div className ="content-body" style={{marginTop:"14rem"}} >
-<<<<<<< HEAD
-           <div class ="bg-white sidebar-content" style ={{height:"100vh", display:"flex", flexDirection:"row"}}>
-=======
+
+           {/* <div class ="sidebar-content" style ={{height:"100vh", display:"flex", flexDirection:"row"}}>
+
            <div className ="bg-white sidebar-content" style ={{height:"100vh", display:"flex", flexDirection:"row"}}>
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
+
          
 
           
-           </div>
-<<<<<<< HEAD
-           <div>
-             {currentPage ==="home" || currentPage==null?<Home/>:null}
-             {currentPage ==="about"?<About/>:null}
-             </div>
-=======
+           </div> */}
+
+           
+
            {theme ==='light' ||theme ===null?<div>
              {currentPage ==="home" || currentPage==null?<Home/>:null}
              {currentPage ==="about"?<About/>:null}
@@ -57,9 +54,9 @@ if(theme ==='dark'){
              {currentPage ==="home" || currentPage==null?<Home/>:null}
              {currentPage ==="about"?<About/>:null}
              </div>:null}
->>>>>>> 3390bd3 (theme interchangibility and About Us Page)
-        </div></div>
-    )
+
+        </div></div>)
+    
 }
 
 export default Body;
