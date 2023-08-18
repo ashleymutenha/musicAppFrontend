@@ -45,15 +45,12 @@ if(theme ==='dark'){
 
            
 
-           {theme ==='light' ||theme ===null?<div>
-             {currentPage ==="home" || currentPage==null?<Home/>:null}
-             {currentPage ==="about"?<About/>:null}
-             </div>:null}
+           
 
-             {theme ==='dark' ||theme ===null?<div>
+             <div>
              {currentPage ==="home" || currentPage==null?<Home/>:null}
              {currentPage ==="about"?<About/>:null}
-             </div>:null}
+             </div>
 
         </div></div>)
     

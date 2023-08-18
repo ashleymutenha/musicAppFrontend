@@ -1,19 +1,11 @@
 
 
-import{BsFacebook,BsLinkedin,BsFillBrushFill,BsMoonStarsFill} from 'react-icons/bs'
+import{BsFacebook,BsLinkedin,BsMoonStarsFill} from 'react-icons/bs'
 
 import Menu from './BodyComponents/Menu.js';
 function Header(){
 
     const theme  = localStorage.getItem('theme');
-
-
-
-    function toHome(){
-        localStorage.setItem('currentPage',"home")
-        window.location.reload(true)
-      
-    }
 
 
     function changethemetoDark(){
@@ -84,7 +76,7 @@ function Header(){
         </div>:null} 
         </div>)} */}
 
-{theme ==='light'?<div className = "row  header bg-white">
+{theme ==='light' || theme===null?<div className = "row  header bg-white">
         
        
 
@@ -99,8 +91,8 @@ function Header(){
      
         </div>
 
-        <div className ="col-md-4 mt-2 " onClick={() =>{changethemetoDark()}}><span className ="fs-5  mb-2  icon"
-           ><BsMoonStarsFill className ="themeDarkIcon"/></span>
+        <div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
+           ><BsMoonStarsFill className ="themeDarkIcon" onClick={() =>{changethemetoDark()}}/></span>
         </div>
 
        
@@ -124,8 +116,8 @@ function Header(){
      
         </div>
 
-        <div className ="col-md-4 mt-2 " onClick={() =>{changethemetoLight()}}><span className ="fs-5  mb-2  icon"
-           ><BsMoonStarsFill className ="themeLightIcon"/></span>
+        <div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
+           ><BsMoonStarsFill className ="themeLightIcon" onClick={() =>{changethemetoLight()}}/></span>
         </div>
 
        

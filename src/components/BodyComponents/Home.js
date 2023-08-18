@@ -28,7 +28,7 @@ function Home(){
     return (
         <div>
          {/* home Light theme */}
-        {theme ==='light'|| theme===null?<ul className ="list-group list-group-flush bg-white home-content">
+        {theme ==='light'|| theme===null?<ul className ="list-group list-group-flush bg-white home-content" style={{borderRadius:"12px"}}>
         <li className ="list-group-item" >
            <span className ="home-span"><span className ="fs-5  text-dark btnicon"
            ><BsInfoCircle className ="icon"/></span></span>
@@ -106,11 +106,6 @@ function Home(){
         </li>
 
 
-        {/* <li className ="list-group-item mt-1">
-           <span className ="home-span"><span className ="fs-5  text-dark btnicon"
-           ><BsEye className ="icon"/></span></span>
-       <span className ="fs-3 content-heading body-heading">Overview of Services</span>
-        </li>  */}
  
         <li className ="list-group-item mt-1">
            <span className ="home-span"><span className ="fs-5  text-dark btnicon"
@@ -122,7 +117,7 @@ function Home(){
 
   {/* home Dark theme */}
 
-         {theme==='dark'?<ul className ="list-group list-group-flush dark-theme home-content" >
+         {theme==='dark'?<ul className ="list-group list-group-flush dark-theme home-content" style={{borderRadius:"12px"}}>
                <li className ="list-group-item" style={{background:"rgb(51, 50, 50)",color:"#ffff"}}>
                   <span className ="home-span"><span className ="fs-5  text-dark dark-btnicon"
                   ><BsInfoCircle className =""/></span></span>

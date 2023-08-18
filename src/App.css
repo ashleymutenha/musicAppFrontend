@@ -27,9 +27,7 @@
 
 }
 
-.footer{
-  
-}
+
 
 .home-subheading{
   border-bottom: 1px solid gold;
@@ -49,14 +47,14 @@
 
 .btnicon{
   border-radius: 50%;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin-top: 6px;
   margin-bottom: 10px;
-  background:rgb(6, 94, 3);
+  background:rgb(228, 235, 228);
   
 
 
@@ -66,15 +64,15 @@
 
 .dark-btnicon{
   border-radius: 50%;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin-top: 6px;
   margin-bottom: 10px;
-  background:goldenrod;
-  
+  background:rgb(199, 195, 191);
+ 
 
 
   /* border-right:1px solid brown; */
@@ -169,7 +167,7 @@ flex-direction: column;
 }
 
 .icon{
-  color:#ffff
+  color:#0a0a0a
 }
 
 .header-picture{
@@ -177,13 +175,7 @@ flex-direction: column;
   margin-bottom: 10px;
 }
 
-.header{
-  /* background:rgb(252, 252, 252);
-  width:100hh; */
 
- 
- /* position:fixed; */
-}
 .head{
   z-index: 999;
   margin-bottom: 10rem;
@@ -202,7 +194,7 @@ flex-direction: column;
 .home-content{
   margin-top: 2%;
  
-
+  border-radius: 10px;
   margin-left: 3%;
   margin-right: 3%;
   /* height:80%;
