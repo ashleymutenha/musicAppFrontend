@@ -3,14 +3,17 @@ import {BsHouse} from 'react-icons/bs'
 import {BsGearWideConnected} from'react-icons/bs'
 import {BsTools,BsInfoCircle} from'react-icons/bs'
 import {BsPeople} from'react-icons/bs'
-import {BsCurrencyDollar,BsThreeDots,BsBag,BsTelephonePlus,BsFolder,BsFillBrushFill} from'react-icons/bs'
+import {BsCurrencyDollar,BsThreeDots,BsBag,BsTelephonePlus,BsFolder} from'react-icons/bs'
 import Dropdown from 'react-bootstrap/Dropdown';
-
 function Menu(){
 
    const theme  = localStorage.getItem('theme')
+   const currentPage = sessionStorage.getItem('currentPage')
+
+   
+  
     function toHome(){
-       localStorage.setItem('currentPage',"home")
+       sessionStorage.setItem('currentPage',"home")
        window.location.reload(true)
      
    }
@@ -19,7 +22,7 @@ function Menu(){
 
 
     function toAbout(){
-       localStorage.setItem('currentPage',"about")
+       sessionStorage.setItem('currentPage',"about")
        window.location.reload(true)
       console.log()
      }
@@ -31,29 +34,31 @@ function Menu(){
             <span className ="menu-item" onClick={()=>{
                 toHome()
             }}>
-               <BsHouse/> Home
+               {currentPage!==null?<span>{currentPage!=='home'?<span><BsHouse/> Home</span>:
+               <span className ="activeMenuItem"><BsHouse/> Home</span>}</span>:
+               <span className ="activeMenuItem"><BsHouse/> Home</span>}
             </span>
 
             <span className ="menu-item" onClick={()=>{
                 toAbout()
             }}>
-               <BsInfoCircle/> About Us
+               {currentPage!=='about'?<span><BsInfoCircle/> About Us</span>:<span className ="activeMenuItem"><BsInfoCircle/> About Us</span>}
             </span>
 
             <span className ="menu-item">
-               <BsGearWideConnected/> Our Solutions
+            {currentPage!=='solutions'?<span><BsGearWideConnected/> Our Solutions</span>:<span className ="activeMenuItem"><BsGearWideConnected/> Our Solutions</span>}
             </span>
 
             <span className ="menu-item">
-               <BsTools/> Services
+            {currentPage!=='services'?<span><BsTools/> Services</span>:<span className ="activeMenuItem"><BsTools/> Services</span>}
             </span>
 
             <span className ="menu-item">
-               <BsCurrencyDollar/> Products
+            {currentPage!=='products'?<span><BsCurrencyDollar/> Products</span>:<span className ="activeMenuItem"><BsCurrencyDollar/> Products</span>}
             </span>
 
             <span className ="menu-item">
-               <BsPeople/> Parterships
+            {currentPage!=='partnerships'?<span><BsPeople/> Parterships</span>:<span className ="activeMenuItem-darker"><BsPeople/> Parterships</span>}
             </span>
 
             
@@ -76,29 +81,30 @@ function Menu(){
 <span className ="menu-item-dark-theme" onClick={()=>{
     toHome()
 }}>
-   <BsHouse/> Home
-</span>
+   {currentPage!==null?<span>{currentPage!=='home'?<span><BsHouse/> Home</span>:
+               <span className ="activeMenuItem-darker"><BsHouse/> Home</span>}</span>:
+               <span className ="activeMenuItem-darker"><BsHouse/> Home</span>}</span>
 
 <span className ="menu-item-dark-theme" onClick={()=>{
     toAbout()
 }}>
-   <BsInfoCircle/> About Us
+ {currentPage!=='about'?<span><BsInfoCircle/> About Us</span>:<span className ="activeMenuItem-darker"><BsInfoCircle/> About Us</span>}
 </span>
 
 <span className ="menu-item-dark-theme">
-   <BsGearWideConnected/> Our Solutions
+{currentPage!=='solutions'?<span><BsGearWideConnected/> Our Solutions</span>:<span className ="activeMenuItem-darker"><BsGearWideConnected/> Our Solutions</span>}
 </span>
 
 <span className ="menu-item-dark-theme">
-   <BsTools/> Services
+{currentPage!=='services'?<span><BsTools/> Services</span>:<span className ="activeMenuItem-darker"><BsTools/> Services</span>}
 </span>
 
 <span className ="menu-item-dark-theme">
-   <BsCurrencyDollar/> Products
+{currentPage!=='products'?<span><BsCurrencyDollar/> Products</span>:<span className ="activeMenuItem-darker"><BsCurrencyDollar/> Products</span>}
 </span>
 
 <span className ="menu-item-dark-theme">
-   <BsPeople/> Parterships
+{currentPage!=='partnerships'?<span><BsPeople/> Parterships</span>:<span className ="activeMenuItem-darker"><BsPeople/> Parterships</span>}
 </span>
 
 

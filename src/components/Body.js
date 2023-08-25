@@ -4,10 +4,12 @@ import Home from './BodyComponents/Home.js'
 import About from './BodyComponents/About.js'
 
 function Body(){
-   const  currentPage = localStorage.getItem('currentPage')
+   const  currentPage = sessionStorage.getItem('currentPage')
+// window.onbeforeunload = ()=>{
+//     localStorage.removeItem('currentPage')
+// };
 
 
-   console.log(currentPage)
 
 
 

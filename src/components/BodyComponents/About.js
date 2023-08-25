@@ -1,7 +1,7 @@
 
 import {BsInfoCircle} from 'react-icons/bs'
 
-import {BsBookmark,BsPinMap,BsCardText,BsArrowDownCircle,BsArrowUpCircle,BsMap,BsCardChecklist} from 'react-icons/bs'
+import {BsBookmark,BsPinMap,BsArrowDownCircle,BsArrowUpCircle,BsMap,BsCardChecklist} from 'react-icons/bs'
 import {aboutInfo} from '../../resources/info.js'
 import { useState } from 'react'
 
@@ -154,7 +154,7 @@ function About(){
            <span className ="home-span">            
            <img src ="/founder.png" alt ="person" style={{height:"55px",width:"auto",background:"transparent",borderRadius:"50%"}}/>
             </span>
-           <span className ="fs-3 content-heading-dark body-heading">Founding Director's Message</span>
+           <span className ="fs-3 content-heading-dark body-heading" >Founding Director's Message</span>
 
            <div className = "home-description">
                <p>"<span style ={{fontStyle:"italic"}}>{data.directorMessage.message}"</span> {data.directorMessage.director}</p>

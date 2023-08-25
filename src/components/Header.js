@@ -1,11 +1,23 @@
 
 
 import{BsFacebook,BsLinkedin,BsMoonStarsFill} from 'react-icons/bs'
+import { useEffect,useState } from 'react'
 
 import Menu from './BodyComponents/Menu.js';
+import MiniMenu from './BodyComponents/MiniMenu.js';
 function Header(){
 
     const theme  = localStorage.getItem('theme');
+
+
+    const[width,setWidth] =useState(window.innerWidth)
+
+    useEffect(()=>{
+       setWidth(window.innerWidth)
+    },[width])
+ 
+ 
+    console.log("Screen width is", width);
 
 
     function changethemetoDark(){
@@ -24,76 +36,26 @@ function Header(){
     return (
         <div style ={{position:"fixed"}} className = "head">
 
-            
-
-        {/* light Theme Header */}
-
-        
-
-        
-        
-      
-
-        {/* {theme ==='light' || theme  ===null ?<div class ="bg-white row">
-        <img  src="/agval.png"  style={{height:"140px",width:"auto",cursor:"pointer",mixBlendMode:"multiply"}} 
-        className='mt-2 mb-2 header-picture' alt ="logo" onClick={()=>{toHome()}}/>
-
-         <span className = "spanspacer"></span>
-
-         <span style ={{marginLeft:"5rem"}}><BsFacebook className ="fs-2 fb-icon mt-2"/>
-        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/></span>
-
-        <span className = "spanspacer"></span>
-        
-           
-        <BsMoonStarsFill className ="fs-3 themeDarkIcon"  style ={{marginLeft:"5rem"}} onClick={()=>{changethemetoDark()}}/>
-           
-      
-        
-
-        </div>:null} */}
-
-             {/*dark Theme Header */}
-
-
-             {/* {theme ==='dark' || theme  ===null ?<div className ="dark-theme">
-        <img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
-        className='mt-2 mb-2 header-picture' alt ="logo" onClick={()=>{toHome()}}/>
-
-         <span className = "spanspacer"></span>
-
-         <span style ={{marginLeft:"5rem"}}><BsFacebook className ="fs-2 fb-icon mt-2"/>
-        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/></span>
-
-        <span className = "spanspacer"></span>
-        
-           
-        <BsMoonStarsFill className ="fs-3 themeLightIcon"  style ={{marginLeft:"5rem"}} onClick={()=>{changethemetoLight()}}/>
-           
-      
-        
-
-        </div>:null} 
-        </div>)} */}
-
-{theme ==='light' || theme===null?<div className = "row  header bg-white">
+{theme ==='light' || theme===null?<div className = "row  header bg-white" style ={{width:width+20}}>
         
        
 
         <div className ="col-md-4">
-         <img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} className='mt-2 mb-2 header-picture' alt ="logo"/>
+        {width>=570?<img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
+        className='mt-2 mb-2 header-picture' alt ="logo"/>:<img  src="/agval.png"  style={{height:"90px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
+        className='mt-2 mb-2 header-picture' alt ="logo"/>}
         </div>
 
-        <div className ="col-md-2">
+        {width>=570?<div className ="col-md-2">
         <BsFacebook className ="fs-2 fb-icon mt-2"/>
         <BsLinkedin className ="fs-2 linkedin-icon mt-2"/>
        
      
-        </div>
+        </div>:null}
 
-        <div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
+        {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
            ><BsMoonStarsFill className ="themeDarkIcon" onClick={() =>{changethemetoDark()}}/></span>
-        </div>
+        </div>:null}
 
        
         </div>:null}
@@ -101,30 +63,30 @@ function Header(){
          
         
 
-        {theme ==='dark'?<div className = "row  header dark-theme">
+        {theme ==='dark'?<div className = "row  header dark-theme" style ={{width:width+20}}>
         
        
 
         <div className ="col-md-4">
-         <img  src="/agval.png"  style={{height:"140px",width:"auto",mixBlendMode:"multiply",cursor:"pointer"}} className='mt-2 mb-2 header-picture' alt ="logo"/>
-        </div>
+        {width>=570?<img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
+        className='mt-2 mb-2 header-picture' alt ="logo"/>:<img  src="/agval.png"  style={{height:"90px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} alt ="logo" />}        </div>
 
-        <div className ="col-md-2">
+   {width>=570?<div className ="col-md-2">
         <BsFacebook className ="fs-2 fb-icon mt-2"/>
         <BsLinkedin className ="fs-2 linkedin-icon mt-2"/>
        
      
-        </div>
+        </div>:null}
 
-        <div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
+        {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
            ><BsMoonStarsFill className ="themeLightIcon" onClick={() =>{changethemetoLight()}}/></span>
-        </div>
+        </div>:null}
 
        
         </div>:null}
 
          
-<Menu/>
+{width>=570?<Menu/>:<MiniMenu/>}
         </div>
     )}
 

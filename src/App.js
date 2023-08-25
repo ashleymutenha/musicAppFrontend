@@ -6,10 +6,13 @@ import Body from './components/Body.js';
 function App() {
  
   return (
-    <div className ="c-body" style ={{height:"100vh",justifyContent:"space-"}}>
+    <div>
     <Header/>
+    <div className ="c-body" style ={{height:"100vh",justifyContent:"space-"}}>
+    
     <Body />
     {/* <Footer /> */}
+    </div>
     </div>
   );
 }
