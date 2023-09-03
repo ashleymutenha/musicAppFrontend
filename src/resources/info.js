@@ -33,3 +33,11 @@ export const aboutInfo ={
    
 }
 
+export const servicePictures ={
+    "data":[{"image":"/servicesImages/arialView.jpg","description":"Satellite driven insights to monitor crop health variations, guiding farmers to timely interventions and improved yields"},
+    {"image":"/servicesImages/goats.jpg","description":"Empowering livestock management : Access tailored husbandry insights and elavate your livestock care "},
+    {"image":"/servicesImages/farmer.jpg","description":"From seed to sale in the digital age: Bridging the gap between farmers and buyers with our Farm Produce marketplace. Register, showcase and get the best value for your produce "},
+    {"image":"/servicesImages/crops.jpg","description":"Harnessing nature's gift: Equipping farmers with data analysis tools to manage their crops cycles, maximizing the benefits of rainfall "},
+    {"image":"/servicesImages/solarPanel.jpg","description":"Empowering decisions with data: meteoeological equipment and analysis solutions to give farmers increased data insights for their crop management needs "}]
+}
+

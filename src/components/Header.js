@@ -36,26 +36,29 @@ function Header(){
     return (
         <div style ={{position:"fixed"}} className = "head">
 
-{theme ==='light' || theme===null?<div className = "row  header bg-white" style ={{width:width+20}}>
+{theme ==='light' || theme===null?<div className = "row  header bg-white" style ={{width:width+20,height:"120px"}}>
         
        
 
         <div className ="col-md-4">
-        {width>=570?<img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
+        {width>=570?<img  src="/agval.png"  style={{height:"100px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
         className='mt-2 mb-2 header-picture' alt ="logo"/>:<img  src="/agval.png"  style={{height:"90px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
         className='mt-2 mb-2 header-picture' alt ="logo"/>}
         </div>
 
-        {width>=570?<div className ="col-md-2">
-        <BsFacebook className ="fs-2 fb-icon mt-2"/>
-        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/>
-       
-     
+        {width>=570?<div className ="col-md-2 mt-3">
+        {/* <BsFacebook className ="fs-2 fb-icon mt-2"/>
+        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/> */}
+        
+
+        <Menu/>
         </div>:null}
 
-        {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
+        
+
+        {/* {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
            ><BsMoonStarsFill className ="themeDarkIcon" onClick={() =>{changethemetoDark()}}/></span>
-        </div>:null}
+        </div>:null} */}
 
        
         </div>:null}
@@ -78,6 +81,8 @@ function Header(){
      
         </div>:null}
 
+       
+
         {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
            ><BsMoonStarsFill className ="themeLightIcon" onClick={() =>{changethemetoLight()}}/></span>
         </div>:null}
@@ -86,7 +91,7 @@ function Header(){
         </div>:null}
 
          
-{width>=570?<Menu/>:<MiniMenu/>}
+{/* {width>=570?<Menu/>:<MiniMenu/>} */}
         </div>
     )}
 

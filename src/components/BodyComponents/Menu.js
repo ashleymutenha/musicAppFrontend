@@ -58,7 +58,7 @@ function Menu(){
             </span>
 
             <span className ="menu-item">
-            {currentPage!=='partnerships'?<span><BsPeople/> Parterships</span>:<span className ="activeMenuItem-darker"><BsPeople/> Parterships</span>}
+            {currentPage!=='partnerships'?<span><BsPeople/> Partnerships</span>:<span className ="activeMenuItem-darker"><BsPeople/> Parterships</span>}
             </span>
 
             
