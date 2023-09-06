@@ -1,5 +1,5 @@
 import {BsArrowDownCircle,BsArrowUpCircle
-  , BsFacebook,BsGoogle,BsMotherboardFill, BsStars, BsSun,BsLinkedin, BsMagic } from "react-icons/bs"
+  , BsFacebook,BsGoogle,BsMotherboardFill, BsStars, BsSun,BsLinkedin, BsMagic,BsDot } from "react-icons/bs"
 import Carousel  from 'react-bootstrap/Carousel'
 import { servicePictures } from "../../resources/info"
 import { homeInfo } from "../../resources/info"
@@ -31,13 +31,13 @@ function Home2(){
            
       
         <div>
-        <div style ={{borderBottom:"1px solid goldenrod"}}>
-        <Carousel style ={{borderRadius:"13px",background:"#397453", marginTop:"1%"}} controls ={false} indicators ={false} fade ={false}>
+        <div style ={{borderBottom:"1px solid grey", }}>
+        <Carousel style ={{borderRadius:"13px",background:"#397453", marginTop:"1%",marginLeft:"3%"}} controls ={false} indicators ={false} fade ={false}>
         { info.data.map((data)=>
         {
           return(
-            <Carousel.Item Interval ={50}  style={{opacity:1, transition:"opacity 0.5s !important"}}>
-          <div style ={{display:"flex",marginLeft:"3%", marginTop:"1%",background:"rgb(243, 240, 243)",width:"fit-content", height:"310px",borderRadius:"12px"}}>
+            <Carousel.Item Interval ={100}  style={{opacity:1, transition:"opacity 0.5s !important"}}>
+          <div style ={{display:"flex",marginLeft:"3%", marginTop:"1%",background:"rgb(243, 240, 243)",width:"fit-content", height:"300px",borderRadius:"12px"}}>
              <div>
              <img src ={data.image} alt ="logo" style ={{height:"310px",width:"600px",
              borderTopLeftRadius:"13px", borderBottomLeftRadius:"13px"}} class ="corousel-item"/>
@@ -67,6 +67,9 @@ function Home2(){
       
           
           </Carousel>
+          {/* <div style ={{marginLeft:"40%", paddingTop:0}}><BsDot style ={{color:"#ffff"}} className ="fs-1"/>
+          <BsDot style ={{color:"#ffff"}} className ="fs-1"/>
+          </div> */}
 
           
           
@@ -77,7 +80,7 @@ function Home2(){
         </div>
     
         <div style ={{display:"flex"}}>
-        <div style ={{borderRight:"1px solid goldenrod",paddingRight:"5%",paddingTop:"3%"}}>
+        <div style ={{borderRight:"1px solid grey",paddingRight:"5%",paddingTop:"3%"}}>
         <div style = {{border:"1px solid lightgrey" ,
          width:"590px", height:"200px", marginLeft:"7%",padding:"10px 10px 10px 10px",
           borderRadius:"12px", background:"hsl(129, 29%, 37%)", color:"white",fontFamily:'cursive' ,marginTop:"1%",fontSize:"20px", position:""}}>
@@ -98,27 +101,27 @@ function Home2(){
      Meet Our Executive Team</span>
      <div style ={{display:"flex"}}>
      <div style ={{position:"relative",border:"1px solid grey",width:"250px",paddingBottom:"10px",
-    paddingTop:"10px", paddingLeft:"10px",paddingRight:"10px", borderRadius:"12px", background:"hsl(126, 47%, 66%)",
+    paddingTop:"10px", paddingLeft:"10px",paddingRight:"10px", borderRadius:"12px", background:"hsl(135, 19%, 42%)",
     marginTop:"12px",marginBottom:"5px"}}>
      <img src ="/DrMagadzire.jpg" alt ="person" style={{height:"200px",width:"200px",background:"transparent",borderRadius:"50%"}}/>
      <div>
 
-        <div class =" text-muted" style ={{fontSize:"18px"}}>Dr Tamuka Magadzire</div>
+        <div class ="" style ={{fontSize:"18px", color:"#ffff"}}>Dr Tamuka Magadzire</div>
      </div>
-     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"navy"}}/> <BsGoogle className ="fs-4 " style ={{color:"green"}}/>
-     <BsLinkedin className ="fs-4" style ={{color:"navy",marginLeft:"4px"}}/></div>
+     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"lightgrey"}}/> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}}/>
+      <BsLinkedin className ="fs-4" style ={{color:"lightgrey",marginLeft:"4px"}}/></div>
      </div>
 
      <div style ={{position:"relative",border:"1px solid grey",width:"250px",paddingBottom:"10px",
-    paddingTop:"10px", paddingLeft:"10px",paddingRight:"10px", borderRadius:"12px", background:"hsl(126, 47%, 66%)",
+    paddingTop:"10px", paddingLeft:"10px",paddingRight:"10px", borderRadius:"12px", background:"hsl(135, 19%, 42%)",
     marginTop:"12px", marginLeft:"3%",marginBottom:"5px"}}>
      <img src ="/DrMbangiwa.jpg" alt ="person" style={{height:"200px",width:"200px",background:"transparent",borderRadius:"50%"}}/>
      <div>
 
-        <div class =" text-muted">Dr. Nicholas Mbangiwa</div>
+        <div class ="" style ={{fontSize:"18px", color:"#ffff"}}>Dr. Nicholas Mbangiwa</div>
      </div>
-     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"navy"}}/> <BsGoogle className ="fs-4 " style ={{color:"green"}}/>
-      <BsLinkedin className ="fs-4" style ={{color:"navy",marginLeft:"4px"}}/></div>
+     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"lightgrey"}}/> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}}/>
+      <BsLinkedin className ="fs-4" style ={{color:"lightgrey",marginLeft:"4px"}}/></div>
      </div>
      
      
@@ -131,7 +134,7 @@ function Home2(){
         </div>
          <div style ={{display:"flex", marginLeft:"4%"}} className ="mb-3">
         <div style = {{border:"1px solid darkgreen" , width:"600px", height:"fit-content", marginLeft:"1%",padding:"10px 10px 10px 10px",
-          borderRadius:"12px" ,marginTop:"850px",fontSize:"20px"}}>
+          borderRadius:"12px" ,marginTop:"890px",fontSize:"20px"}}>
                    <span> <BsMagic className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", marginLeft:"2%",opacity:"0.6"}}/>
                     <p className ="fs-1 text-success"> Mission</p></span>
 
@@ -175,7 +178,7 @@ function Home2(){
 
 
         <div style = {{border:"1px solid darkgreen" , width:"600px", height:"fit-content", marginLeft:"1%",padding:"10px 10px 10px 10px",
-          borderRadius:"12px" ,marginTop:"850px",fontSize:"20px"}}>
+          borderRadius:"12px" ,marginTop:"890px",fontSize:"20px"}}>
                    <span> <BsSun className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", marginLeft:"2%",opacity:"0.6"}}/>
                     <p className ="fs-1 text-success"> Vision</p></span>
 

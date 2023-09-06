@@ -1,16 +1,16 @@
 
 import Home2 from "./BodyComponents/Home2";
+import AboutUs from "./BodyComponents/AboutUs";
 function Welcome(){
 
+
+    const  currentPage = sessionStorage.getItem('currentPage')
+
 return (
+
     <div>
-        {/* <Header style ={{position:"fixed"}}/> */}
-        <Home2 />
-        {/* <div style ={{marginTop:"20%"}}>
-             <span>fkffk</span>
-        </div> */}
-        
-        
+        {currentPage ==='home'|| currentPage===null?<Home2 />:null}
+        {currentPage ==='about'?<AboutUs/>:null}
     </div>
 )
 }
