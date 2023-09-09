@@ -24,7 +24,19 @@ function Menu(){
     function toAbout(){
        sessionStorage.setItem('currentPage',"about")
        window.location.reload(true)
-      console.log()
+     
+     }
+
+
+     function toSolutions(){
+        sessionStorage.setItem('currentPage',"solutions")
+       window.location.reload(true)
+     }
+
+
+     function to(){
+        sessionStorage.setItem('currentPage',"solutions")
+       window.location.reload(true)
      }
 
 
@@ -45,7 +57,7 @@ function Menu(){
                {currentPage!=='about'?<span><BsInfoCircle/> About Us</span>:<span className ="activeMenuItem"><BsInfoCircle/> About Us</span>}
             </span>
 
-            <span className ="menu-item">
+            <span className ="menu-item"onClick ={()=>{toSolutions()}}>
             {currentPage!=='solutions'?<span><BsGearWideConnected/> Our Solutions</span>:<span className ="activeMenuItem"><BsGearWideConnected/> Our Solutions</span>}
             </span>
 
@@ -62,7 +74,7 @@ function Menu(){
             </span>
 
             
-            < Dropdown  style ={{marginLeft:"10px", color:"green",cursor:"pointer"}}>
+            {/* < Dropdown  style ={{marginLeft:"10px", color:"green",cursor:"pointer"}}>
               <Dropdown.Toggle variant="" style ={{border:"1px rgb(7, 65, 7) dashed",background:"rgb(239, 243, 239)"}} className ="mt-2 mb-1 menu-dropdown"> < BsThreeDots /> More</Dropdown.Toggle>
 
               <Dropdown.Menu>
@@ -70,7 +82,7 @@ function Menu(){
                      <Dropdown.Item  >Careers <BsBag style ={{marginLeft:"10px"}}/></Dropdown.Item>
                      <Dropdown.Item   >Contact Us <BsTelephonePlus style ={{marginLeft:"10px"}}/></Dropdown.Item>
       </Dropdown.Menu>
-            </Dropdown>
+            </Dropdown> */}
 
            
 

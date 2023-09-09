@@ -1,5 +1,5 @@
 
-import {BsCompass, BsFillMotherboardFill, BsInfoCircle, BsMotherboard, BsPin} from 'react-icons/bs'
+import {BsCompass, BsFillMotherboardFill, BsInfoCircle, BsMotherboard, BsMotherboardFill, BsPin} from 'react-icons/bs'
 
 import {BsBookmark,BsPinMap,BsMap,BsCardChecklist,BsFillBoxSeamFill,BsGeo} from 'react-icons/bs'
 import {aboutInfo} from '../../resources/info.js'
@@ -26,6 +26,13 @@ function AboutUs(){
         
          <div>
             <div style ={{background:"#ffff"}}>
+            <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%" }}>
+                                <h4 style ={{color:"green"}}>About Us</h4>
+                               <div style ={{display:"flex",opacity:0.8 }}>
+                                <div><BsMotherboard className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", borderRight:"1px solid green", paddingRight:"2px"}}/></div>
+                                <div><BsMotherboardFill className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", paddingLeft:"2px"}}/></div>
+                               </div>
+                               </div>
         <div style ={{paddingLeft:10, paddingRight:10, paddingTop:10 ,paddingBottom:10,
         border: "1px solid lightgrey", marginLeft:"4%", marginRight:"4%", borderRadius:12}}>
                                {/* <BsFillBoxSeamFill className ="fs-1 mt-1"   style ={{borderRadius:"",color:"darkgreen", marginLeft:"80%", opacity:0.5}}/> */}
