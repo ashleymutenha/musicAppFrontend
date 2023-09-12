@@ -2,7 +2,7 @@
  
  export const homeInfo = {
     "Introduction":
-   "Agval Networks(Pty) is a company registered in Botswana which is operating to serve stakeholders in agriculture value chain",
+   "AgVal Networks (Pty) Ltd: Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!",
     "Vision":"At AgVal Networks, we envision a future where the agricultural value chain in Africa and beyond operates with maximum efficiency, sustainability, and profitability. Our ultimate goal is to foster robust growth and development in the agricultural industry, and by extension, accelerate the economic upliftment of the people of Africa and the world. We strive to broaden our impact by extending our services, first throughout southern Africa, then across the entire continent, and eventually on a global scale.",
  
     "Mission":
@@ -38,7 +38,7 @@ export const servicePictures ={
     {"image":"/servicesImages/goats.jpg","description":"Empowering livestock management : Access tailored husbandry insights and elavate your livestock care "},
     {"image":"/servicesImages/farmer.jpg","description":"From seed to sale in the digital age: Bridging the gap between farmers and buyers with our Farm Produce marketplace. Register, showcase and get the best value for your produce "},
     {"image":"/servicesImages/crops.jpg","description":"Harnessing nature's gift: Equipping farmers with data analysis tools to manage their crops cycles, maximizing the benefits of rainfall "},
-    {"image":"/servicesImages/solarPanel.jpg","description":"Empowering decisions with data: meteoeological equipment and analysis solutions to give farmers increased data insights for their crop management needs "}]
+    {"image":"/servicesImages/solarPanel.jpg","description":"Empowering decisions with data: meteorological equipment and analysis solutions to give farmers increased data insights for their crop management needs "}]
 }
 
 
