@@ -66,7 +66,7 @@ function Menu(){
             </span>
 
             <span className ="menu-item" onClick={()=>toProducts()}>
-            {currentPage!=='products'?<span><BsCurrencyDollar/> Products</span>:<span className ="activeMenuItem"><BsCurrencyDollar/> Products</span>}
+            {currentPage!=='products'?<span><BsBag/> Products</span>:<span className ="activeMenuItem"><BsBag/> Products</span>}
             </span>
 
             <span className ="menu-item">
