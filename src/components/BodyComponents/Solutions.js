@@ -24,19 +24,19 @@ function Solutions(){
         </div>
 
           
-        <div style={{background:"hsl(142, 17%, 87%)"}}>
-            <div class ="fs-3 " style ={{fontFamily:"cursive", marginLeft:"6%",color:"grey", borderBottom:"1px solid darkgrey",width:"fit-content"}}> Some of Our Solutions Include:</div>
-        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"left"}}>
+        <div style={{background:"#397453"}}>
+            <div class ="fs-3 " style ={{fontFamily:"cursive", marginLeft:"6%",color:"white", borderBottom:"1px solid darkgrey",width:"fit-content"}}> Some of Our Solutions Include:</div>
+        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"left",borderBottom:"1px solid darkgrey"}}>
         
 
-        {data.problemAreas.map((solutionArea,key) =>{return <div  style={{background:"hsl(142, 17%, 87%)",color:"black"}}>
+        {data.problemAreas.map((solutionArea,key) =>{return <div  style={{background:"#397453",color:"black"}}>
            <div className ="mb-2 mt-2" style ={{border:"1px solid lightgrey", padding:"10px 10px 10px 10px", borderRadius:"12px",width:"600px",marginLeft:"30px",background:"hsl(90, 4%, 78%)"}}>
 
             <div style ={{marginLeft:"80%"}}>
             <BsFillCpuFill class ="fs-2" style={{color:"darkgreen", opacity:0.5}}/>
             </div>
 
-           <span className ="fs-4 content-heading" style ={{color:"darkgreen"}}><span style ={{background:"lightgrey", borderRadius:"50%", padding:"6px 15px 6px 15px",color:"black"}}>{key+1}</span> <span style ={{color:"darkgreen", marginLeft:"3%",borderBottom:"1px solid goldenrod"}}>{solutionArea.area}</span>
+           <span className ="fs-4 content-heading" style ={{color:"darkgreen"}}><span style ={{background:"hsl(90, 17%, 93%)", borderRadius:"50%", padding:"6px 15px 6px 15px",color:"black"}}>{key+1}</span> <span style ={{color:"darkgreen", marginLeft:"3%",borderBottom:"1px solid goldenrod"}}>{solutionArea.area}</span>
            </span>
 
            <div className = "home-description" style ={{fontFamily:"cursive"}}>

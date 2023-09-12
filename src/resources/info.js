@@ -52,3 +52,15 @@ export const solutions ={
 ]
 }
 
+
+export const products ={
+    "Introduction":"Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability, and growth at every step of the value chain.",
+    "products":[{"product":"AgVal Data Portal","description":"A centralized hub where NMHSs, farmers, and stakeholders can access, process, and manage meteorological and agrometeorological data tailored to their unique needs.","feature":"User-friendly interface, customizable data views, real-time weather updates, and predictive modeling capabilities."},
+    {"product":"Farm-Fresh Delights AgVal Marketplace","description":"A dynamic online platform connecting farmers directly with buyers. Farmers can list their produce, while buyers enjoy the ease of discovering and purchasing high-quality goods.","feature":"Secure transactions, smart produce-matching algorithms, user reviews, and instant connectivity with the agricultural community."},
+    {"product":"ClimApp Solutions","description":"Powered by our Climate Services division, this suite of tools and technologies is designed to cater to the climate service needs of the agricultural value chain.","feature":"Weather forecasting, real-time climate advisories, and data analytics to empower decision-making in agriculture."},
+    {"product":"AgVal Risk Assessor","description":"An intuitive tool for farmers and stakeholders to gauge risks, particularly focusing on rainfall patterns like El Nino, aiding in better crop planning and management.","feature":"Advanced predictive models, interactive dashboards, and user-specific risk profiles."},
+    {"product":"AgVal Farm Advisor","description":"A comprehensive digital toolkit for farmers, covering agronomy, husbandry, and agrometeorology. Built on a vast database, it offers advisories and best practices to enhance farm productivity.","feature":"Crop and livestock-specific guides, management planning features, and real-time advisories."},
+    {"product":"Meteorological Instrumentation","description":"State-of-the-art meteorological instruments sourced and assembled to cater to the specific needs of farmers and meteorological agencies, ensuring accurate and timely data collection.","feature":" High durability, precision accuracy, and easy integration with existing systems."},
+    {"product":"Cold Chain Solutions","description":"Essential instrumentation to support the cold supply chain, safeguarding the quality and longevity of agricultural produce from farm to market.","feature":"Advanced temperature monitoring, real-time alerts, and seamless integration with logistics systems."}]
+}
+

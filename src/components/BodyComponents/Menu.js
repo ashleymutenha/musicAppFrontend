@@ -34,8 +34,8 @@ function Menu(){
      }
 
 
-     function to(){
-        sessionStorage.setItem('currentPage',"solutions")
+     function toProducts(){
+        sessionStorage.setItem('currentPage',"products")
        window.location.reload(true)
      }
 
@@ -65,7 +65,7 @@ function Menu(){
             {currentPage!=='services'?<span><BsTools/> Services</span>:<span className ="activeMenuItem"><BsTools/> Services</span>}
             </span>
 
-            <span className ="menu-item">
+            <span className ="menu-item" onClick={()=>toProducts()}>
             {currentPage!=='products'?<span><BsCurrencyDollar/> Products</span>:<span className ="activeMenuItem"><BsCurrencyDollar/> Products</span>}
             </span>
 

@@ -48,6 +48,8 @@ function Home(){
               <div className ="btn-detail" style ={{marginTop:"6px",}}>
                 <a href ="#" style ={{textDecoration:"none",color:"#ffff"}}>Learn More</a>
               </div>
+
+             
               <div>
                <BsMotherboardFill className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", marginLeft:"80%", opacity:0.5}}/>
               </div>
@@ -58,8 +60,14 @@ function Home(){
                 <div>
                 </div>
             </div>
+
+          
               </div>
+
+             
              </div>
+             <div>
+                        </div> 
 
           </div>
           </Carousel.Item>)})}

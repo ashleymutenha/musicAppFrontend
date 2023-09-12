@@ -2,6 +2,7 @@
 import Home from "./BodyComponents/Home";
 import AboutUs from "./BodyComponents/AboutUs";
 import Solutions from "./BodyComponents/Solutions";
+import Products from "./BodyComponents/Products";
 function Content(){
 
 
@@ -14,6 +15,8 @@ return (
         {currentPage ==='about'?<AboutUs/>:null}
 
         {currentPage ==='solutions'?<Solutions/>:null}
+
+        {currentPage ==='products'?<Products/>:null}
     </div>
 )
 }
