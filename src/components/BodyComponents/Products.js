@@ -6,7 +6,7 @@ function Products(){
      const data = products
 
     return (
-        <div style ={{marginTop:"120px",fontSize:"20px",background:"lightgray"}}>
+        <div style ={{marginTop:"120px",fontSize:"20px",background:"#397453"}}>
             <div style ={{padding:"5px 5px 5px 5px", borderTop:"null",background:"#ffff"}}>
             <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%" }}>
                                 <h4 style ={{color:"green"}}>Products</h4>

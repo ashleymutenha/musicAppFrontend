@@ -64,3 +64,39 @@ export const products ={
     {"product":"Cold Chain Solutions","description":"Essential instrumentation to support the cold supply chain, safeguarding the quality and longevity of agricultural produce from farm to market.","feature":"Advanced temperature monitoring, real-time alerts, and seamless integration with logistics systems."}]
 }
 
+
+export const services ={
+    "Introduction":"At AgVal Networks, we are committed to fortifying the agricultural value chain. Through our blend of innovative technology, extensive industry insights, and a commitment to sustainable growth, we aim to uplift Africa's agricultural sector, one solution at a time.",
+    "services":[{"service":"Meteorological Data Management","description":[{"heading":"Data Handling Tools","content":"Streamlined platforms for NMHSs in Africa to efficiently process and manage meteorological data."},
+    {"heading":"Customized Data Tailoring & Dissemination","content":"Offering tools and online platforms that allow NMHSs to customize and distribute their data efficiently."},
+    {"heading":"Instrument Acquisition","content":"Procurement and assembly of state-of-the-art meteorological instruments tailored to support farmers."}]},
+
+    {"service":"Agrometeorological Data Dissemination & Application","description":[{"heading":"Real-time Advisories","content":"Providing farmers with timely agronomic and meteorological advisories."},
+    {"heading":"User-friendly Online Platforms","content":"Automated data and advisory tools for farmers to optimize their agricultural activities based on weather conditions."},
+    {"heading":"Risk Assessment Tools","content":"Empowering users, especially farmers, to assess the risk of low rainfall during events like El Nino."}]},
+
+    {"service":"Market Discovery for Farmers","description":[{"heading":"Online Marketplace","content":"A two-sided platform where farmers can register their produce and connect directly with buyers, enhancing market access and profitability."},
+    {"heading":"Index Insurance Tools","content":"Developing platforms/tools to provide index-based insurance for farmers, mitigating risks associated with unpredictable weather patterns."}]},
+    
+
+    {"service":"Farm Advisory & Management","description":[{"heading":"Comprehensive Farm Advisory Tools","content":"Covering agronomy, husbandry, and agrometeorology based on a robust database of best practices."},
+    {"heading":"Farm Management Apps","content":"Tailored apps that assist farmers in planning and managing their crop and livestock for maximum productivity."},
+    {"heading":"Support for Research & Innovation","content":" Leveraging IoT technologies to enhance farm management, operations, and research, furthering our understanding of crop and livestock performance to boost food security."}]},
+
+    {"service":"Climate Services (by ClimApp Technologies)","description":[{"heading":"Weather Station Solutions","content":"Offering state-of-the-art weather stations to support climate services for the agricultural value chain."},
+    {"heading":"Cold Supply Chain Support","content":"Providing essential instrumentation to stakeholders involved in the cold supply chain, ensuring produce quality and longevity."}
+   ]},
+
+   {"service":"Consultancy & Government Collaborations","description":[{"heading":"Agricultural Planning & Advisory","content":"Collaborative services with governments for enhanced agricultural decision-making."},
+   {"heading":"Meteorological Consultancy","content":"Offering expertise in meteorological data handling and dissemination tailored for government agencies."}
+  ]},
+
+  {"service":"Support for Innovation, Technology, and Youth","description":[{"heading":"Internship Programs","content":"Providing invaluable industry exposure to recent graduates, nurturing the next generation of agri-tech leaders."},
+  {"heading":"Research & Innovation Focus","content":"Promoting cutting-edge research, especially in areas like IoT, to elevate farm management and ensure food security for Africa's growing population."}
+ ]}
+]
+}
+
+
+
+
