@@ -1,7 +1,7 @@
 
-import {BsCompass, BsFillMotherboardFill, BsInfoCircle, BsMotherboard, BsMotherboardFill, BsPin} from 'react-icons/bs'
+import {BsCompass,  BsMotherboard, BsMotherboardFill} from 'react-icons/bs'
 
-import {BsBookmark,BsPinMap,BsMap,BsCardChecklist,BsFillBoxSeamFill,BsGeo} from 'react-icons/bs'
+import {BsGeo} from 'react-icons/bs'
 import {aboutInfo} from '../../resources/info.js'
 import { useState } from 'react'
 import Footer from '../Footer.js'
@@ -20,13 +20,13 @@ function AboutUs(){
  
 
      return(
-        <div style ={{marginTop:"120px",fontSize:"20px"}}>
+        <div style ={{marginTop:"120px",fontSize:"20px", background:"#ffff"}}>
 
             {/* light theme */}
         
          <div>
             <div style ={{background:"#ffff"}}>
-            <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%" }}>
+            <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%" ,marginTop:"40px"}}>
                                 <h4 style ={{color:"green"}}>About Us</h4>
                                <div style ={{display:"flex",opacity:0.8 }}>
                                 <div><BsMotherboard className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", borderRight:"1px solid green", paddingRight:"8px"}}/></div>
@@ -36,7 +36,7 @@ function AboutUs(){
         <div style ={{paddingLeft:10, paddingRight:10, paddingTop:10 ,paddingBottom:10,
         border: "1px solid lightgrey", marginLeft:"4%", marginRight:"4%", borderRadius:12}}>
                                {/* <BsFillBoxSeamFill className ="fs-1 mt-1"   style ={{borderRadius:"",color:"darkgreen", marginLeft:"80%", opacity:0.5}}/> */}
-                              <img src ="/logo.png" style ={{height:60 , width:"auto", marginLeft:"80%", opacity:0.8}}></img>
+                              <img src ="/logo.png" style ={{height:60 , width:"auto", marginLeft:"200px", opacity:0.8}}></img>
                 <div className ="fs-3 content-heading ">Company History</div>
 
                 <div>
@@ -107,7 +107,7 @@ function AboutUs(){
         </div>
 
 
-        <div  style ={{paddingLeft:10, paddingRight:10, paddingTop:10 ,paddingBottom:10,
+        <div className ="mb-"  style ={{paddingLeft:10, paddingRight:10, paddingTop:10 ,paddingBottom:10,
         border: "1px solid grey", marginLeft:"1%", marginRight:"2%", borderRadius:12, marginTop:10}}>
                                <BsGeo className ="fs-1 mt-1"   style ={{borderRadius:"",color:"darkgreen", marginLeft:"80%"}}/>
                                <div className ="fs-3 content-heading ">Our Offices</div>
@@ -115,7 +115,7 @@ function AboutUs(){
            
 
 <div className = "">
-<div className ="mb-1 text-muted fs-4 "><span className ="home-subheading">Gaborone Office</span>
+<div className ="mb- text-muted fs-4 "><span className ="home-subheading">Gaborone Office</span>
  </div>
     <p>{data.offices.Gaborone}</p>
  </div>

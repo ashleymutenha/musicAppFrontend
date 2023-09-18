@@ -4,7 +4,6 @@ import{BsFacebook,BsLinkedin,BsMoonStarsFill} from 'react-icons/bs'
 import { useEffect,useState } from 'react'
 
 import Menu from './BodyComponents/Menu.js';
-import MiniMenu from './BodyComponents/MiniMenu.js';
 function Header(){
 
     const theme  = localStorage.getItem('theme');
@@ -46,19 +45,25 @@ function Header(){
         className='mt-2 mb-2 header-picture' alt ="logo"/>}
         </div>
 
-        {width>=570?<div className ="col-md-2 mt-3">
-        {/* <BsFacebook className ="fs-2 fb-icon mt-2"/>
-        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/> */}
+        {width>=700?<div className ="col-md-2 mt-3 bg-white">
+    
         
 
         <Menu/>
+      
+        </div>:null}
+
+        {width<700?<div className ="col-md-2  bg-white">
+       
+        
+
+        <Menu/>
+       
         </div>:null}
 
         
 
-        {/* {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
-           ><BsMoonStarsFill className ="themeDarkIcon" onClick={() =>{changethemetoDark()}}/></span>
-        </div>:null} */}
+  
 
        
         </div>:null}
@@ -91,7 +96,6 @@ function Header(){
         </div>:null}
 
          
-{/* {width>=570?<Menu/>:<MiniMenu/>} */}
         </div>
     )}
 

@@ -1,4 +1,4 @@
-import { BsBookmark, BsBookmarkDashFill, BsBuildingGear, BsHouseGear, BsDice5Fill,BsBag,BsBagFill } from "react-icons/bs";
+import {  BsDice5Fill,BsBag,BsBagFill } from "react-icons/bs";
 import { products } from "../../resources/info";
 import Footer from "../Footer";
 function Products(){
@@ -8,7 +8,7 @@ function Products(){
     return (
         <div style ={{marginTop:"120px",fontSize:"20px",background:"#397453"}}>
             <div style ={{padding:"5px 5px 5px 5px", borderTop:"null",background:"#ffff"}}>
-            <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%" }}>
+            <div class ="mb-2" style ={{width:"fit-content",padding:"5px 5px 5px 5px",border:"1px lightgrey solid", borderRadius:"12px",marginLeft:"5%",marginTop:"40px" }}>
                                 <h4 style ={{color:"green"}}>Products</h4>
                                <div style ={{display:"flex",opacity:0.8 }}>
                                 <div><BsBag className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", borderRight:"1px solid green", paddingRight:"8px"}}/></div>
