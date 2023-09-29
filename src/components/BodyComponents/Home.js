@@ -22,6 +22,18 @@ function Home(){
     changeHeight(!missionAndVision);
  }
 
+ const toLinkedIn =()=>{
+   window.open("//https://www.linkedin.com/in/tamuka-magadzire","_blank","noreferrer")
+ }
+ const drMagadzireGoogleSearch =()=>{
+  window.open("//https://google.com/search?q=+'Dr Tamuka Magadzire'")
+ }
+
+
+const drNicholasGoogleSearch =()=>{
+  window.open("//https://google.com/search?q=+'Dr Nicholas Mbangiwa'")
+
+}
  console.log(width)
 
     return (
@@ -104,6 +116,7 @@ function Home(){
 
            <div style ={{marginLeft:"4%"}}>
 
+
 <span className =""></span>
 
      <span className="fs-3" style ={{color:"white", borderBottom:"1px solid lightgrey"}}>
@@ -117,8 +130,8 @@ function Home(){
 
         <div class ="" style ={{fontSize:"18px", color:"#ffff"}}>Dr Tamuka Magadzire</div>
      </div>
-     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"lightgrey"}}/> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}}/>
-      <BsLinkedin className ="fs-4" style ={{color:"lightgrey",marginLeft:"4px"}}/></div>
+     <div class ="mt-1"> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}} onClick ={drMagadzireGoogleSearch}/>
+      <BsLinkedin onClick={toLinkedIn}  className ="fs-4" style ={{color:"lightgrey",marginLeft:"4px" }}/></div>
      </div>
 
      <div style ={{position:"relative",border:"1px solid grey",width:"250px",paddingBottom:"10px",
@@ -129,8 +142,8 @@ function Home(){
 
         <div class ="" style ={{fontSize:"18px", color:"#ffff"}}>Dr. Nicholas Mbangiwa</div>
      </div>
-     <div class ="mt-1"><BsFacebook className ="fs-4" style ={{color:"lightgrey"}}/> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}}/>
-      <BsLinkedin className ="fs-4" style ={{color:"lightgrey",marginLeft:"4px"}}/></div>
+     <div class ="mt-1"> <BsGoogle className ="fs-4 " style ={{color:"lightgrey"}} onClick ={drNicholasGoogleSearch} />
+  </div>
      </div>
      
      
@@ -143,7 +156,7 @@ function Home(){
         </div>
          <div  style ={{display:"flex",background:"#ffff"}} className ="mb-3">
         <div className ="mb-2" style = {{border:"1px solid darkgreen" , width:"600px", height:"fit-content",padding:"10px 10px 10px 10px",
-          borderRadius:"12px" ,marginTop:"890px",fontSize:"20px", marginLeft:"4%"}}>
+          borderRadius:"12px" ,marginTop:"810px",fontSize:"20px", marginLeft:"4%"}}>
                    <span> <BsMagic className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", marginLeft:"2%",opacity:"0.6"}}/>
                     <p className ="fs-1 text-success"> Mission</p></span>
 
@@ -187,7 +200,7 @@ function Home(){
 
 
         <div className ="mb-2" style = {{border:"1px solid darkgreen" , width:"600px", height:"fit-content", marginLeft:"1%",padding:"10px 10px 10px 10px",
-          borderRadius:"12px" ,marginTop:"890px",fontSize:"20px"}}>
+          borderRadius:"12px" ,marginTop:"810px",fontSize:"20px"}}>
                    <span> <BsSun className ="fs-1 mt-1"   style ={{borderRadius:"",color:"goldenrod", marginLeft:"2%",opacity:"0.6"}}/>
                     <p className ="fs-1 text-success"> Vision</p></span>
 

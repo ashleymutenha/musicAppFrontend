@@ -35,7 +35,7 @@ function Solutions(){
           
         <div style={{background:"#397453"}}>
             <div class ="fs-3 " style ={{fontFamily:"cursive", marginLeft:"6%",color:"white", borderBottom:"1px solid darkgrey",width:"fit-content"}}> Some of Our Solutions Include:</div>
-        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"left",borderBottom:"1px solid darkgrey"}}>
+        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"left"}}>
         
 
         {data.problemAreas.map((solutionArea,key) =>{return <div  style={{background:"#397453",color:"black"}}>

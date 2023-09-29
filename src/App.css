@@ -25,7 +25,7 @@
 
 
 .footer-copyright{
-  margin-left: 20px;
+  margin-left: 0px;
 
 }
 
@@ -236,7 +236,7 @@ flex-direction: column;
 
 a{
   background-color: rgb(8, 56, 7);
-  color:hsl(150, 39%, 46%);
+  color:hsl(66, 66%, 73%);
   padding:10px 20px;
   border:1px solid rgb(216, 182, 33);
   font-size: 1.3rem;
@@ -398,4 +398,10 @@ body{
 
 .activeMenuItem-darker{
   color: rgb(119, 223, 119);
+}
+
+.backtotop:hover{
+ background: rgb(89, 134, 75);
+ color:#0a0a0a;
+ cursor: pointer
 }

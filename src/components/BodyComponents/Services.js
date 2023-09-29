@@ -1,6 +1,6 @@
 import { services
  } from "../../resources/info";
- import { BsTools,BsScrewdriver } from "react-icons/bs";
+ import { BsTools,BsScrewdriver,BsBullseye } from "react-icons/bs";
  import Footer from "../Footer";
  import {useEffect,useState} from 'react'
 function Services(){
@@ -44,11 +44,12 @@ function Services(){
         <div style ={{display:"flex"}}>
         {width>700?<div style ={{marginLeft:"1%", opacity:0.5}}>
 
-        <img src ="/servicesdarker.png" style ={{width:"70px", height:"70px"}} alt ="decoration"></img>
+        <BsScrewdriver className ="fs-2" style ={{color:"goldenrod"}}/>
 
         </div>:null}
         <div className="mb-2" style ={{marginLeft:"80%", opacity:0.5}}>
-        <img src ="/services.png" style ={{width:"70px", height:"70px"}} alt ="decoration"></img>
+          <BsBullseye className ="fs-2" style ={{color:"darkgreen"}}/>
+
         </div>
         </div>
         <div style ={{marginLeft:"4%"}} >

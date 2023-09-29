@@ -49,14 +49,14 @@ function Partners(){
         {data.partners.map((partner,key) =>{return <div  style={{background:"#397453",color:"black"}}>
            <div className ="mb-2 mt-2" style ={{border:"1px solid lightgrey", padding:"10px 10px 10px 10px", borderRadius:"12px",marginRight:"30px",marginLeft:"3%",marginRight:"3%",background:"#ffff"}}>
            <div className ="mb-2" style ={{background:"green", borderRadius:"50%", padding:"6px 15px 6px 15px",color:"#ffff",width:"fit-content",opacity:0.7}}>{key+1}</div>
-            <div style ={{display:"flex"}}>
-                <div className ="mb-2" style ={{padding:"10px 10px 10px 10px", borderRadius:"12px", border:"1px solid lightgrey",width:"fit-content", height:"fit-content", background:"hsl(150, 39%, 46%)"}}>
-                    <img src ={partner.logo} style ={{width:"250px", height:"250px",borderRadius:"12px" }} alt ="logo"/>
+            <div style ={{display:"flex", flexWrap:"wrap"}}>
+                <div className ="mb-2" style ={{padding:"10px 10px 10px 10px", borderRadius:"12px", border:"1px solid lightgrey",width:"fit-content", height:"fit-content", background:"lightgrey"}}>
+                    <img src ={partner.logo} style ={{width:"180px", height:"180px",borderRadius:"12px" }} alt ="logo"/>
                     
                 </div>
-            <div style ={{marginLeft:"60%"}}>
-            {width>700?<div style ={{padding:"10px 10px 10px 10px", borderRadius:"12px", border:"2px dashed goldenrod",opacity:0.7}}>
-            <img src ="/partnerships.jpeg" style ={{width:"70px", height:"70px"}} alt ="logo"></img>
+            <div style ={{marginLeft:"50px"}}>
+            {width>700?<div style ={{padding:"10px 10px 10px 10px", borderRadius:"12px", border:"2px dashed lightgrey",opacity:0.7}}>
+            <img src ="/partnerships.jpeg" style ={{width:"50px", height:"50px"}} alt ="logo"></img>
             </div>:null}
             </div>
             </div> 
