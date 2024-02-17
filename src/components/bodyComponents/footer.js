@@ -4,6 +4,9 @@ export default function Footer(){
 
     return(
         <div className ="footer">
+           <div class="ocean">
+            <div class="wave"></div>
+            </div>
             <div className='container'>
             <div className ="footer-card ">
                  <div className ="_icon-container" style ={{marginTop:"12px", marginBottom:"12px"}}>
@@ -46,6 +49,18 @@ export default function Footer(){
             </div>
 
             </div>
+
+{/* <div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-top.png')"}}></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')"}}></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')"}}></div>
+  </div>
+</div> */}
 
         </div>
     )

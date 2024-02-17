@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import Body from './components/Body';
+import Waves from './components/bodyComponents/Waves'
 
 function App() {
  
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Header/>
       <Body />
+      <Waves/>
     </div>
   );
 }
