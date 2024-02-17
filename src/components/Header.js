@@ -1,104 +1,102 @@
+import './css/header.css'
+import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle} from'react-icons/bs'
+import { BsJustify } from 'react-icons/bs';
 
-
-import{BsFacebook,BsLinkedin,BsMoonStarsFill} from 'react-icons/bs'
-import { useEffect,useState } from 'react'
-
-import Menu from './BodyComponents/Menu.js';
+import { useEffect,useState } from 'react';
 function Header(){
 
-    const theme  = localStorage.getItem('theme');
+  const [width,setWidth] =useState(window.innerWidth)
 
 
-    const[width,setWidth] =useState(window.innerWidth)
+  useEffect(()=>{
+    setWidth(window.innerWidth)
 
-    useEffect(()=>{
-       setWidth(window.innerWidth)
-    },[width])
+    console.log(width)
+  })
+
+
  
- 
-    console.log("Screen width is", width);
+
+    return(
+
+        <div>
+          <div className ="header">
+           <div className ="content">
+            <div style={{flex:2, background:"white",padding:"12px 12px 12px 12px"}}>
+
+              <img src = "/agval.png" alt ="logo" style={{height:"100px",width:"auto",background:"transparent",cursor:"pointer"}} />
+            </div>
+              {width>1000?<div style={{flex:4,background:"rgb(20, 55, 38)", padding:"40px 40px 40px 40px" }}>
+              <BsClock className ="icon" size={30}/> 
+             <span style ={{marginLeft:20,color:"#ffff", fontWeight:"bold"}}>MON-SAT 4.00AM -13.00PM 
+             <span style ={{marginLeft:16,color:"#ffff", fontWeight:"bold"}}>SUN CLOSED</span> 
+              </span>
+              </div>:null}
+
+              {width>1000?<div style ={{flex:3, background:"rgb(20, 55, 38)",padding:"40px 40px 40px 40px"}}>
+                <BsFacebook color='#ffff'  size ={20}/>
+                <BsTwitter style ={{marginLeft:12}} color='#ffff'  size ={20}/>
+                <BsLinkedin style ={{marginLeft:12}} color='#ffff'  size ={20}/>
+                <BsGoogle style ={{marginLeft:12}} color='#ffff'  size ={20}/>
+              </div>:null}
+           </div>
+
+           {width>1000?<div className ="lower-content">
+            <div style={{flex:3}}>
+
+              {/* <BsJustify style ={{marginLeft:12}} color='black'  size ={40}/> */}
+            </div>
+
+           
+
+          <div style ={{flex:4, }}>
+
+              <span style ={{color:"rgb(42, 95, 49)", fontSize:23, fontWeight:"bold"}}>AgVal Networks (Pty) Ltd <span style={{color:"goldenrod"}}>.</span></span>
+            </div>
+
+          
+
+           <div style ={{flex:6, marginTop:3}}>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold"}}>Home</span>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About</span>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Partners</span>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Contact</span>
 
 
-    function changethemetoDark(){
-     
-        localStorage.setItem('theme','dark')
-        window.location.reload(true)
-    }
 
 
-    function changethemetoLight(){
-     
-        localStorage.setItem('theme','light')
-        window.location.reload(true)
-    }
 
-    return (
-        <div style ={{position:"fixed"}} className = "head">
+            </div>
 
-{theme ==='light' || theme===null?<div className = "row  header bg-white" style ={{width:width+20,height:"120px"}}>
+
+           </div>:null}
+
+
+
+
+           {width<=1000?<div className ="lower-content-sm">
+           
+
+           <div style={{flex:3,background:"rgb(20, 55, 38)"}}>
+
+          <BsJustify style ={{marginLeft:12}} color='white'  size ={40}/>
+          </div>
+
         
-       
 
-        <div className ="col-md-4">
-        {width>=570?<img  src="/agval.png"  style={{height:"100px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
-        className='mt-2 mb-2 header-picture' alt ="logo"/>:<img  src="/agval.png"  style={{height:"90px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
-        className='mt-2 mb-2 header-picture' alt ="logo"/>}
+         <div style ={{flex:4,background:"rgb(20, 55, 38)"}}>
+
+              <span style ={{color:"white", fontSize:23, fontWeight:"bold"}}>AgVal Networks (Pty) Ltd <span style={{color:"goldenrod"}}>.</span></span>
+            </div>
+
+
+
+           </div>:null}
+
+           </div>
         </div>
-
-        {width>=700?<div className ="col-md-2 mt-3 bg-white">
-    
-        
-
-        <Menu/>
-      
-        </div>:null}
-
-        {width<700?<div className ="col-md-2  bg-white">
-       
-        
-
-        <Menu/>
-       
-        </div>:null}
-
-        
-
-  
-
-       
-        </div>:null}
-
-         
-        
-
-        {theme ==='dark'?<div className = "row  header dark-theme" style ={{width:width+20}}>
-        
-       
-
-        <div className ="col-md-4">
-        {width>=570?<img  src="/agval.png"  style={{height:"140px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} 
-        className='mt-2 mb-2 header-picture' alt ="logo"/>:<img  src="/agval.png"  style={{height:"90px",width:"auto",background:"transparent",mixBlendMode:"multiply",cursor:"pointer"}} alt ="logo" />}        </div>
-
-   {width>=570?<div className ="col-md-2">
-        <BsFacebook className ="fs-2 fb-icon mt-2"/>
-        <BsLinkedin className ="fs-2 linkedin-icon mt-2"/>
-       
-     
-        </div>:null}
-
-       
-
-        {width>=570?<div className ="col-md-4 mt-2 " ><span className ="fs-5  mb-2  icon"
-           ><BsMoonStarsFill className ="themeLightIcon" onClick={() =>{changethemetoLight()}}/></span>
-        </div>:null}
-
-       
-        </div>:null}
-
-         
-        </div>
-    )}
-
-
+    );
+}
 
 export default Header;

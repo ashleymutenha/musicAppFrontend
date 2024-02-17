@@ -1,0 +1,65 @@
+.footer{
+    
+    
+    padding:20px 20px 20px 20px;
+    background: rgb(20, 55, 38);
+    
+  
+    /* overflow-inline: hidden; */
+}
+
+.container{
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 0%;
+
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background: rgb(20, 55, 38); */
+    /* border-bottom: 1px solid lightgray; */
+    margin-right: 0;
+    animation: area;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.icon-container{
+
+    background: rgb(3, 59, 50);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    /* transform:translate(0,-50%); */
+
+    
+}
+.bn{
+    color:rgb(223, 205, 91)
+}
+
+
+.phoneNumber{
+    color:rgb(239, 245, 239);
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.footer-card{
+    border-radius: 12px;
+    width: 350px;
+    border: 1px solid rgb(35, 66, 49);
+    padding:12px 12px 12px 12px;
+    margin-right: 12px;
+    margin-top: 10px;
+    background:rgb(37, 74, 52)
+}
+
+
+
+

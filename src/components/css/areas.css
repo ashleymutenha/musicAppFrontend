@@ -1,0 +1,220 @@
+
+
+.areas{
+    
+    display:inline-flex;
+   justify-content: flex-start;
+    justify-items: flex-start;
+    flex-shrink:0% ;
+    flex-wrap:wrap;
+
+    animation-name: areas; 
+    animation-duration:4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite; 
+    /* filter:sepia(30%); */
+    /* filter:grayscale(30%) */
+    
+}
+
+.collective{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.lowerCollection{
+    padding:12px 12px 12px 12px;
+    background: rgb(240, 236, 236);
+    width:350px;
+    height: 500px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+   
+   
+  
+    
+.areas2{
+display: flex;
+justify-content: flex-start; 
+flex-wrap: wrap;
+justify-items: flex-start;
+}
+
+._container{
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(20, 55, 38);
+    border-bottom: 1px solid rgb(222, 200, 149);
+    margin-right: 0;
+}
+
+._heading{
+    font-size: 40px;
+    font-weight: bold;
+    color:#ebead3;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightblue;
+    width: fit-content;
+}
+.crop{
+    background-image: url("./servicesImages/corn.jpg");
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-right: 10px;
+   
+    animation:firstSlidePicture;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.goats{
+    background-image: url("./servicesImages/wheat.jpg");
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    /* border-radius: 12px;  */
+    margin-top: 10px;
+    margin-right: 10px;
+  
+   
+  
+}
+
+.animals{
+    background-image: url("./servicesImages/goats.jpg");
+    margin-top: 10px;
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    /* border-radius: 12px;  */
+    margin-right: 10px;
+
+    animation:thirdSlidePicture;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  
+  
+
+}
+
+
+.basket{
+    background-image: url("./servicesImages/wheat.jpg");
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    background-size: cover;
+
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    /* border-radius: 12px;  */
+    margin-top: 10px;
+    margin-right: 10px;
+    animation:secondSlidePicture;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    
+   
+}
+
+
+.firstSlide{
+    animation: firstSlide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+   animation-delay: 6s;
+    
+}
+
+
+.icon-container{
+
+    background: rgb(18, 63, 53);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    /* transform:translate(0,-50%); */
+
+    
+}
+
+.submenu-heading{
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(17, 55, 17);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid goldenrod;
+    width: fit-content;
+}
+
+
+.submenu{
+    font-size: 18px;
+}
+
+
+
+
+
+    
+
+
+
+@keyframes firstSlide{
+    from{margin-left:-900px;}
+    to{opacity:1 ;margin: left 0;}
+}
+
+/* @keyframes areas{
+    from{filter:sepia(10%);}
+    from{filter:grayscale(60%);}
+    /* to{opacity:1} 
+} */
+
+
+@keyframes firstSlidePicture {
+
+    from{background-image: url("./servicesImages/wheatfield.jpg")}
+    to{background-image: url("./servicesImages/maize.jpg")}
+    
+}
+
+
+@keyframes secondSlidePicture {
+
+    from{background-image: url("./servicesImages/crops.jpg")}
+    to{background-image: url("./servicesImages/greenWheat.jpg")}
+    
+}
+
+@keyframes thirdSlidePicture {
+
+    from{background-image: url("./servicesImages/barley.jpg")}
+    to{background-image: url("./servicesImages/basket.jpg")}
+    
+}
+

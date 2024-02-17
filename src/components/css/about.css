@@ -1,0 +1,321 @@
+@keyframes rotate{
+    from{ background-image: url("./servicesImages/barley.jpg");
+    height:840px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    
+    }
+    to{ background-image: url("./servicesImages/farmer.jpg") ;
+    height:840px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    
+    
+    }
+
+ 
+
+
+    
+}
+
+@keyframes colorChange {
+     from{background:rgb(237, 236, 240)}
+     to{background:#e8eadb;}
+}
+
+
+@keyframes smallScreen{
+    from{ background-image: url("./servicesImages/barley.jpg");
+    height:900px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    
+    }
+    to{ background-image: url("./servicesImages/wheatfield.jpg") ;
+    height:900px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    
+    
+    }
+
+ 
+}
+
+
+
+
+
+.about{
+    background-image: url("./servicesImages/femaleFarmer.jpg");
+    mask-repeat: no-repeat;
+    height:840px;
+    mask-repeat: no-repeat;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    padding:8px 8px 8px 8px;
+   animation-direction:reverse;
+
+   transition:
+    background-image 2s 
+
+
+}
+
+._left-content{
+ 
+    backdrop-filter:blur(10px);
+    backdrop-filter:invert(30%);
+    /* backdrop-filter: grayscale(30%); */
+    backdrop-filter: contrast(90%);
+    backdrop-filter: sepia(10%);
+    fill-opacity: 0.2;
+
+}
+
+.btn-view:hover{
+ background-color: rgb(3, 59, 50);
+ color:#ffff;
+ cursor: pointer;
+
+}
+
+.leftside-content{
+    top:70%;
+    transform:translate(0,-50%);
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    width:30%;
+    /* height: 30%; */
+   
+    padding: 16px 16px 16px 16px;
+    color:black;
+    margin-left: 65%;
+
+    /* padding:8px 8px 8px 8px; */
+    border-radius: 12px;
+    border:1px solid rgb(237, 236, 240);
+    background-color: #e8eadb;
+
+    /* background-image: url("./servicesImages/forest.jpg"); */
+    border-radius: 12px;
+
+    opacity:0.8;
+
+    /* height: 120px;
+    width: 120px; */
+
+}
+
+.mother-fill{
+    color:#60df73;
+    opacity: 0.8;
+}
+
+.element{
+   top:70%;
+    transform:translate(0,-50%);
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    width:30%;
+    opacity:1;
+    margin-left: 10%;
+    padding:8px 8px 8px 8px;
+    border-radius: 12px;
+    border:1px solid rgb(237, 236, 240);
+    background-color: #d4dceb;
+    opacity:0.8;
+
+    animation-name: colorChange;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    
+}
+
+.left-image{
+   margin-top: 28%;
+   opacity: 0.4;
+   border-radius: 50%;
+   margin-left: 6%;
+   /* clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%); */
+   /* height: 500px; */
+
+}
+.__element2{
+    
+    border:1px solid rgb(4, 29, 43);
+    /* width:20px;
+    height:20px; */
+    padding:1px 1px 1px 1px;
+    width:26px; 
+    
+}
+
+
+.__element3{
+   border:1px solid white;
+   background: white; 
+   width:26px; 
+   cursor:pointer;
+    /* border-radius: 12px; */
+    padding:1px 1px 1px 1px
+   
+} 
+
+.__element3:hover ,.__element2:hover{
+   cursor: pointer;
+
+}
+
+.__element2:hover{
+    background:rgb(236, 52, 52);
+    border:1px solid rgb(236, 52, 52)
+}
+ .__carousel{
+    top:110%;
+     transform:translate(0,-50%);
+     position: absolute;
+     font-size: 39px;
+     font-weight: bold;
+     opacity:1;
+     margin-left: 37%;
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+ .dot{
+    background-color: #e2b1b1;
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+ }
+
+ .dot1{
+    background-color: #ffff;
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+ }
+
+ /* small gudgets */
+
+ 
+ 
+ .about-sm{
+    background-image: url("./servicesImages/femaleFarmer.jpg");
+    mask-repeat: no-repeat;
+    height:600px;
+    mask-repeat: no-repeat;
+    animation-name: smallScreen;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+    padding:8px 8px 8px 8px;
+   animation-direction:reverse;
+
+}
+
+
+._element-sm{
+    /* transform:translate(0,-50%);  */
+    margin-top: 30px;
+  
+   
+    font-size: 26px;
+    font-weight: bold;
+
+    height: fit-content;
+    opacity:1;
+    color:#030303;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid lightgray;
+
+    border-radius: 12px;margin-right: 10px;
+
+  
+
+    align-items: center;
+   justify-content: center;
+
+   /* animation-name: colorChange;
+   animation-duration: 20s;
+   animation-iteration-count: infinite; */
+
+}
+
+._element-sm{
+    /* transform:translate(0,-50%);  */
+    margin-top: 30px;
+  
+   
+    font-size: 26px;
+    font-weight: bold;
+
+    height: fit-content;
+    opacity:1;
+    width:20rem;
+    color:#030303;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid lightgray;
+
+    border-radius: 12px;
+    /* margin-left: 0%; */
+    margin-left: 12px;
+    align-items: center;
+   justify-content: center;
+
+   animation-name: colorChange;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+
+}
+
+._carousel-sm{
+   /* top:110%; */
+    /* transform:translate(0,-50%);
+    position: absolute; */
+    margin-top: 40px;
+    font-size: 39px;
+    font-weight: bold;
+    opacity:1;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.__element2-sm{
+   
+   border:1px solid #ffff;
+   /* width:20px;
+   height:20px; */
+   padding:2px 2px 2px 2px;
+   width:40px; 
+   
+}
+
+
+.__element3-sm{
+  border:1px solid white;
+  background: white; 
+  width:26px; 
+  cursor:pointer;
+   /* border-radius: 12px; */
+   padding:2px 2px 2px 2px;
+   width:40px; 
+  
+} 
+
+
+
+
+
+ 
+
+ 
+
+
