@@ -1,0 +1,278 @@
+.__upperContent{
+    display:flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    background-image: url("./servicesImages/pexels-partnership.jpg");
+    height:900px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.partner{
+
+    /* flex-wrap: wrap; */
+    background-image: url("./partners/amrf.png");
+    height:fit-content;
+    background-size: cover;
+     mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0; 
+  
+   
+}
+
+.____lowerContent{
+  background:rgb(228, 228, 217);
+  padding:20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+
+.__left{
+    background:rgb(241, 238, 238);
+}
+
+.____item{
+    background: rgb(236, 236, 227)
+}
+
+.partner2{
+
+    /* flex-wrap: wrap; */
+    background-image: url("./partners/amrf.png");
+    background-size: cover;
+     mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0; 
+   
+}
+
+.partner1{
+
+    /* flex-wrap: wrap; */
+    background-image: url("./partners/wfp.png");
+    height:200px;
+    background-size: cover;
+     mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0; 
+   
+}
+
+._lowerContent{
+    /* padding:20px 20px 20px 20px; */
+    background: #ffff;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.pictureSlide{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("./servicesImages/pexels-partnership3.jpg");
+    height:600px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    /* animation: _pictureChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+   
+
+ }
+
+    
+
+.__decorator{
+    /* background:green; */
+    height: 100%;
+  
+    /* border-radius: 50%; */
+   
+
+    display: flex;
+    flex-wrap: nowrap;
+    /* background:rgb(239, 239, 146); */
+    animation: _decoratorColor;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+  
+
+}
+
+
+
+.focusPoint{
+   /* background: rgb(239, 239, 146); */
+   /* border-top-left-radius: 800%; */
+   /* border-bottom-right-radius:700% ; */
+   /* border-bottom-left-radius: 200%; */
+   width:300px;
+ 
+   filter:sepia(70%);
+   filter:contrast(80%);
+   opacity:0.9;
+   /* background:rgb(241, 229, 229) */
+  
+
+   
+
+
+
+
+
+   /* width:340px; */
+}
+.__firstElement{
+    position: relative;
+    background-image: linear-gradient(rgb(131, 211, 131),rgb(239, 239, 146));
+    height:100%;
+    /* display:flex; */
+    opacity:0.3;
+}
+
+.__firstElement:after{
+border-bottom-left-radius: 150%  60%; 
+border-top-left-radius: 150% 60%; 
+    position: absolute;
+    /* bottom: 0; */
+    content:" ";
+    right: 0;
+   height:100%;
+    width:100%; 
+   /* user-select: none;   */
+   background-color: white;
+ } 
+
+.___element{
+    /* top:90%; */
+     /* transform:translate(0,-50%); */
+     /* position: absolute; */
+
+     font-size: 30px;
+     font-weight: bold;
+     /* width:230px; */
+     opacity:1;
+     /* margin-left: 10%; */
+     color:rgb(20, 80, 34);
+     height:100%;
+     margin-left: 70px;
+     margin-top: 30px;
+    /* animation: _colorChange;
+   animation-duration: 10s;
+   animation-iteration-count: infinite; */
+   
+
+     
+ }
+
+
+ /* small gudgets */
+
+ 
+ 
+ .__upperContentsm{
+    background-image: url("./servicesImages/pexels-partnership.jpg");
+    mask-repeat: no-repeat;
+    height:320px;
+   
+    mask-repeat: no-repeat;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    display:flex;
+    padding:12px 12px 12px 12px;
+    /* animation-name: smallScreen;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+    padding:16px 16px 16px 16px;
+   animation-direction:reverse; */
+
+}
+
+
+.___element-sm{
+    /* transform:translate(0,-50%);  */
+    margin-top: 30px;
+  
+   
+    font-size: 26px;
+    font-weight: bold;
+
+    height: fit-content;
+    opacity:1;
+    color:black;
+    background:beige;
+    opacity:0.6;
+    padding: 12px 12px 12px 12px;
+    /* border: 1px solid lightgray; */
+
+    border-radius: 12px;
+
+  
+
+    align-items: center;
+   justify-content: center;
+
+   /* animation-name: colorChange;
+   animation-duration: 20s;
+   animation-iteration-count: infinite; */
+
+}
+
+._element-sm{
+    /* transform:translate(0,-50%);  */
+    margin-top: 30px;
+  
+   
+    font-size: 26px;
+    font-weight: bold;
+
+    height: fit-content;
+    opacity:1;
+    width:20rem;
+    color:#030303;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid lightgray;
+
+    border-radius: 12px;
+    /* margin-left: 0%; */
+    margin-left: 12px;
+    align-items: center;
+   justify-content: center;
+
+   animation-name: colorChange;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+
+}
+
+
+ @keyframes _pictureChange {
+    from{background-image: url("./servicesImages/pexels-partnership3.jpg");}
+
+    to{background-image: url("./servicesImages/pexels-partnership2.jpg");}
+
+
+    /* from{background-image: url("./servicesImages/maize.jpg");}
+
+    to{background-image: url("./servicesImages/crops.jpg");}
+     */
+ }
+
+
+ @keyframes _decoratorColor{
+    from{margin-left: -300px;}
+     /* to{background:rgb(50, 106, 59)} */
+ 
+ }
+/* 
+ @keyframes _colorChange {
+    from {color:darkgreen;left: 120px; }
+    to {color:darkgreen}
+ } */

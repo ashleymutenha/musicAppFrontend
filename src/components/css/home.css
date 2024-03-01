@@ -6,14 +6,48 @@
 .first-container{
     display:flex;
     flex-wrap: wrap;
-    background-image: url("./servicesImages/femaleFarmer.jpg");
-    height:580px;
+    background-image: url("./servicesImages/pexels-farm.jpg");
+    height:840px;
     background-size: cover;
     mask-repeat: no-repeat;
-    animation-name: rotate;
-    animation-duration: 5s;
+    overflow: hidden;
+    
+    
+    
+   
+    animation-name: _rotate;
+    animation-duration: 3s;
     animation-iteration-count: 1;
+    animation-delay: 18s;
 }
+
+
+._decorator{
+    top:90%;
+     transform:translate(0,-50%);
+     position: absolute;
+     font-size: 30px;
+     font-weight: bold;
+     width:30%;
+     margin-left: 20%;
+
+     animation: decorator;
+     animation-duration: 4s;
+     animation-iteration-count: i;
+     animation-delay: 16s;
+    /* color:white; */
+     white-space: wrap;
+    
+     
+ }
+
+
+ @keyframes decorator {
+
+    from{margin-left: -200px;overflow:"hidden"}
+    to {margin-left:1200px;overflow:"hidden"}
+    
+ }
 
 .left-content{
  

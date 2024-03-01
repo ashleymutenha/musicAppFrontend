@@ -2,9 +2,16 @@ import '../css/about.css'
 
 import Body from '../Body'
 import Footer from './footer'
-import { useState,useEffect } from 'react'
+import { useState,useEffect ,lazy, Suspense} from 'react'
 import {BsMotherboard, BsMagic, BsFillEvStationFill, BsWind, BsGearWideConnected} from'react-icons/bs'
-import Areas from './Areas'
+// import Areas from './Areas'
+import Home from './home.js';
+
+import {motion} from "framer-motion";
+import Waves from './Waves.js'
+
+const Areas = lazy(() => import('./Areas'));
+
 export default function About(){
 
     const[currentItem ,setItem] = useState(2)
@@ -17,18 +24,25 @@ export default function About(){
         setTimeout(
             ()=>{
             
-             setInfo(1)
+             setItem(1)
     
-            },10000
-            )
+            },35000
+            );
+
 
         setTimeout(
-        ()=>{
-         setItem(1)
-         
-
-        },20000
+          ()=>{
+            setInfo(1)
+          },6000
         )
+
+
+
+
+
+     
+
+       
     })
 
 
@@ -39,11 +53,11 @@ export default function About(){
         
 
         {currentItem===2?<div>
-            <div className ="about">
+            <div className ="about" style ={{padding: "16px 16px 16px 16px"}}>
                 <div className ="_left-content " style ={{flex:3}}>
-                  <div className ="vegitable-info"  >
-                    <img class ="left-image" src ="/servicesImages/wheatField.jpg" width={400} height ={400}  alt ="vegetables"/>
-                    </div>
+                  {/* <div className ="vegitable-info"  >
+                    <img class ="left-image" src ="/servicesImages/technology4.jpg" width={400} height ={400}  alt ="vegetables"/>
+                    </div> */}
                     
 
                 </div>
@@ -59,7 +73,7 @@ export default function About(){
 
             </div>
 
-            <div className = "element">
+            {/* <div className = "__element">
                       <div>
                        <BsMagic size ={50} color ="rgb(4, 29, 43)" style ={{opacity:0.4}}/>
                       </div>
@@ -78,25 +92,43 @@ export default function About(){
 
                       
 
-                    </div>
+                    </div> */}
 
 
-                    {showInfo===1?<div className = "leftside-content vegitable-info">
+                    <motion.div className = "leftside-content vegitable-info"
+                      style ={{marginRight:"40px"}}
+                      initial={{filter:"sepia(50%)", marginTop:"-200px",opacity:0.5,borderRadius:"50%", width:"fit-content", height:"fit-content" }}
+                      animate={{filter:"sepia(0%)", marginTop:"0px",width:"30%",
+                      opacity:0.8,borderRadius:"12px" ,padding: "16px 16px 16px 16px"
+                      ,rotate:360,}}
+                      transition={{duration:6}}
+                      dragTransition={{ power: 0.2 }}
+                  
+                    
+                    >
                       {/* <div>
                        <BsWind size ={80} className ="mother-fill"/>
                       </div> */}
-                        <span>Our Vision</span>
+                        {showInfo===1?<motion.div 
+                         initial={{visibility:"hidden" }}
+                         whileInView={{visibility:"visible" }}
+                         transition={{duration:6,type: 'spring', restSpeed: 0.5}}
+                        //  style ={{width:"30%"}}
 
-                        <div style ={{fontSize:20,marginTop:10, fontWeight:"normal"}}>
-                        At AgVal Networks, we envision a future where the agricultural value chain in Africa ....
+                        >
+                        {/* <span>Our Vision</span> */}
+
+                        <div style ={{fontSize:27,marginTop:10, fontWeight:"bold"}}>
+
+                        <div>
+                     <BsMagic size ={50} color ="rgb(4, 29, 43)" style ={{opacity:0.4}}/>
+                    </div>
+                        Accelerating Agricultural Success through Innovation 
                         </div>
 
-                        <div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-                        width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-                         padding:"12px 12px 12px 12px", marginLeft:60}}>
-                            Read More
-                        </div>
-                    </div>:null}
+                      
+                        </motion.div>:null}
+                    </motion.div>
 
 
                    
@@ -145,10 +177,14 @@ export default function About(){
                     
                     
                     </div>
-        <Areas/>
-        <Footer/>
+                    <Suspense>
+
+                  {/* <Areas/> */}
+                  </Suspense>
+                  
+        {/* <Footer/> */}
         </div>:null}
-        {currentItem===1?<Body/>:null}
+        {currentItem===1?<Home/>:null}
         </div>:null}
 
 
@@ -259,13 +295,17 @@ export default function About(){
 
 
         
+        <Suspense>
 
         <Areas/>
+        </Suspense>
+        
        <Footer/>
+       <Waves/>
          </div>:null}
         
         
-       {currentItem==1?<Body/>:null}
+         {currentItem===1?<Home/>:null}
         </div>:null}
 
 

@@ -25,10 +25,21 @@
 .lowerCollection{
     padding:12px 12px 12px 12px;
     background: rgb(240, 236, 236);
-    width:350px;
-    height: 500px;
+    width:fit-content;
+    height: fit-content;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
+    margin-right: 10px;
+}
+
+._lowerCollection{
+    padding:12px 12px 12px 12px;
+    background: rgb(240, 236, 236);
+    width:350px;
+    height: 480px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-right: 10px;
 }
    
    
@@ -42,13 +53,18 @@ justify-items: flex-start;
 }
 
 ._container{
-    padding-left: 20px;
-    padding-right: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+ 
+    padding: 20px 20px 20px 20px;
+
+
     background: rgb(20, 55, 38);
     border-bottom: 1px solid rgb(222, 200, 149);
     margin-right: 0;
+
+    animation: containerAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+   animation-delay: 2s;
 }
 
 ._heading{
@@ -64,7 +80,7 @@ justify-items: flex-start;
 .crop{
     background-image: url("./servicesImages/corn.jpg");
     height:200px;
-    width:350px;
+    width:inherit;
     mask-repeat: no-repeat;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
@@ -81,7 +97,7 @@ justify-items: flex-start;
 .goats{
     background-image: url("./servicesImages/wheat.jpg");
     height:200px;
-    width:350px;
+    width:inherit;
     mask-repeat: no-repeat;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
@@ -95,6 +111,83 @@ justify-items: flex-start;
 }
 
 .animals{
+    background-image: url("./servicesImages/goats.jpg");
+    margin-top: 10px;
+    height:200px;
+    width:inherit;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    /* border-radius: 12px;  */
+    margin-right: 10px;
+
+    animation:thirdSlidePicture;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  
+  
+
+}
+
+
+.basket{
+    background-image: url("./servicesImages/pexels-partnership3.jpg");
+    height:200px;
+    width:inherit;
+    mask-repeat: no-repeat;
+    background-size: cover;
+
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    /* border-radius: 12px;  */
+    margin-top: 10px;
+    margin-right: 10px;
+    animation:secondSlidePicture;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    
+   
+}
+
+
+
+._crop{
+    background-image: url("./servicesImages/corn.jpg");
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-right: 10px;
+   
+    animation:firstSlidePicture;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+._goats{
+    background-image: url("./servicesImages/wheat.jpg");
+    height:200px;
+    width:350px;
+    mask-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size: cover;
+    /* border-radius: 12px;  */
+    margin-top: 10px;
+    margin-right: 10px;
+  
+   
+  
+}
+
+._animals{
     background-image: url("./servicesImages/goats.jpg");
     margin-top: 10px;
     height:200px;
@@ -115,8 +208,20 @@ justify-items: flex-start;
 
 }
 
+.bnm{
+    color:"black"
+}
 
-.basket{
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.bnm:hover{
+    color:#ffff;
+}
+
+._basket{
     background-image: url("./servicesImages/wheat.jpg");
     height:200px;
     width:350px;
@@ -136,12 +241,11 @@ justify-items: flex-start;
    
 }
 
-
 .firstSlide{
     animation: firstSlide;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
-   animation-delay: 6s;
+  
     
 }
 
@@ -198,23 +302,30 @@ justify-items: flex-start;
 
 @keyframes firstSlidePicture {
 
-    from{background-image: url("./servicesImages/wheatfield.jpg")}
-    to{background-image: url("./servicesImages/maize.jpg")}
+    from{background-image: url("./servicesImages/pexels-chicken.jpg")}
+    to{background-image: url("./servicesImages/pexels-maize.jpg")}
     
 }
 
 
 @keyframes secondSlidePicture {
 
-    from{background-image: url("./servicesImages/crops.jpg")}
-    to{background-image: url("./servicesImages/greenWheat.jpg")}
+    from{background-image: url("./servicesImages/pexels-partnership.jpg")}
+    to{background-image: url("./servicesImages/pexels-partnership2.jpg")}
     
 }
 
 @keyframes thirdSlidePicture {
 
-    from{background-image: url("./servicesImages/barley.jpg")}
-    to{background-image: url("./servicesImages/basket.jpg")}
+    from{background-image: url("./servicesImages/pexels-farm.jpg")}
+    to{background-image: url("./servicesImages/pexels-agric3.jpg")}
+    
+}
+
+
+@keyframes containerAnimation {
+    from{filter: grayscale(70%);}
+ 
     
 }
 

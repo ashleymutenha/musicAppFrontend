@@ -1,12 +1,17 @@
 import './css/body.css'
-import { useState,useEffect,lazy,startTransition} from 'react';
+import { useState,useEffect,lazy, Suspense} from 'react';
 import React from 'react';
 import About from './bodyComponents/About';
 import Footer from './bodyComponents/footer';
-import Areas from './bodyComponents/Areas';
-
-
+import Header from './Header';
+import Waves from './bodyComponents/Waves';
+// import Areas from './bodyComponents/Areas';
 import { Bs1Circle, BsGearWideConnected } from 'react-icons/bs';
+import {motion} from "framer-motion";
+
+
+const Areas = lazy(() => import('./bodyComponents/Areas'));
+
 export default function Body(){
     const _Areas =lazy(()=>import('./bodyComponents/Areas'))
         
@@ -24,19 +29,28 @@ export default function Body(){
                 setItem(2)
             },20000
         )
+
+
+      
+       
+
+
+       
     })
 
 
     return(
         
-         <div>
+         <div >
 
-
+        <Header/>
         {width>1000?<div>
-        {currentItem===1?<div>
-            <div className ="first-container">
+            {currentItem===1?<div >
+           <div 
+            
+            className ="first-container" >
 
-                <div className =" right-container" style ={{flex:8}}>
+                <div className =" right-container" style ={{flex:11}}>
 
                 </div>
                 
@@ -49,7 +63,7 @@ export default function Body(){
 
             <div className = "_element">
                       <div>
-                        <span style ={{color:"navy", fontSize:14}}>___________  
+                        <span style ={{color:"darkgreen", fontSize:14}}>___________  
                         <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
                       </div>
                         <span>Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!</span>
@@ -59,6 +73,21 @@ export default function Body(){
                          padding:"12px 12px 12px 12px", }}>
                             View More
                         </div> */}
+                    </div>
+
+
+                    <div className = "_decorator" style ={{display:"flex", opacity:0.8, overflow:"hidden", marginLeft:"-200px"}}>
+                      <div style ={{width:"10px", height:"680px", background:"beige", marginRight:"10px" }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
+                      <div style ={{width:"10px", height:"680px", background:"beige",marginRight:"10px"  }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
+
+
+                      <div style ={{width:"10px", height:"680px", background:"beige", }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
                     </div>
                     
                     <div className ="_carousel">
@@ -107,14 +136,20 @@ export default function Body(){
                     
                     
                     </div>
-
-                    <Areas/>
-
-         <Footer/>
+                   
         </div>:null}
 
-        {currentItem===2?<About/>:null}
+        {currentItem===2?<div><About/></div>:null}
 
+<Suspense>
+
+<Areas/>
+</Suspense>
+
+
+
+<Footer/>
+<Waves/>
         </div>:null}
 
 
@@ -190,12 +225,15 @@ export default function Body(){
             </div>:null}
 
         
+            <Suspense>
 
             <Areas/>
+            </Suspense>
+            
             
            
             <Footer/>
-
+            <Waves/>
            </div>:null}
 
            {currentItem===2?<About/>:null}

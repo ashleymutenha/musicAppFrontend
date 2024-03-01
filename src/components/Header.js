@@ -34,8 +34,6 @@ function Header(){
               </div>:null}
 
               {width>1000?<div style ={{flex:3, background:"rgb(20, 55, 38)",padding:"40px 40px 40px 40px"}}>
-                <BsFacebook color='#ffff'  size ={20}/>
-                <BsTwitter style ={{marginLeft:12}} color='#ffff'  size ={20}/>
                 <BsLinkedin style ={{marginLeft:12}} color='#ffff'  size ={20}/>
                 <BsGoogle style ={{marginLeft:12}} color='#ffff'  size ={20}/>
               </div>:null}
@@ -57,11 +55,10 @@ function Header(){
           
 
            <div style ={{flex:6, marginTop:3}}>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold"}}>Home</span>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About</span>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Partners</span>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Contact</span>
+           <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold"}}>Home</span></a>
+              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About Us</span>
+              {/* <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span> */}
+             <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Mission & Vision</span></a>
 
 
 

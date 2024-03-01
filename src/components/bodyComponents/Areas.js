@@ -1,29 +1,26 @@
 import '../css/areas.css'
 import {  BsCollection, BsCpuFill, BsInboxesFill, BsPeopleFill } from 'react-icons/bs'
 import { useState } from 'react';
+
+import {motion} from "framer-motion";
 export default function Areas(){
     const[width, setWidth] =useState(window.innerWidth)
 
-    // var[showPictures, setPictures] = useState(true)
-
-    // useEffect(()=>{
-    //     setTimeout(()=>{
-    //         setPictures(!showPictures);
-    //     }, 30000)
-    // })
-
+    const toPartners =()=>{
+      window.onpageshow("/partnerships")
+    }
     return(
       
         <div className ="_container" style ={{borderTop:"1px solid rgb(222, 200, 149)" }}>
             <BsCollection color ="rgb(222, 200, 149)" size ={70} style ={{opacity:0.8}}/>
             <div className='_heading' ></div>
             {width>1000?<div className ="areas">
-                <div className ="firstSlide collective">
-                <div className ="crop">
+                <div className =" collective">
+                <div className ="_crop">
                   
                 </div>
 
-                <div className ="lowerCollection">
+                <div className ="_lowerCollection">
 
                       <div className ="icon-container">
 
@@ -83,13 +80,15 @@ By marrying cutting-edge technology with deep industry knowledge, we present a s
 
                 </div> */}
 
-
-                <div className ="collective">
-                <div className ="basket">
+              
+                <motion.div className =" collective" initial ={{marginLeft:"-400px"}} whileInView={{marginLeft:"0px" }}
+                transition={{duration:3}}
+                >
+                <div className ="_basket">
                   
                 </div>
 
-                <div className ="lowerCollection">
+                <div className ="_lowerCollection">
 
 <div className ="icon-container">
 
@@ -106,10 +105,13 @@ At AgVal Networks, we deeply value the power of collaboration.
   Our partners play an integral role in....
   
 
-<div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-  width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-   padding:"12px 12px 12px 12px", marginLeft:60}}>
-      Read More
+<div  style ={{marginTop:"12px"}}>
+     <a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/partnerships"> <span className='bnm'>Read More</span></a>
   </div>
 
 </div>
@@ -117,14 +119,15 @@ At AgVal Networks, we deeply value the power of collaboration.
 
 
 
-                </div>
+                </motion.div>
+               
                 
                 <div className ="collective">
-                <div className ="animals">
+                <div className ="_animals">
                   
                   </div>
 
-                  <div className ="lowerCollection">
+                  <div className ="_lowerCollection">
 
 <div className ="icon-container">
 

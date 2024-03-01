@@ -1,0 +1,141 @@
+import { BsBookmark, BsCashStack, BsDatabase, BsMotherboardFill, BsPeople, BsPiggyBank } from 'react-icons/bs'
+import '../css/company.css'
+import { homeInfo } from '../../resources/info'
+import Footer from '../bodyComponents/footer'
+import Header from '../Header'
+import Waves from '../bodyComponents/Waves'
+export default function Company(){
+
+    const data = homeInfo
+
+return(
+
+    <div>
+       <Header/>
+        <div className ="topContent">
+        <div className = "element" style ={{flex:8, marginTop:"5%"}}>
+                      <div>
+                     
+                      </div>
+                        <span>Maximum Efficiency, Sustainability, and Profitability </span>
+
+                   
+                    </div>
+
+        <div className ="topContent-bottom" style ={{flex:4, background:"rgb(20, 55, 38)", opacity:0.9}}>
+
+            <div style ={{marginRight:"8rem",width:"20rem"}}>
+                
+                <div style ={{marginLeft:"5.5rem"}}><BsCashStack size ={50} color ="white"/></div>
+                <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"30px",marginLeft:"2rem"}}>Value For Money</div>
+
+                <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Turn to us for all your 
+                agricultural needs and be guaranteed of exceptional value for your investment</div>
+
+               
+            </div>
+
+
+            <div style ={{width:"20rem" }}>
+                
+                <div style ={{marginLeft:"5.5rem"}}><BsPeople size ={50} color ="white"/></div>
+                <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"30px",marginLeft:"2rem"}}>Partner with us</div>
+
+                <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
+                <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div>
+               
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <div className ="lowerContent">
+            <div style ={{textAlign:"center", fontSize:"30px",marginTop:"10px", marginBottom:"8px"
+           }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Our Vision</span></div>
+        <p style ={{fontSize:"18px"}}>
+            {homeInfo.Vision}
+        </p>
+
+
+     
+        </div>
+
+        <div className ="mission" style ={{background:"#ffff"}} >
+
+           
+            <div className ="pictureGallery" style ={{flex:6}}>
+
+            <div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
+                 borderBottomRightRadius:"40%", height:"fit-content",
+                
+                color:"#ffff", fontSize:"26px", padding:"12px 12px 12px 12px",}}>
+
+Africa with an excellent Agricultural Value Chain
+
+                </div>
+
+                
+
+            <div style ={{flex:10 }}> 
+                <img class ="__left-image" src ="/servicesImages/farm2.jpg"  style ={{}}  alt ="vegetables"/>
+                </div>
+
+               
+
+            </div>
+            <div >
+
+            </div>
+        
+
+
+        <div  style = {{flex:6, borderTop:"2px solid rgb(20, 55, 38)"
+          }}>
+                       <div style ={{textAlign:"center", fontSize:"30px",marginTop:"10px", marginBottom:"8px"
+           }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Our Mission</span></div>
+
+                    
+
+         <div style ={{ marginLeft:"10px"}}>{data.Mission.map((_data,key)=>{
+
+             
+
+               if (typeof(_data.paragraph)!=='string'){
+
+                return <p id ={key} style ={{marginLeft:"10px",fontSize:"18px"}}>
+
+              
+
+                
+                <strong style ={{color:"rgb(22, 52, 20)"}}>{_data.paragraph.keyPoint}</strong> {_data.paragraph.explanation}</p>
+             }
+
+             if (typeof(_data.paragraph)==='string') 
+             {
+
+                return <p id ={key} style ={{fontSize:"18px"}}>
+
+               
+
+                
+                {_data.paragraph}</p>
+             }
+             return null
+            })}
+             </div>
+                    
+             
+        </div>
+        </div>
+
+        <Footer/>
+        <Waves/>
+      
+        
+    </div>
+)
+
+
+}
