@@ -6,6 +6,8 @@ import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle} from'react-icons/bs'
 import { useState } from 'react';
 export default function Waves(){
 
+
+
   const[width, setWidth] =useState(window.innerWidth)
 
   const year = new Date().getFullYear()
@@ -48,7 +50,7 @@ export default function Waves(){
       <div style ={{position:"relative",overflow:"hidden", height:"140px", background:"rgb(37, 74, 52)"}}>
        
 
-        <div style ={{height:"fit-content",display:"flex", flexWrap:"wrap"}}>
+        {width>=1000?<div style ={{height:"fit-content",display:"flex", flexWrap:"wrap"}}>
        
 
       <div className ="dotContainer" style ={{flex:2}}>
@@ -97,7 +99,7 @@ export default function Waves(){
           
        
       </div>
-     </div>
+     </div>:null}
         <div>
       <div style ={{display:"flex",bottom:"4px", transform:"translate(0,-50%)",
         

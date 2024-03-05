@@ -24,11 +24,11 @@ export default function Body(){
     useEffect(()=>{
         const Areas = React.lazy(()=>import("./bodyComponents/Areas"))
 
-        setTimeout(
-            ()=>{
-                setItem(2)
-            },20000
-        )
+        // setTimeout(
+        //     ()=>{
+        //         setItem(2)
+        //     },22000
+        // )
 
 
       
@@ -50,14 +50,16 @@ export default function Body(){
             
             className ="first-container" >
 
-                <div className =" right-container" style ={{flex:11}}>
-
-                </div>
+               
                 
 
-                <div  style ={{flex:2,borderBottomLeftRadius: "50%"}}>
+                <div  style ={{flex:1,borderBottomLeftRadius: "50%"}}>
 
                 </div>
+
+                <div className =" right-container" style ={{flex:11}}>
+
+</div>
 
             </div>
 

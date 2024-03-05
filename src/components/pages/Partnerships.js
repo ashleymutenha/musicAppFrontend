@@ -3,6 +3,9 @@ import Waves from "../bodyComponents/Waves.js"
 import Footer from "../bodyComponents/footer.js"
 import { partnerships } from "../../resources/info";
 
+import {motion} from "framer-motion";
+
+
 import '../css/partnerships.css'
 import { useState } from "react";
 export default function Partnerships(){
@@ -64,7 +67,7 @@ export default function Partnerships(){
 
             </div>:null}
 
-            <div className ="_lowerContent">
+            <motion.div className ="_lowerContent" >
              <div className ="__left" style ={{flex:5}}>
             <div  style ={{fontSize:"18px",  marginTop:"12%", marginLeft:"13px", marginRight:"13px", marginBottom:"13px"}}>
                 <div style ={{fontSize:"30px", textAlign:"center"}}>
@@ -81,13 +84,14 @@ export default function Partnerships(){
             {width>1000?<div className ="pictureSlide" style ={{flex:8}}>
 
             </div>:null}
-            </div>
+            </motion.div>
 
-            <div className ="____lowerContent" >
-                <div style ={{borderRadius:"50%", width:"40px",height:"40px", background:'darkgreen', padding:"8px 8px 8px 8px", opacity:0.3}}>
+            <motion.div  className ="____lowerContent" initial ={{opacity:0, }} whileInView={{opacity:1 }}
+                transition={{duration:3}} >
+                <div style ={{borderRadius:"50%", width:"40px",height:"40px", background:'goldenrod', padding:"8px 8px 8px 8px", opacity:0.2}}>
             
                 </div>
-                <div style ={{display:"flex", flexWrap:"wrap" }}>
+                <motion.div style ={{display:"flex", flexWrap:"wrap" }} initial ={{ marginTop:"20%",opacity:0}} animate={{marginTop:"0px"}} whileInView={{opacity:1}}>
             {data.partners.map((partner,key) =>{return <div  style={{color:"black", flex:6, 
             width:"fit-content",marginTop:"20px",borderBottomRightRadius:"30px",marginBottom:"1%",  }}>
            <div className ="mb-2" style ={{borderRadius:"12px",marginRight:"2%", fontSize:"18px"
@@ -95,7 +99,7 @@ export default function Partnerships(){
             {width>1000?<div >
                 
 
-                <div className ="" style ={{flex: 10,background:"whitesmoke" ,marginTop:0,padding:"12px",borderTopLeftRadius:"50px", borderBottomRightRadius:"50px"}}>
+                <div className ="" style ={{flex: 10,background:"whitesmoke" ,marginTop:0,padding:"12px",borderTopLeftRadius:"50px", borderBottomRightRadius:"50px", height:"700px"}}>
 
                 <div style ={{flex:1, display:"flex"}} >
                 <div style ={{flex:8}}></div>
@@ -159,7 +163,7 @@ export default function Partnerships(){
         </div>})}
 
 
-            </div></div>
+            </motion.div></motion.div>
              <Footer/>
             <Waves/>
         </div>

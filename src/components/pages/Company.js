@@ -4,15 +4,20 @@ import { homeInfo } from '../../resources/info'
 import Footer from '../bodyComponents/footer'
 import Header from '../Header'
 import Waves from '../bodyComponents/Waves'
+
+
+import { useState } from 'react'
 export default function Company(){
 
     const data = homeInfo
+    const[width, setWidth] =useState(window.innerWidth)
+
 
 return(
 
     <div>
        <Header/>
-        <div className ="topContent">
+        {width>=1000?<div className ="topContent">
         <div className = "element" style ={{flex:8, marginTop:"5%"}}>
                       <div>
                      
@@ -48,7 +53,52 @@ return(
 
         </div>
 
+        </div>:null}
+
+
+
+        {width<1000?<div><div className ="topContent-sm">
+        <div className = "element" style ={{flex:8, marginTop:"5%"}}>
+                      <div>
+                     
+                      </div>
+                        <span>Maximum Efficiency, Sustainability, and Profitability </span>
+
+                   
+                    </div>
+
+       
+
         </div>
+
+        <div className ="topContent-bottom" style ={{flex:4, background:"rgb(20, 55, 38)", opacity:0.9}}>
+
+<div style ={{marginBottom:"10px"}}>
+    
+    <div style ={{marginLeft:"5.5rem"}}><BsCashStack size ={50} color ="white"/></div>
+    <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"22px",marginLeft:"2rem"}}>Value For Money</div>
+
+    <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Turn to us for all your 
+    agricultural needs and be guaranteed of exceptional value for your investment</div>
+
+   
+</div>
+
+
+<div style ={{}}>
+    
+    <div style ={{marginLeft:"5.5rem"}}><BsPeople size ={50} color ="white"/></div>
+    <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"22px",marginLeft:"2rem"}}>Partner with us</div>
+
+    <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
+    <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div>
+   
+</div>
+
+</div>
+        </div>
+        
+        :null}
 
 
         <div className ="lowerContent">
@@ -67,14 +117,24 @@ return(
            
             <div className ="pictureGallery" style ={{flex:6}}>
 
-            <div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
+            {width>=1000?<div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
                  borderBottomRightRadius:"40%", height:"fit-content",
                 
                 color:"#ffff", fontSize:"26px", padding:"12px 12px 12px 12px",}}>
 
 Africa with an excellent Agricultural Value Chain
 
-                </div>
+                </div>:null}
+
+
+                {width<1000?<div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
+                 borderBottomRightRadius:"40%", height:"fit-content",
+                
+                color:"#ffff", fontSize:"16px", padding:"12px 12px 12px 12px",}}>
+
+Africa with an excellent Agricultural Value Chain
+
+                </div>:null}
 
                 
 

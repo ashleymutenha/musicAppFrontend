@@ -1,0 +1,178 @@
+.UpperContent{
+    display:flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    background-image: url("./servicesImages/pexels-oranges.jpg");
+    height:900px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    margin: 0;
+    padding: 12px 12px 12px 12px;
+    
+}
+
+
+.UpperContent-sm{
+   display:flex;
+   /* flex-direction: column; */
+   /* flex-wrap: wrap; */
+   background-image: url("./servicesImages/pexels-oranges.jpg");
+   height:300px;
+   background-size: cover;
+   mask-repeat: no-repeat;
+   margin: 0;
+   padding: 12px 12px 12px 12px;
+   
+}
+
+.bn{
+
+    background:rgb(9, 48, 18)
+}
+
+/* .__firstElement{
+    position: relative;
+    background-image: linear-gradient(rgb(131, 211, 131),rgb(239, 239, 146));
+    height:100%;
+    /* display:flex; */
+    /* opacity:0.3; */
+
+
+.card2::after{
+border-bottom-left-radius: 150%  60%; 
+border-top-left-radius: 150% 60%; 
+    position: absolute;
+    /* bottom: 0; */
+    content:" ";
+    right: 0;
+   height:100%;
+    width:50%; 
+    opacity:0.2;
+   /* user-select: none;   */
+   background-color: rgb(89, 123, 90);
+  
+ } 
+
+ .lowerSection{
+    background: #ffff;
+    /* padding:20px 20px 20px 20px; */
+
+    /* display:flex; */
+ }
+
+
+
+
+ .mat{
+    background-image: url("./servicesImages/pexels-barometer.jpg");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    height: 400px;
+    padding:12px 12px 12px 12px;
+    width:500px;
+
+ }
+
+ .mat-sm{
+   background-image: url("./servicesImages/pexels-barometer.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:200px;
+
+}
+
+
+
+ .mat2{
+    background-image: url("./servicesImages/pexels-laptop.jpg");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    height: 400px;
+    padding:12px 12px 12px 12px;
+    width:500px;
+
+ }
+
+ .mat2-sm{
+   background-image: url("./servicesImages/pexels-laptop.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:200px;
+
+}
+
+ .mat3{
+    background-image: url("./servicesImages/basket.jpg");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    height: 400px;
+    padding:12px 12px 12px 12px;
+    width:500px;
+
+ }
+
+
+ .mat4{
+   background-image: url("./servicesImages/pexels-twoFarmers.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:500px;
+
+}
+
+.mat5{
+   background-image: url("./servicesImages/windmill.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:500px;
+
+}
+
+.mat6{
+   background-image: url("./servicesImages/pexels-advise.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:500px;
+
+}
+
+
+.mat7{
+   background-image: url("./servicesImages/pexels-youth.jpg");
+   background-size: cover;
+   mask-repeat: no-repeat;
+   height: 400px;
+   padding:12px 12px 12px 12px;
+   width:500px;
+
+}
+
+
+.view-more{
+   padding:12px 12px 12px 12px;
+   background:rgb(9, 48, 18);
+   color:white;
+   opacity:0.8;
+   width:fit-content;
+   /* border-radius: 12px; */
+   cursor:pointer;
+   font-size: 22px;
+   /* border: 2px solid gold; */
+
+}
+
+
+.view-more:hover{
+   background: beige;
+   color:black
+}

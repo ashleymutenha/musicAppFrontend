@@ -1,5 +1,5 @@
 @keyframes rotate{
-    from{ background-image: url("./servicesImages/pexels-agric1.jpg");
+    from{ background-image: url("./servicesImages/pexels-tomatoes.jpg");
     height:840px;
     background-size: cover;
     mask-repeat: no-repeat;
@@ -48,7 +48,7 @@
 
 
 .about{
-    background-image: url("./servicesImages/pexels-agric1.jpg");
+    background-image: url("./servicesImages/pexels-tomatoes.jpg");
     mask-repeat: no-repeat;
     height:840px;
     mask-repeat: no-repeat;

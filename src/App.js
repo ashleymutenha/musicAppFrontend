@@ -9,6 +9,7 @@ import Dots from './components/bodyComponents/Dots';
 import Company from './components/pages/Company';
 import {motion} from "framer-motion";
 import Partnerships from './components/pages/Partnerships';
+import Services from './components/pages/Services';
 
 function App() {
  
@@ -22,9 +23,11 @@ function App() {
       <Route path="/company" element={ <Company/> }/>
      <Route path="/partnerships" element={ <Partnerships/>}/>
 
+     <Route path="/services" element={ <Services/>}/>
 
       </Routes>
         </BrowserRouter>
+
 
         
   

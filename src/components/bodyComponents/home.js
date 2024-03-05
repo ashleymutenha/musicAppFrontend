@@ -22,11 +22,11 @@ export default function Home(){
     useEffect(()=>{
         // const Areas = React.lazy(()=>import("./bodyComponents/Areas"))
 
-        setTimeout(
-            ()=>{
-                setItem(2)
-            },20000
-        )
+        // setTimeout(
+        //     ()=>{
+        //         setItem(2)
+        //     },22000
+        // )
 
 
 
@@ -48,7 +48,7 @@ export default function Home(){
                 </div>
                 
 
-                <div  style ={{flex:2,borderBottomLeftRadius: "50%"}}>
+                <div  style ={{flex:1,borderBottomLeftRadius: "50%"}}>
 
                 </div>
 

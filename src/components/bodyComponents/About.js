@@ -21,13 +21,13 @@ export default function About(){
 
     useEffect(()=>{
 
-        setTimeout(
-            ()=>{
+        // setTimeout(
+        //     ()=>{
             
-             setItem(1)
+        //      setItem(1)
     
-            },35000
-            );
+        //     },35000
+        //     );
 
 
         setTimeout(

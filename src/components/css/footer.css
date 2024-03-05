@@ -2,7 +2,7 @@
     
     
     padding:30px 30px 30px 30px;
-    background-image: url("./servicesImages/pexels-goats.jpg");
+    background-image: url("./servicesImages/windmill.jpg");
     background-size: cover;
     mask-repeat: no-repeat;
     width:"fit-content";
@@ -86,7 +86,7 @@
 
 
 .phoneNumber{
-    color:rgb(236, 246, 189);
+    color:whitesmoke;
     font-size: 20px;
     margin-bottom: 9px;
     font-weight: bold;

@@ -1,6 +1,7 @@
 import './css/header.css'
 import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle} from'react-icons/bs'
 import { BsJustify } from 'react-icons/bs';
+import { Dropdown } from 'react-bootstrap';
 
 import { useEffect,useState } from 'react';
 function Header(){
@@ -15,12 +16,12 @@ function Header(){
   })
 
 
- 
+ const options =['Home', 'Mission & Vision', 'About Us']
 
     return(
 
         <div>
-          <div className ="header">
+          <div className ="header" >
            <div className ="content">
             <div style={{flex:2, background:"white",padding:"12px 12px 12px 12px"}}>
 
@@ -78,6 +79,7 @@ function Header(){
            <div style={{flex:3,background:"rgb(20, 55, 38)"}}>
 
           <BsJustify style ={{marginLeft:12}} color='white'  size ={40}/>
+          <Dropdown options ={options}  value = {options[0]} style ={{background:"#ffff"}}/>
           </div>
 
         
