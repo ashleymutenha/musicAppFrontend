@@ -18,7 +18,12 @@ return(
     <div>
        <Header/>
         {width>=1000?<div className ="topContent">
-        <div className = "element" style ={{flex:8, marginTop:"5%"}}>
+           
+       <div style ={{display:"flex", height:"550px"}}>
+
+     
+        
+         <div className = "element" style ={{flex:6, marginTop:"1%", padding:"12px"}}>
                       <div>
                      
                       </div>
@@ -26,6 +31,23 @@ return(
 
                    
                     </div>
+
+
+                    <div style ={{flex:3}}>
+                    <div  className ="card" style ={{display:"flex", marginBottom:"30%",
+                         background:"whitesmoke", color:"black", opacity:0.7, fontSize:"30px", flexDirection:"row",border:"0px"}}>
+                        <div className ="card" style ={{width:"80px", background:"transparent", border:"0px",flex:1, border:"0px"}}>
+                       <div className ="_card3" ></div>
+                       </div>
+                       <div style ={{flex:6, padding:"12px 12px 12px 12px"}}> Mission and Vision </div>
+                      
+                    </div>
+
+            </div>
+
+                    </div>
+
+                  
 
         <div className ="topContent-bottom" style ={{flex:4, background:"rgb(20, 55, 38)", opacity:0.9}}>
 
@@ -118,7 +140,7 @@ return(
             <div className ="pictureGallery" style ={{flex:6}}>
 
             {width>=1000?<div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
-                 borderBottomRightRadius:"40%", height:"fit-content",
+                  height:"fit-content",
                 
                 color:"#ffff", fontSize:"26px", padding:"12px 12px 12px 12px",}}>
 
@@ -128,7 +150,7 @@ Africa with an excellent Agricultural Value Chain
 
 
                 {width<1000?<div style ={{flex:1, background:"rgb(20, 55, 38)", opacity:0.8,
-                 borderBottomRightRadius:"40%", height:"fit-content",
+                  height:"fit-content",
                 
                 color:"#ffff", fontSize:"16px", padding:"12px 12px 12px 12px",}}>
 
@@ -138,20 +160,23 @@ Africa with an excellent Agricultural Value Chain
 
                 
 
-            <div style ={{flex:10 }}> 
+            <div style ={{flex:20 }}> 
                 <img class ="__left-image" src ="/servicesImages/farm2.jpg"  style ={{}}  alt ="vegetables"/>
                 </div>
 
                
 
             </div>
+
+
+            
             <div >
 
             </div>
         
 
 
-        <div  style = {{flex:6, borderTop:"2px solid rgb(20, 55, 38)"
+        <div  style = {{flex:5, borderTop:"2px solid rgb(20, 55, 38)"
           }}>
                        <div style ={{textAlign:"center", fontSize:"30px",marginTop:"10px", marginBottom:"8px"
            }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Our Mission</span></div>

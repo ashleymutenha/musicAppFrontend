@@ -1,11 +1,11 @@
 @keyframes rotate{
-    from{ background-image: url("./servicesImages/pexels-tomatoes.jpg");
+    from{ background-image: url("./servicesImages/pexels-chicken.jpg");
     height:840px;
     background-size: cover;
     mask-repeat: no-repeat;
     
     }
-    to{ background-image: url("./servicesImages/pexels-tomatoes.jpg") ;
+    to{ background-image: url("./servicesImages/pexels-chicken.jpg") ;
     height:840px;
     background-size: cover;
     mask-repeat: no-repeat;
@@ -17,6 +17,10 @@
 
 
     
+}
+
+.nm{
+    background: rgb(52, 114, 64);
 }
 
 @keyframes colorChange {
@@ -48,7 +52,7 @@
 
 
 .about{
-    background-image: url("./servicesImages/pexels-tomatoes.jpg");
+    background-image: url("./servicesImages/pexels-cattle.jpg");
     mask-repeat: no-repeat;
     height:840px;
     mask-repeat: no-repeat;
@@ -155,8 +159,8 @@
     border:1px solid rgb(4, 29, 43);
     /* width:20px;
     height:20px; */
-    padding:1px 1px 1px 1px;
-    width:26px; 
+    padding:1px;
+    width:45px; 
     
 }
 
@@ -164,30 +168,31 @@
 .__element3{
    border:1px solid white;
    background: white; 
-   width:26px; 
+   width:45px; 
    cursor:pointer;
     /* border-radius: 12px; */
-    padding:1px 1px 1px 1px
+    padding:1px
    
 } 
 
 .__element3:hover ,.__element2:hover{
    cursor: pointer;
 
+
 }
 
 .__element2:hover{
-    background:rgb(236, 52, 52);
-    border:1px solid rgb(236, 52, 52)
+   background:rgb(33, 94, 61);
+    border:1px solid rgb(33, 94, 61)
 }
  .__carousel{
-    top:110%;
+    top:120%;
      transform:translate(0,-50%);
      position: absolute;
      font-size: 39px;
      font-weight: bold;
      opacity:1;
-     margin-left: 37%;
+     margin-left: 50%;
      display: flex;
      flex-wrap: wrap;
 

@@ -3,6 +3,15 @@ import {  BsCollection, BsCpuFill, BsInboxesFill, BsPeopleFill } from 'react-ico
 import { useState } from 'react';
 
 import {motion} from "framer-motion";
+
+
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+import { A11y, Navigation, Pagination, Scrollbar,Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 export default function Areas(){
     const[width, setWidth] =useState(window.innerWidth)
 
@@ -14,7 +23,11 @@ export default function Areas(){
         <div className ="_container" style ={{borderTop:"1px solid rgb(222, 200, 149)" }}>
             <BsCollection color ="rgb(222, 200, 149)" size ={70} style ={{opacity:0.8}}/>
             <div className='_heading' ></div>
-            {width>1000?<div className ="areas">
+
+
+
+
+            {width>1100?<div className ="areas">
                 <div className =" collective">
                 <div className ="_crop">
                   
@@ -50,38 +63,7 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 
                 </div>
                  
-                {/* <div className ="collective">
-                <div className ="goats secondSlide">
-                  
-                </div>
-
-
-                <div className ="lowerCollection">
-
-<div className ="icon-container">
-
-<BsMotherboardFill color='rgb(231, 232, 216)' size ={40}/> 
-</div>
-
-<div className ="submenu-heading">Our Solutions</div>
-
-<div className ="submenu">
-
-Our comprehensive solutions are not just individual products or services, 
-but integrated responses tailored to address these multifaceted challenges.
-By marrying cutting-edge technology with deep industry knowledge, we present a suite of solutions designed to empower...
-
-
-<div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-  width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-   padding:"12px 12px 12px 12px", marginLeft:60}}>
-      Read More
-  </div>
-
-</div>
-</div>
-
-                </div> */}
+               
 
               
                 <motion.div className =" collective" initial ={{marginLeft:"-400px"}} whileInView={{marginLeft:"0px" }}
@@ -160,7 +142,13 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
             </div>:null}
 
 
-{width<=1000?<div className ="areas2">
+
+
+
+
+
+
+{width<=1100?<div className ="areas2">
 
 <div className ="collective">
 <div className ="crop ">

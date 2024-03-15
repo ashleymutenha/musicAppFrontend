@@ -2,12 +2,11 @@
     display:flex;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    background-image: url("./servicesImages/pexels-oranges.jpg");
+    background-image: url("./servicesImages/pexels-tomatoes.jpg");
     height:900px;
     background-size: cover;
     mask-repeat: no-repeat;
     margin: 0;
-    padding: 12px 12px 12px 12px;
     
 }
 
@@ -16,8 +15,8 @@
    display:flex;
    /* flex-direction: column; */
    /* flex-wrap: wrap; */
-   background-image: url("./servicesImages/pexels-oranges.jpg");
-   height:300px;
+   background-image: url("./servicesImages/pexels-maize2.jpg");
+   height:500px;
    background-size: cover;
    mask-repeat: no-repeat;
    margin: 0;
@@ -27,7 +26,7 @@
 
 .bn{
 
-    background:rgb(9, 48, 18)
+    background:rgb(207, 221, 157)
 }
 
 /* .__firstElement{
@@ -53,6 +52,38 @@ border-top-left-radius: 150% 60%;
   
  } 
 
+
+ .card3::after{
+   border-top-right-radius: 50%  60%; 
+   border-bottom-right-radius: 50% 60%; 
+       position: absolute;
+       /* bottom: 0; */
+       content:" ";
+       right: 0;
+      height:100%;
+       width:100%; 
+       opacity:0.1;
+      /* user-select: none;   */
+      background-color: rgb(158, 185, 166);
+     
+    } 
+
+
+    ._card3::after{
+      border-top-right-radius: 50%  60%; 
+      border-bottom-right-radius: 50% 60%; 
+          position: absolute;
+          /* bottom: 0; */
+          content:" ";
+          right: 0;
+         height:100%;
+          width:100%; 
+          opacity:0.1;
+         /* user-select: none;   */
+         background-color: rgb(15, 41, 23);
+        
+       } 
+
  .lowerSection{
     background: #ffff;
     /* padding:20px 20px 20px 20px; */
@@ -70,6 +101,11 @@ border-top-left-radius: 150% 60%;
     height: 400px;
     padding:12px 12px 12px 12px;
     width:500px;
+    animation:mat;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
 
  }
 
@@ -79,7 +115,11 @@ border-top-left-radius: 150% 60%;
    mask-repeat: no-repeat;
    height: 400px;
    padding:12px 12px 12px 12px;
-   width:200px;
+   width:500px;
+   animation:mat;
+   animation-duration: 9s;
+   animation-delay: 3s;
+   animation-iteration-count: infinite;
 
 }
 
@@ -93,6 +133,11 @@ border-top-left-radius: 150% 60%;
     padding:12px 12px 12px 12px;
     width:500px;
 
+    animation:mat2;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+
  }
 
  .mat2-sm{
@@ -101,38 +146,57 @@ border-top-left-radius: 150% 60%;
    mask-repeat: no-repeat;
    height: 400px;
    padding:12px 12px 12px 12px;
-   width:200px;
+   width:500px;
+
+   animation:mat2;
+   animation-duration: 6s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
 
 }
 
  .mat3{
-    background-image: url("./servicesImages/basket.jpg");
+    background-image: url("./servicesImages/pexels-market.jpg");
     background-size: cover;
     mask-repeat: no-repeat;
     height: 400px;
     padding:12px 12px 12px 12px;
     width:500px;
+    animation:mat3;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
 
  }
 
 
  .mat4{
-   background-image: url("./servicesImages/pexels-twoFarmers.jpg");
+   background-image: url("./servicesImages/pexels-young-farmer.jpg");
    background-size: cover;
    mask-repeat: no-repeat;
    height: 400px;
    padding:12px 12px 12px 12px;
    width:500px;
+
+   animation:mat4;
+   animation-duration: 10s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
 
 }
 
 .mat5{
-   background-image: url("./servicesImages/windmill.jpg");
+   background-image: url("./servicesImages/pexels-desert.jpg");
    background-size: cover;
    mask-repeat: no-repeat;
    height: 400px;
    padding:12px 12px 12px 12px;
    width:500px;
+
+   animation:mat5;
+   animation-duration: 8s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
 
 }
 
@@ -144,23 +208,34 @@ border-top-left-radius: 150% 60%;
    padding:12px 12px 12px 12px;
    width:500px;
 
+   animation:mat6;
+   animation-duration: 10s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+
+
 }
 
 
 .mat7{
-   background-image: url("./servicesImages/pexels-youth.jpg");
+   background-image: url("./servicesImages/pexels-twoFarmers.jpg");
    background-size: cover;
    mask-repeat: no-repeat;
    height: 400px;
    padding:12px 12px 12px 12px;
    width:500px;
 
+   animation:mat7;
+   animation-duration: 12s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+
 }
 
 
 .view-more{
    padding:12px 12px 12px 12px;
-   background:rgb(9, 48, 18);
+   background:rgb(52, 81, 59);
    color:white;
    opacity:0.8;
    width:fit-content;
@@ -174,5 +249,80 @@ border-top-left-radius: 150% 60%;
 
 .view-more:hover{
    background: beige;
-   color:black
+   color:black;
+}
+
+
+@keyframes mat {
+   from {
+      background-image: url("./servicesImages/_weatherStation.jpg");
+   }
+
+   to{
+      background-image: url("./servicesImages/pexels-instument1.jpg");
+   }
+}
+
+
+
+@keyframes mat2 {
+   from {
+      background-image: url("./servicesImages/pexels-laptop2.jpg");
+   }
+
+   to{
+      background-image: url("./servicesImages/pexels-laptop.jpg");
+   }
+}
+
+@keyframes mat3 {
+   from {
+      background-image: url("./servicesImages/pexels-market.jpg");
+   }
+
+   to{
+      background-image: url("./servicesImages/basket.jpg");
+   }
+}
+
+@keyframes mat4 {
+   from {
+      background-image: url("./servicesImages/farmadvise2.jpg");
+   }
+
+   to{
+      background-image: url("./servicesImages/farmadvise.jpg");
+   }
+}
+
+@keyframes mat5 {
+   from {
+      background-image: url("./servicesImages/pexels-desert.jpg");
+   }
+
+   to{
+      background-image: url("./servicesImages/pexels-vegitation.jpg");
+   }
+}
+
+
+@keyframes mat6{
+   from {
+      background-image: url("./servicesImages/pexels-advise.jpg")
+   }
+
+   to{
+      background-image: url("./servicesImages/farmadvise3.jpg");
+   }
+}
+
+
+@keyframes mat7{
+   from {
+      background-image: url("./servicesImages/femaleFarmer.jpg");background-position: right;
+   }
+
+   to{
+      background-image: url("./servicesImages/pexels-youth.jpg");
+   }
 }

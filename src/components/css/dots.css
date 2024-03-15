@@ -73,11 +73,17 @@
 
 .octet{
     
-     background: goldenrod;
+     background: rgb(238, 213, 156);
     margin-left: 40%;
     animation: dotMotionOctet;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    opacity: 0.6;
+}
+
+.bn{
+    background: rgb(233, 214, 174);
+
 }
 
 /* .octet-container{

@@ -34,7 +34,7 @@ export default function Partnerships(){
                         </div>
                         <div className ="focusPoint" style ={{flex:6}}>
 
-                        <div className = "___element" style ={{flex:6, marginTop:"10%"}}>
+                        <div className = "___element" style ={{flex:6, marginTop:"118%"}}>
                       <div>
                      
                       </div>
@@ -48,7 +48,19 @@ export default function Partnerships(){
                 </div>
            
 
-                    <div style ={{flex:6}}></div>
+                    <div style ={{flex:3}}>
+
+                    <div  className ="card" style ={{display:"flex", marginBottom:"30%",
+                         background:"whitesmoke", color:"black", opacity:0.7, fontSize:"30px", flexDirection:"row",border:"0px"}}>
+                        <div className ="card" style ={{width:"80px", background:"transparent", border:"0px",flex:1, border:"0px"}}>
+                       <div className ="_card3" ></div>
+                       </div>
+                       <div style ={{flex:6, padding:"12px 12px 12px 12px"}}> Partnerships </div>
+                      
+                    </div>
+
+
+                    </div>
 
             </div>:null}
 
@@ -88,7 +100,7 @@ export default function Partnerships(){
 
             <motion.div  className ="____lowerContent" initial ={{opacity:0, }} whileInView={{opacity:1 }}
                 transition={{duration:3}} >
-                <div style ={{borderRadius:"50%", width:"40px",height:"40px", background:'goldenrod', padding:"8px 8px 8px 8px", opacity:0.2}}>
+                <div style ={{borderRadius:"50%", width:"40px",height:"40px", background:'#d8e68b', padding:"8px 8px 8px 8px", opacity:0.6}}>
             
                 </div>
                 <motion.div style ={{display:"flex", flexWrap:"wrap" }} initial ={{ marginTop:"20%",opacity:0}} animate={{marginTop:"0px"}} whileInView={{opacity:1}}>
@@ -99,14 +111,14 @@ export default function Partnerships(){
             {width>1000?<div >
                 
 
-                <div className ="" style ={{flex: 10,background:"whitesmoke" ,marginTop:0,padding:"12px",borderTopLeftRadius:"50px", borderBottomRightRadius:"50px", height:"700px"}}>
+                <div className ="" style ={{flex: 10,background:"whitesmoke" ,marginTop:0,padding:"12px",borderRadius:"29px" , height:"700px"}}>
 
                 <div style ={{flex:1, display:"flex"}} >
                 <div style ={{flex:8}}></div>
 
                     <div style ={{marginLeft:"12px",}}>
-                  <img src ={partner.logo} style ={{ width:"200px", height:"200px", opacity:1,
-                   borderTopLeftRadius:"30px", borderBottomRightRadius:"30px",marginBottom:"3%" }}/>
+                  <img src ={partner.logo} style ={{ width:"200px", height:"200px",
+                   borderRadius:"16px",marginBottom:"3%" }}/>
 
                    </div>
                    

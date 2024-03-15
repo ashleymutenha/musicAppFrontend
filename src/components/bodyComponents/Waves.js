@@ -47,7 +47,7 @@ export default function Waves(){
 
     return (
       <div>
-      <div style ={{position:"relative",overflow:"hidden", height:"140px", background:"rgb(37, 74, 52)"}}>
+      <div style ={{position:"relative",overflow:"hidden", height:"140px", background:"rgb(20, 55, 38)"}}>
        
 
         {width>=1000?<div style ={{height:"fit-content",display:"flex", flexWrap:"wrap"}}>
@@ -105,9 +105,9 @@ export default function Waves(){
         
         opacity:"0.7",position:"absolute",
         padding:"12px 12px 12px 12px",width:"100%",
-        marginTop:"10px" , background:"rgb(45, 82, 57)" ,opacity:0.8}}>
+        marginTop:"10px" , background:"rgb(20, 55, 38)" ,opacity:0.8}}>
           <div style ={{flex:7}}>
-          <BsCCircle color='white' size={20}/> <span style ={{fontSize:"18px", color:"white", marginLeft:"8px", marginTop:"2px"}}>AgVal Networks (Pty) Ltd {year}</span>
+          <BsCCircle color='white' size={20}/> <span style ={{fontSize:"18px", color:"white", marginLeft:"8px", marginTop:"2px"}}>AgVal Networks (Pty) Ltd 2021 - {year}</span>
         </div>
 
         <div style ={{flex:2, }}>

@@ -24,11 +24,11 @@ export default function Body(){
     useEffect(()=>{
         const Areas = React.lazy(()=>import("./bodyComponents/Areas"))
 
-        // setTimeout(
-        //     ()=>{
-        //         setItem(2)
-        //     },22000
-        // )
+        setTimeout(
+            ()=>{
+                setItem(2)
+            },22000
+        )
 
 
       
@@ -42,8 +42,9 @@ export default function Body(){
     return(
         
          <div >
-
-        <Header/>
+        
+        <Header />
+       
         {width>1000?<div>
             {currentItem===1?<div >
            <div 
@@ -54,6 +55,8 @@ export default function Body(){
                 
 
                 <div  style ={{flex:1,borderBottomLeftRadius: "50%"}}>
+                
+              
 
                 </div>
 
@@ -65,29 +68,25 @@ export default function Body(){
 
             <div className = "_element">
                       <div>
-                        <span style ={{color:"darkgreen", fontSize:14}}>___________  
+                        <span style ={{color:"navy", fontSize:18}}>___________  
                         <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
                       </div>
                         <span>Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!</span>
 
-                        {/* <div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-                        width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-                         padding:"12px 12px 12px 12px", }}>
-                            View More
-                        </div> */}
+                       
                     </div>
 
 
                     <div className = "_decorator" style ={{display:"flex", opacity:0.8, overflow:"hidden", marginLeft:"-200px"}}>
-                      <div style ={{width:"10px", height:"680px", background:"beige", marginRight:"10px" }}>
+                      <div style ={{width:"4px", height:"680px", background:"beige", marginRight:"10px" }}>
                              <span style ={{opacity:0}}>m</span>
                       </div>
-                      <div style ={{width:"10px", height:"680px", background:"beige",marginRight:"10px"  }}>
+                      <div style ={{width:"4px", height:"680px", background:"beige",marginRight:"10px"  }}>
                              <span style ={{opacity:0}}>m</span>
                       </div>
 
 
-                      <div style ={{width:"10px", height:"680px", background:"beige", }}>
+                      <div style ={{width:"4px", height:"680px", background:"beige", }}>
                              <span style ={{opacity:0}}>m</span>
                       </div>
                     </div>

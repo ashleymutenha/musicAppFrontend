@@ -1,0 +1,503 @@
+
+
+
+
+ .bn{
+  color:rgb(26, 66, 47)
+ }
+  
+  .service{
+    top:40%;
+    position: absolute;
+   
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    /* right:50% */
+  }
+
+
+  .service-name{
+    font-size: 30px;
+    width:40%;
+   margin-left: 3%;
+    font-weight: bold;
+    color:rgb(38, 62, 44);
+    padding:12px 12px 12px 12px;
+    border-radius: 12px;
+    border: 0;
+    background:rgb(240, 239, 235);
+    height:fit-content;
+    opacity:0.7;
+    margin-top: 6%;
+    /* margin-bottom: 5%; */
+  }
+
+  .___content{
+    background:whitesmoke;
+    opacity:0.9;
+    padding: 12px 12px 12px 12px;
+  }
+
+
+  .service-image{
+   
+   
+    background-image: url("./servicesImages/pexels-instument1.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:450px;
+    width:450px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+
+  .service-image1{
+   
+   
+    background-image: url("./servicesImages/pexels-laptop.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange1;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .service-image1{
+   
+   
+    background-image: url("./servicesImages/pexels-laptop.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange1;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .service-image2{
+   
+   
+    background-image: url("./servicesImages/pexels-market.jpg");
+ 
+    background-repeat: no-repeat;
+
+    
+    
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange2;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .service-image3{
+   
+   
+    background-image: url("./servicesImages/farmadvise.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange3;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+
+  .service-image4{
+   
+   
+    background-image: url("./servicesImages/pexels-desert.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange4;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .service-image5{
+   
+   
+    background-image: url("./servicesImages/pexels-advise.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange5;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .service-image6{
+   
+   
+    background-image: url("./servicesImages/pexels-twoFarmers.jpg");
+ 
+    background-repeat: no-repeat;
+    height:500px;
+    width:500px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+
+  
+    animation:imageChange6;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+  .service-image-container{
+    margin-top: 6%;
+    padding :10px;
+    border-radius: 50%;
+    background:linear-gradient( rgb(48, 75, 48),rgb(232, 229, 212));
+    animation: backgroundChange;
+    animation-duration: 4s;
+   animation-iteration-count:infinite ;
+   margin-left: 30%;
+
+
+  }
+
+  .__decorator{
+   /* animation:decorator ;
+   animation-duration: 4s;
+   animation-iteration-count: infinite; */
+  }
+
+  @keyframes decorator {
+
+    from {border-radius: 0;width:50px ;height:50px; opacity:0.4}
+
+    to{border-radius: 50%;width:100px; height:100px; opacity:0.2}
+    
+  }
+
+
+  @keyframes imageChange {
+
+    from{    background-image: url("./servicesImages/_weatherStation.jpg");
+    }
+
+    to {background-image:url("./servicesImages/windmill.jpg");}
+    
+  }
+
+
+  @keyframes imageChange1 {
+
+    from{    background-image: url("./servicesImages/pexels-laptop.jpg");
+    }
+
+    to {background-image:url("./servicesImages/pexels-laptop2.jpg");}
+    
+  }
+
+  @keyframes imageChange2 {
+
+    from{    background-image: url("./servicesImages/pexels-basket.jpg");
+    }
+
+    to {background-image:url("./servicesImages/basket.jpg");}
+    
+  }
+
+
+  @keyframes imageChange3 {
+
+    from{    background-image: url("./servicesImages/farmadvise.jpg");
+    }
+
+    to {background-image:url("./servicesImages/farmadvise2.jpg");}
+    
+  }
+
+
+  @keyframes imageChange4 {
+
+    from{    background-image: url("./servicesImages/pexels-desert.jpg");
+    }
+
+    to {background-image:url("./servicesImages/pexels-vegitation.jpg");}
+    
+  }
+
+  @keyframes imageChange5 {
+
+    from{    background-image: url("./servicesImages/pexels-advise.jpg");
+    }
+
+    to {background-image:url("./servicesImages/farmadvise3.jpg");}
+    
+  }
+
+
+  @keyframes imageChange6 {
+
+    from{    background-image: url("./servicesImages/femaleFarmer.jpg");background-position: right;
+    }
+
+    to {background-image:url("./servicesImages/pexels-youth.jpg");}
+    
+  }
+
+  /* create wrapper */
+.brush-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 3rem;
+  margin:0;
+  /* transform: translateX(-40%) skew(-14deg); */
+}
+  /* top: 40%;
+} */
+
+._brush-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 3rem;
+  margin:0;
+  /* transform: translateX(-40%) skew(-14deg); */
+}
+
+/* applying example animation (indefinite variant) */
+.brush-wrap.brush-wrap--indefinite:before {
+  clip-path: url(#clip-indefinite);
+}
+
+/* clipping/animating object (pseudo element) */
+.brush-wrap:before {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 300%;
+  top:120%;
+  /* top:40%; */
+ 
+  /* left: 0; */
+  background:linear-gradient( rgb(48, 75, 48),rgb(236, 227, 175));
+  margin-left: 120%;
+  animation: backgroundChange;
+  animation-duration: 4s;
+ animation-iteration-count:infinite ;
+ opacity:0.5;
+
+  /* transform: translateX(-40%) skew(-14deg); */
+
+ 
+
+  /* z-index: -1; */
+  clip-path: url(#clip); /* applying clip animation */
+}
+
+
+._brush-wrap:before {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 300%;
+  top:120%;
+ 
+  /* left: 0; */
+  background:linear-gradient( rgb(48, 75, 48),rgb(236, 227, 175));
+
+   transform: translateX(-40%) skew(-14deg);
+
+   animation: backgroundChange;
+   animation-duration: 4s;
+  animation-iteration-count:infinite ;
+  opacity:0.5;
+
+
+  /* z-index: -1; */
+  clip-path: url(#clip); /* applying clip animation */
+}
+
+@keyframes backgroundChange {
+   from{    background:linear-gradient( rgb(48, 75, 48),rgb(236, 227, 175));
+   }
+
+   to{    background:linear-gradient(rgb(236, 227, 175), rgb(48, 75, 48));
+   }
+}
+
+
+.picture{
+ 
+  background-image: url("./servicesImages/pexels-instument1.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+
+.picture1{
+ 
+  background-image: url("./servicesImages/pexels-laptop2.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+.picture2{
+ 
+  background-image: url("./servicesImages/pexels-market.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+
+.picture3{
+ 
+  background-image: url("./servicesImages/farmadvise2.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+
+
+.picture4{
+ 
+  background-image: url("./servicesImages/pexels-desert.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+.picture5{
+ 
+  background-image: url("./servicesImages/pexels-advise.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+.picture6{
+ 
+  background-image: url("./servicesImages/pexels-youth.jpg");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  overflow: hidden;
+  
+  /* background-position: bottom; */
+  
+ 
+ 
+}
+
+
+.decorator{
+  background:khaki;
+  opacity:0.7;
+  border-radius: 50%;
+  height:100px;
+  width:100px;
+  position: absolute;
+  top:20%;
+  left:50%
+}
+

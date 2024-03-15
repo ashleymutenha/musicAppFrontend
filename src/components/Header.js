@@ -41,16 +41,16 @@ function Header(){
            </div>
 
            {width>1000?<div className ="lower-content">
-            <div style={{flex:3}}>
+            <div style={{flex:1}}>
 
               {/* <BsJustify style ={{marginLeft:12}} color='black'  size ={40}/> */}
             </div>
 
            
 
-          <div style ={{flex:4, }}>
+          <div style ={{flex:3, }}>
 
-              <span style ={{color:"rgb(42, 95, 49)", fontSize:23, fontWeight:"bold"}}>AgVal Networks (Pty) Ltd <span style={{color:"goldenrod"}}>.</span></span>
+          <a href='/' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(42, 95, 49)", fontSize:23, fontWeight:"bold"}}>AgVal Networks (Pty) Ltd <span style={{color:"goldenrod"}}>.</span></span></a>
             </div>
 
           
@@ -60,8 +60,8 @@ function Header(){
               <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About Us</span>
               {/* <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span> */}
              <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Mission & Vision</span></a>
-
-
+             <a href='/services' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span></a>
+             <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Partners</span></a>
 
 
 
