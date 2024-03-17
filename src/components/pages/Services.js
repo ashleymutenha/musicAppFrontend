@@ -23,7 +23,7 @@ export default function Services(){
 
     function toService(num){
         sessionStorage.setItem('index',num)
-        window.open("/service")
+        window.location.replace("/service");
       
     }
 
@@ -53,11 +53,11 @@ export default function Services(){
                     <div style ={{flex:8, padding:"12px"}}>
                     
 
-                    {width>=1000?<div className ="card"  style ={{display:"flex", flexDirection:"row", marginTop:"20%",height:"fit-content",background:"rgb(46, 67, 51)", opacity:0.9, fontSize:"27px", color:"whitesmoke"}}>
-                    <div  style ={{flex:6, padding:"12px 12px 12px 12px"}}>
+                    {width>=1000?<div className ="__card  card"  style ={{display:"flex",background:"#fdfff5", flexDirection:"row", marginTop:"20%",height:"fit-content", opacity:0.7, fontSize:"27px", color:"black"}}>
+                    <div  style ={{flex:6, padding: "12px 12px 12px 12px"}}>
 
                         <div>
-                            <BsCommand size ={50} color ='beige' style ={{opacity:0.7}}/>
+                            <BsCommand size ={50} color ='darkgreen' style ={{opacity:0.8}}/>
                         </div>
                         
                         At AgVal Networks, we are committed to fortifying the agricultural value chain. Through our blend of innovative technology, extensive industry insights, and a commitment to sustainable growth, 
@@ -66,8 +66,8 @@ export default function Services(){
                     
                     <motion.div className ="card2" style ={{flex:6}}
 
-                    initial ={{marginLeft:"700px", opacity:0.2 }} animate={{marginLeft:"0px", opacity:0.8 }}
-                    transition={{duration:6}}
+                    // initial ={{marginLeft:"700px", opacity:0.2 }} animate={{marginLeft:"0px", opacity:0.8 }}
+                    // transition={{duration:6}}
                     
                     ></motion.div>
                    

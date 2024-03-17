@@ -145,7 +145,7 @@ export default function Home(){
                         <div>
                         <BsGearWideConnected color='darkgreen' size ={50}/>
                         </div>
-                        <span style ={{color:"navy", fontSize:23}}>___________  
+                        <span style ={{color:"darkgreen", fontSize:23}}>___________  
                         <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
                       </div>
                         <span>Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!</span>

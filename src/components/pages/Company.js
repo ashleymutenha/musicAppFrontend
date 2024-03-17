@@ -27,7 +27,7 @@ return(
                       <div>
                      
                       </div>
-                        <span>Maximum Efficiency, Sustainability, and Profitability </span>
+                        {/* <span>Maximum Efficiency, Sustainability, and Profitability </span> */}
 
                    
                     </div>
@@ -49,9 +49,9 @@ return(
 
                   
 
-        <div className ="topContent-bottom" style ={{flex:4, background:"rgb(20, 55, 38)", opacity:0.9}}>
+        <div className ="topContent-bottom" style ={{flex:4, background:"khaki", opacity:0.2}}>
 
-            <div style ={{marginRight:"8rem",width:"20rem"}}>
+            {/* <div style ={{marginRight:"8rem",width:"20rem"}}>
                 
                 <div style ={{marginLeft:"5.5rem"}}><BsCashStack size ={50} color ="white"/></div>
                 <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"30px",marginLeft:"2rem"}}>Value For Money</div>
@@ -60,10 +60,10 @@ return(
                 agricultural needs and be guaranteed of exceptional value for your investment</div>
 
                
-            </div>
+            </div> */}
 
 
-            <div style ={{width:"20rem" }}>
+            {/* <div style ={{width:"20rem" }}>
                 
                 <div style ={{marginLeft:"5.5rem"}}><BsPeople size ={50} color ="white"/></div>
                 <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"30px",marginLeft:"2rem"}}>Partner with us</div>
@@ -71,7 +71,7 @@ return(
                 <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
                 <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div>
                
-            </div>
+            </div> */}
 
         </div>
 

@@ -35,8 +35,8 @@ function Header(){
               </div>:null}
 
               {width>1000?<div style ={{flex:3, background:"rgb(20, 55, 38)",padding:"40px 40px 40px 40px"}}>
-                <BsLinkedin style ={{marginLeft:12}} color='#ffff'  size ={20}/>
-                <BsGoogle style ={{marginLeft:12}} color='#ffff'  size ={20}/>
+                {/* <BsLinkedin style ={{marginLeft:12}} color='#ffff'  size ={20}/>
+                <BsGoogle style ={{marginLeft:12}} color='#ffff'  size ={20}/> */}
               </div>:null}
            </div>
 

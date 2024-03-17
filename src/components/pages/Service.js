@@ -1,4 +1,4 @@
-import { BsAlexa, BsChevronBarUp, BsChevronDoubleDown, BsClipboard2, BsCloudDrizzle, BsCloudFogFill, BsCloudRainFill, BsCloudSnowFill, BsCloudSun, BsCloudSunFill, BsDash, BsDiamondFill, BsDiamondHalf, BsDice1Fill, BsFillMotherboardFill, BsGearWideConnected, BsGem, BsMagic, BsMagnet, BsMoonFill, BsMoonStarsFill, BsMortarboardFill, BsOutlet, BsSegmentedNav, BsSinaWeibo, BsSnow, BsSnow3, BsSoundwave, BsSquare, BsSquareFill, BsStar, BsStars, BsSunFill, BsSunrise, BsWind, BsWrenchAdjustable } from "react-icons/bs";
+import { BsAlexa, BsChevronBarUp, BsChevronDoubleDown, BsClipboard2, BsCloudDrizzle, BsCloudFogFill, BsCloudRainFill, BsCloudSnow, BsCloudSnowFill, BsCloudSun, BsCloudSunFill, BsDash, BsDiamondFill, BsDiamondHalf, BsDice1Fill, BsFillMotherboardFill, BsGearWideConnected, BsGem, BsMagic, BsMagnet, BsMoonFill, BsMoonStarsFill, BsMortarboardFill, BsMotherboard, BsOutlet, BsRewind, BsSegmentedNav, BsSinaWeibo, BsSnow, BsSnow3, BsSoundwave, BsSquare, BsSquareFill, BsStack, BsStar, BsStars, BsSunFill, BsSunrise, BsVr, BsWind, BsWrenchAdjustable } from "react-icons/bs";
 import Header from "../Header";
 import Waves from "../bodyComponents/Waves";
 import Footer from "../bodyComponents/footer";
@@ -51,7 +51,7 @@ export default function Service(){
                     </div> */}
 
                     <div style ={{marginTop:"20px", marginLeft:"50%"}}>
-                           <BsAlexa size ={70} color ="khaki" style ={{opacity:0.3}}/>
+                           <BsStars size ={70} color ="khaki" style ={{opacity:0.3}}/>
                     </div>
 
                     <motion.div  initial ={{width:0, height:0 }} whileInView={{width:"100px",height:"100px" }}
@@ -66,7 +66,7 @@ export default function Service(){
         <div style={{ overflow: "hidden", flex:6,}}>
 
         <div style ={{ background:"rgb(42, 72, 57)", opacity:0.8}}>
-                           <BsMagic size ={70} color ="khaki" style ={{opacity:0.3,marginTop:"20px", marginLeft:"25%",}}/>
+                           <BsStars size ={70} color ="#ffff" style ={{opacity:0.3,marginTop:"20px", marginLeft:"25%",}}/>
                     </div>
         <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" height ="460px"  >
   <path fill="rgb(42, 72, 57)" fill-opacity="0.8" d="M0,96L16,101.3C32,107,64,117,96,154.7C128,192,160,256,192,234.7C224,213,256,107,288,74.7C320,43,352,85,384,90.7C416,96,448,64,480,96C512,128,544,224,576,261.3C608,299,640,277,672,240C704,203,736,149,768,133.3C800,117,832,139,864,170.7C896,203,928,245,960,240C992,235,1024,181,1056,154.7C1088,128,1120,128,1152,149.3C1184,171,1216,213,1248,202.7C1280,192,1312,128,1344,112C1376,96,1408,128,1424,144L1440,160L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"></path>

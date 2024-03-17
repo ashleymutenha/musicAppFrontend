@@ -68,7 +68,7 @@ export default function Body(){
 
             <div className = "_element">
                       <div>
-                        <span style ={{color:"navy", fontSize:18}}>___________  
+                        <span style ={{color:"darkgreen", fontSize:18}}>___________  
                         <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
                       </div>
                         <span>Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!</span>

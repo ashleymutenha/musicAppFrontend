@@ -94,9 +94,9 @@
  }
 
  @keyframes pictureChange {
-    from{background-image: url("./servicesImages/pexels-africanFarming.jpg");}
+    from{background-image: url("./servicesImages/pexels-sheep.jpg");}
 
-    to{background-image: url("./servicesImages/pexels-africanFarming.jpg");}
+    to{background-image: url("./servicesImages/pexels-maize3.jpg");background-position:center;}
 
 
     /* from{background-image: url("./servicesImages/maize.jpg");}
@@ -105,11 +105,11 @@
      */
  }
 
- @keyframes pictureChange2 {
-    from{background-image: url("./servicesImages/pexels-africaFarming.jpg")}
+ /* @keyframes pictureChange2 {
+    from{background-image: url("./servicesImages/pexels-sheep.jpg")}
 
-    to{background-image: url("./servicesImages/pexels-africaFarming.jpg")}
- }
+    to{background-image: url("./servicesImages/pexels-sheep.jpg")}
+ } */
 
 
  @keyframes fontColorChange {
