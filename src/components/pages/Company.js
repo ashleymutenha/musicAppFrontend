@@ -84,7 +84,7 @@ return(
                       <div>
                      
                       </div>
-                        <span>Maximum Efficiency, Sustainability, and Profitability </span>
+                       
 
                    
                     </div>
@@ -93,15 +93,14 @@ return(
 
         </div>
 
-        <div className ="topContent-bottom" style ={{flex:4, background:"rgb(20, 55, 38)", opacity:0.9}}>
+        <div className ="topContent-bottom" style ={{flex:4, background:"khaki", opacity:0.2}}>
 
 <div style ={{marginBottom:"10px"}}>
     
-    <div style ={{marginLeft:"5.5rem"}}><BsCashStack size ={50} color ="white"/></div>
-    <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"22px",marginLeft:"2rem"}}>Value For Money</div>
+    
 
-    <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Turn to us for all your 
-    agricultural needs and be guaranteed of exceptional value for your investment</div>
+    {/* <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Turn to us for all your 
+    agricultural needs and be guaranteed of exceptional value for your investment</div> */}
 
    
 </div>
@@ -109,11 +108,9 @@ return(
 
 <div style ={{}}>
     
-    <div style ={{marginLeft:"5.5rem"}}><BsPeople size ={50} color ="white"/></div>
-    <div style ={{marginTop:"3px",color:"rgb(232, 226, 122)", fontSize:"22px",marginLeft:"2rem"}}>Partner with us</div>
 
-    <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
-    <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div>
+    {/* <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
+    <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div> */}
    
 </div>
 

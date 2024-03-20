@@ -1,0 +1,154 @@
+.upperSegment{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("./servicesImages/pexels-maize5.jpg");
+    height:800px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    /* animation: pictureChange; */
+    /* animation-duration: 20s;
+    animation-iteration-count: infinite;
+} */
+}
+
+.bn{
+    color:rgb(64, 100, 62)
+}
+
+
+.data-portal{
+    background-image: url("./servicesImages/pexels-anna-nekrashevich-6801872.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+   
+    transform:skew(4deg)
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.data-portal1{
+    background-image: url("./servicesImages/pexels-laptop.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+   
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.farm-fresh{
+    background-image: url("./servicesImages/pexels-vendor.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    transform:skew(4deg)    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.farm-fresh1{
+    background-image: url("./servicesImages/pexels-market.jpg");
+    height:600px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.farm-advisor1{
+    background-image: url("./servicesImages/pexels-advise.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.climApp{
+    background-image: url("./servicesImages/pexels-pixabay-60013.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    transform:skew(2deg);
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.climApp1{
+    background-image: url("./servicesImages/pexels-desert.jpg");
+    height:700px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skewY(-5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.risk-assesor1{
+    background-image: url("./servicesImages/pexels-kat-smith-551615.jpg");
+    height:800px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+
+.mat-instrument1{
+    background-image: url("./servicesImages/pexels-victor-suciu-15523101.jpg");
+    height:500px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+.cold-chain1{
+    background-image: url("./servicesImages/Cannon-Cold-Chain.jpg");
+    height:300px;
+    background-size:cover;
+    mask-repeat: no-repeat;
+    /* transform:skew(5deg) */
+    /* border-top:300px solid transparent;
+    border-left:200px solid green ; */
+
+}
+
+
+
+.left-segment{
+    border-top:500px solid transparent;
+    border-left:500px solid rgb(25, 93, 51) ;
+    opacity:0.5
+}
+
+
+.image{
+    border-top:300px solid transparent;
+    border-right:300px solid transparent ;
+    
+}
+
+
+._flexBox{
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}

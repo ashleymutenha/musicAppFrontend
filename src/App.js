@@ -11,6 +11,9 @@ import {motion} from "framer-motion";
 import Partnerships from './components/pages/Partnerships';
 import Services from './components/pages/Services';
 import Service from './components/pages/Service';
+import AboutUs from './components/pages/AboutUs';
+import { Products } from './components/pages/Products';
+
 
 function App() {
  
@@ -26,13 +29,18 @@ function App() {
 
      <Route path="/services" element={ <Services/>}/>
      <Route path ="/service" element ={<Service/>}/>
+      <Route path ="/about-us" element ={<AboutUs/>}/>
+
+            <Route path ="/products" element ={<Products/>}/>
+
+
 
       </Routes>
         </BrowserRouter>
 
 
         
-  {/* <Service/> */}
+
      
   
     </div>

@@ -14,6 +14,33 @@ function Header(){
 
     console.log(width)
   })
+  
+
+function toPage(url){
+ console.log(url)
+}
+
+ const  toHome =()=>{
+  window.open("/")
+ }
+
+ const  toAbout =()=>{
+  window.open("/about-us")
+ }
+
+ const  toPartners =()=>{
+  window.open("/partners")
+ }
+
+
+ const  toService =()=>{
+  window.open("/services")
+ }
+
+
+ const  toMission =()=>{
+  window.open("/company")
+ }
 
 
  const options =['Home', 'Mission & Vision', 'About Us']
@@ -57,11 +84,12 @@ function Header(){
 
            <div style ={{flex:6, marginTop:3}}>
            <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold"}}>Home</span></a>
-              <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About Us</span>
+           <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>About Us</span></a>
               {/* <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span> */}
              <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Mission & Vision</span></a>
              <a href='/services' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Services</span></a>
              <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Partners</span></a>
+             <a href='/products' style ={{textDecoration:"none"}}> <span style ={{color:"rgb(3, 59, 50)", fontSize:18, fontWeight:"bold", marginLeft:18}}>Products</span></a>
 
 
 
@@ -71,16 +99,30 @@ function Header(){
            </div>:null}
 
 
+           {width<1000?<div><select  onChange={(e)=>{
+              window.location.replace(e.target.value);
+
+          }
+          
+          
+          }    style ={{fontSize:"18px",background:"rgb(20, 55, 38)",border:"1px solid rgb(20, 55, 38)", color:"#ffff"}}>
+       <option value ="/">  Home</option>
+            <option value ="/about-us" >About Us</option>
+            <option value ="/company"> Mission and Vision</option>
+            <option value ="/partnerships"> Partners</option>
+            <option value ="/services"> Services</option>
+            <option value ="/products"> Products</option>
+
+          </select>
+          </div>:null}
+
+
 
 
            {width<=1000?<div className ="lower-content-sm">
            
 
-           <div style={{flex:3,background:"rgb(20, 55, 38)"}}>
-
-          <BsJustify style ={{marginLeft:12}} color='white'  size ={40}/>
-          <Dropdown options ={options}  value = {options[0]} style ={{background:"#ffff"}}/>
-          </div>
+          
 
         
 

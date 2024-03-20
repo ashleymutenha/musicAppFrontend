@@ -9,7 +9,7 @@
 @keyframes dotMotionOctet {
 
     from {border-radius: 50%;
-        width:30px; height: 30px;opacity:0.3; background:"transparent";border-left: 5px solid goldenrod}
+        width:30px; height: 30px;opacity:0.3; background:"transparent";border-left: 5px solid rgb(240, 233, 215)}
 
     to{
         background:"goldenrod"
@@ -73,7 +73,7 @@
 
 .octet{
     
-     background: rgb(238, 213, 156);
+     background: rgb(251, 241, 219);
     margin-left: 40%;
     animation: dotMotionOctet;
     animation-duration: 5s;
@@ -82,7 +82,7 @@
 }
 
 .bn{
-    background: rgb(233, 214, 174);
+    background: rgb(241, 233, 216);
 
 }
 

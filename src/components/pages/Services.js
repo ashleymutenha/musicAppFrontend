@@ -53,7 +53,7 @@ export default function Services(){
                     <div style ={{flex:8, padding:"12px"}}>
                     
 
-                    {width>=1000?<div className ="__card  card"  style ={{display:"flex",background:"#fdfff5", flexDirection:"row", marginTop:"20%",height:"fit-content", opacity:0.7, fontSize:"27px", color:"black"}}>
+                    {width>=1000?<div className ="__card  card"  style ={{display:"flex",background:"#fdfff5", flexDirection:"row", marginTop:"20%",height:"fit-content", opacity:0.8, fontSize:"27px", color:"black"}}>
                     <div  style ={{flex:6, padding: "12px 12px 12px 12px"}}>
 
                         <div>
@@ -148,12 +148,7 @@ we aim to uplift Africa's agricultural sector, one solution at a time.
 we aim to uplift Africa's agricultural sector, one solution at a time.
         </div>
         
-        {/* <motion.div className ="card2" style ={{flex:4}}
-
-        initial ={{marginLeft:"700px", opacity:0.2 }} animate={{marginLeft:"0px", opacity:0.8 }}
-        transition={{duration:6}}
         
-        ></motion.div> */}
        
         </div>:null}
        

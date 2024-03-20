@@ -1,0 +1,75 @@
+.__top-content{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("./servicesImages/pexels-african.jpg");
+    height:900px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    overflow: hidden;
+    
+    background-position: center;
+    
+   
+    animation-name: _rotate;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 18s;
+}
+
+.lower{
+    background:beige;
+    padding:18px 18px 18px 18px;
+}
+
+.lowest{
+    background:rgb(238, 238, 237);
+    padding:18px 18px 18px 18px;
+}
+
+
+.bn{
+    color:rgb(237, 248, 233)
+}
+
+.flag{
+    background-image: url("./servicesImages/botswana.png");
+    height:130px;
+    width:130px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    border-radius: 50%;
+    opacity:0.9;
+    margin-bottom: 3%;
+
+}
+
+.climapp{
+    background-image: url("./servicesImages/_weatherStation.jpg");
+    height:130px;
+    width:130px;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    border-radius: 50%;
+    opacity:0.9;
+    margin-bottom: 3%;
+
+}
+
+.director{
+    background: url("./servicesImages/DrMagadzire.jpg");
+    height:600px;
+ 
+    background-size: cover;
+    mask-repeat: no-repeat;
+  
+}
+
+
+.director-sm{
+    background: url("./servicesImages/DrMagadzire.jpg");
+    height:400px;
+ 
+    background-size: cover;
+    mask-repeat: no-repeat;
+  
+}

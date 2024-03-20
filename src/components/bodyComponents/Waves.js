@@ -12,6 +12,15 @@ export default function Waves(){
 
   const year = new Date().getFullYear()
 
+
+  const toLinkedIn =()=>{
+    window.open("//https://www.linkedin.com/in/tamuka-magadzire","_blank","noreferrer")
+  }
+  const GoogleSearch =()=>{
+   window.open("//https://google.com/search?q=+'Agval Networks'")
+  }
+ 
+
   var rt =['o','p']
   const op = 'kl'
 
@@ -113,9 +122,9 @@ export default function Waves(){
         <div style ={{flex:2, }}>
 
 {width>1000?<div>
-        <BsLinkedin color='#ffff'  size ={25}/>
+        <BsLinkedin color='#ffff'  size ={25} onClick={toLinkedIn} style ={{cursor:"pointer"}}/>
 
-        <BsGoogle color ="#ffff" size ={25} style ={{marginLeft:"3%"}}/>
+        <BsGoogle color ="#ffff" size ={25}  onClick={GoogleSearch} style ={{cursor:"pointer",marginLeft:"3%"}}/>
    
       </div>:null}
 

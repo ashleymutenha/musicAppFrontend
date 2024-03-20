@@ -33,6 +33,22 @@
     /* margin-bottom: 5%; */
   }
 
+  .service-name-sm{
+    font-size: 30px;
+    width:40%;
+   margin-left: 3%;
+    font-weight: bold;
+    color:rgb(38, 62, 44);
+    padding:12px 12px 12px 12px;
+    border-radius: 12px;
+    border: 0;
+    background:rgb(251, 251, 251);
+    height:fit-content;
+    opacity:0.9;
+    margin-top: 6%;
+    /* margin-bottom: 5%; */
+  }
+
   .___content{
     background:whitesmoke;
     opacity:0.9;
@@ -52,6 +68,30 @@
     background-size: cover;
     border-radius: 50%;
    stroke-opacity: 0;
+
+  
+    animation:imageChange;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+  }
+
+
+  .service-image-sm{
+   
+   
+    background-image: url("./servicesImages/pexels-instument1.jpg");
+ 
+    background-repeat: no-repeat;
+
+    height:250px;
+    width:250px;
+    background-size: cover;
+    border-radius: 50%;
+   stroke-opacity: 0;
+  
 
   
     animation:imageChange;
@@ -223,7 +263,7 @@
     
   }
   .service-image-container{
-    margin-top: 6%;
+    margin-top: 10%;
     padding :10px;
     border-radius: 50%;
     background:linear-gradient( rgb(48, 75, 48),rgb(232, 229, 212));
@@ -231,6 +271,21 @@
     animation-duration: 4s;
    animation-iteration-count:infinite ;
    margin-left: 30%;
+
+
+  }
+
+
+  .service-image-container-sm{
+    margin-top: 6%;
+    padding :10px;
+    border-radius: 50%;
+    background:linear-gradient( rgb(48, 75, 48),rgb(232, 229, 212));
+    animation: backgroundChange;
+    animation-duration: 4s;
+   animation-iteration-count:infinite ;
+   margin-left: 3%;
+   margin-top: 30%;
 
 
   }
@@ -274,7 +329,7 @@
     from{    background-image: url("./servicesImages/pexels-basket.jpg");
     }
 
-    to {background-image:url("./servicesImages/basket.jpg");}
+    to {background-image:url("./servicesImages/pexels-market.jpg");}
     
   }
 
@@ -413,6 +468,12 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+  animation:imageChange;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -427,6 +488,12 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+  animation:imageChange1;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -440,6 +507,13 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+
+  animation:imageChange2;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -454,6 +528,13 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+
+  animation:imageChange3;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -469,6 +550,12 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+  animation:imageChange4;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -482,6 +569,13 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+
+  animation:imageChange5;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
@@ -495,6 +589,13 @@
   background-size: cover;
   mask-repeat: no-repeat;
   overflow: hidden;
+
+
+  animation:imageChange6;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   
   /* background-position: bottom; */
   
