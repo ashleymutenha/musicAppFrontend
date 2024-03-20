@@ -79,7 +79,7 @@ profitability, and growth at every step of the value chain.
                 <div style ={{marginLeft:"20px",marginRight:"20px", marginBottom:"20px", marginTop:"10%"}}>
                    <div style ={{textAlign:"center", fontSize:"28px"}}>
                     </div>
-                    <div class ="card" style ={{padding:"12px", background:"#fdfff5", opacity:0.8}}>
+                    <div class ="card" style ={{padding:"12px", background:"#fdfff5", opacity:0.9}}>
                     <div style ={{marginTop:"1%"}}>
                       <div style ={{fontSize:"22px"}}> <span style ={{color:"darkgreen"}}>Description:</span>
 
