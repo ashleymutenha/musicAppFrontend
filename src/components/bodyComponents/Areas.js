@@ -131,7 +131,7 @@ Innovation meets agriculture. Our range of products is meticulously crafted to a
  style ={{ border:"1px solid rgb(3, 59, 50)", 
 width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
  padding:"12px 12px 12px 12px", marginLeft:60}}
-       href ="/"> <span className='bnm'>Read More</span></a>
+       href ="/products"> <span className='bnm'>Read More</span></a>
 
 </div>
 
@@ -171,11 +171,15 @@ Through our blend of innovative technology, extensive industry insights, and a c
 we aim to uplift Africa's agricultural sector, one solution at a time.
 
 
-<div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-  width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-   padding:"12px 12px 12px 12px", marginLeft:60}}>
-      Read More
-  </div>
+<div  style ={{marginTop:"12px"}}>
+<a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/services"> <span className='bnm'>Read More</span></a>
+
+</div>
 
 </div>
 </div>
@@ -209,11 +213,15 @@ At AgVal Networks, we deeply value the power of collaboration.
   Our partners play an integral role in....
   
 
-<div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-  width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-   padding:"12px 12px 12px 12px", marginLeft:60}}>
-      Read More
-  </div>
+  <div  style ={{marginTop:"12px"}}>
+<a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/partnerships"> <span className='bnm'>Read More</span></a>
+
+</div>
 
 </div>
 </div>
@@ -238,11 +246,15 @@ At AgVal Networks, we deeply value the power of collaboration.
 Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability, and growth at every step of the value chain.
 
 
-<div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-  width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-   padding:"12px 12px 12px 12px", marginLeft:60}}>
-      Read More
-  </div>
+<div  style ={{marginTop:"12px"}}>
+<a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/products"> <span className='bnm'>Read More</span></a>
+
+</div>
 
 </div>
 </div>
