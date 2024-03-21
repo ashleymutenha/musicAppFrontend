@@ -14,9 +14,19 @@ const Areas = lazy(() => import('./bodyComponents/Areas'));
 
 export default function Body(){
     const _Areas =lazy(()=>import('./bodyComponents/Areas'))
-        
-    
+    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-vegetables.jpg')", 
+    "url('/servicesImages/pexels-maize2.jpg')" ,"url('/servicesImages/femaleFarmer.jpg')", 
+    "url('/servicesImages/farmer.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
+    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')"])        
+       
+       var background = Math.ceil(Math.random()*(7-0)+0)
 
+    // if(background==5 && background<0){
+    //     background =0;
+    // }
+
+    console.log("index",background)
+    console.log("length",backgrounds.length)
 
     const[currentItem ,setItem] = useState(1)
     const[width, setWidth] =useState(window.innerWidth)
@@ -49,7 +59,7 @@ export default function Body(){
             {currentItem===1?<div >
            <div 
             
-            className ="first-container" >
+            className ="first-container" style ={{backgroundImage:backgrounds[background]}} >
 
                
                 

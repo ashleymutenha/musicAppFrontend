@@ -12,6 +12,13 @@ const Areas = lazy(() => import('./Areas'));
 
 export default function Home(){
     // const _Areas =lazy(()=>import('./Areas'))
+
+    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-vegetables.jpg')", 
+    "url('/servicesImages/pexels-maize2.jpg')" ,"url('/servicesImages/femaleFarmer.jpg')", 
+    "url('/servicesImages/farmer.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
+    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')"])        
+       
+       var background = Math.ceil(Math.random()*(7-0)+0)
         
     
 
@@ -41,7 +48,7 @@ export default function Home(){
 
         {width>1000?<div>
             {currentItem===1?<div >
-           <div className ="first-container" >
+           <div className ="first-container" style ={{backgroundImage:backgrounds[background]}} >
 
                 <div className =" right-container" style ={{flex:11}}>
 
