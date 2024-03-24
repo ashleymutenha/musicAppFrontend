@@ -53,7 +53,7 @@ export default function Services(){
                     <div style ={{flex:8, padding:"12px"}}>
                     
 
-                    {width>=1000?<div className ="__card  card"  style ={{display:"flex",background:"#fdfff5", flexDirection:"row", marginTop:"20%",height:"fit-content", opacity:0.8, fontSize:"27px", color:"black"}}>
+                    {width>=1000?<div className ="__card  card"  style ={{display:"flex",background:"#fdfff5", flexDirection:"row", marginTop:"6%",height:"fit-content", opacity:0.8, fontSize:"23px", color:"black"}}>
                     <div  style ={{flex:6, padding: "12px 12px 12px 12px"}}>
 
                         <div>
@@ -74,6 +74,7 @@ export default function Services(){
                     </div>:null}
                    
                     </div>
+                    <div style ={{flex:3}}></div>
 
                     <div style ={{flex:3}}>
 

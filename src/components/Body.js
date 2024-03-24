@@ -15,7 +15,7 @@ const Areas = lazy(() => import('./bodyComponents/Areas'));
 export default function Body(){
     const _Areas =lazy(()=>import('./bodyComponents/Areas'))
     const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-vegetables.jpg')", 
-    "url('/servicesImages/pexels-maize2.jpg')" ,"url('/servicesImages/femaleFarmer.jpg')", 
+    "url('/servicesImages/pexels-maize2.jpg')" ,"url('/servicesImages/vegetables.jpg')", 
     "url('/servicesImages/farmer.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
     "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')"])        
        

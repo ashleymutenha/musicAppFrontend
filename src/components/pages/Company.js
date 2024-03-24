@@ -19,7 +19,7 @@ return(
        <Header/>
         {width>=1000?<div className ="topContent">
            
-       <div style ={{display:"flex", height:"550px"}}>
+       <div style ={{display:"flex", height:"550px", flex:8}}>
 
      
         
@@ -49,7 +49,7 @@ return(
 
                   
 
-        <div className ="topContent-bottom" style ={{flex:4, background:"khaki", opacity:0.2}}>
+        <div className ="topContent-bottom" style ={{flex:6, background:"khaki", opacity:0.2}}>
 
             {/* <div style ={{marginRight:"8rem",width:"20rem"}}>
                 

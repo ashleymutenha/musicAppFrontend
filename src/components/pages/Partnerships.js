@@ -34,7 +34,7 @@ export default function Partnerships(){
                         </div>
                         <div className ="focusPoint" style ={{flex:6}}>
 
-                        <div className = "___element" style ={{flex:6, marginTop:"118%"}}>
+                        <div className = "___element" style ={{flex:6, marginTop:"10%", marginRight:"5%"}}>
                       <div>
                      
                       </div>
@@ -43,6 +43,8 @@ export default function Partnerships(){
                    
                     </div>
                         </div>
+
+
 
                  
                 </div>
