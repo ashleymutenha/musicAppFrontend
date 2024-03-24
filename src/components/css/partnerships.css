@@ -173,10 +173,10 @@ border-top-left-radius: 150% 60%;
      /* transform:translate(0,-50%); */
      /* position: absolute; */
 
-     font-size: 30px;
+     font-size: 28px;
      font-weight: bold;
      /* width:230px; */
-     opacity:0.8;
+     opacity:0.9;
      /* margin-left: 10%; */
      color:black;
      height:fit-content;
@@ -186,7 +186,7 @@ border-top-left-radius: 150% 60%;
      padding:12px 12px 12px 12px;
 
 
-     background: rgb(241, 238, 237);
+     background: beige;
     /* animation: _colorChange;
    animation-duration: 10s;
    animation-iteration-count: infinite; */

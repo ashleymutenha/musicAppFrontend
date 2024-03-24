@@ -55,7 +55,7 @@ function toPage(url){
               <img src = "/agval.png" alt ="logo" style={{height:"90px",width:"auto",background:"transparent",cursor:"pointer"}} />
             </div>
 
-            <div style ={{flex:6, padding:"18px"}}>
+           {width>1000?<div style ={{flex:6, padding:"18px"}}>
            <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold"}}>Home</span></a>
            <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}>About Us</span></a>
              <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}>Mission & Vision</span></a>
@@ -65,7 +65,7 @@ function toPage(url){
 
 
 
-            </div>
+            </div>:null}
 
            
             
@@ -82,7 +82,10 @@ function toPage(url){
 
 
            {width<1000?<div><select  onChange={(e)=>{
-              window.location.replace(e.target.value);
+              // window.open(e.target.value)
+
+              window.location.href = e.target.value;
+
 
           }
           

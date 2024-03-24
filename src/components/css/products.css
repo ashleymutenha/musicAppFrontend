@@ -2,7 +2,7 @@
     display:flex;
     flex-wrap: wrap;
     background-image: url("./servicesImages/pexels-maize5.jpg");
-    height:800px;
+    height:fit-content;
     background-size: cover;
     mask-repeat: no-repeat;
     margin: 0;
@@ -135,8 +135,8 @@
 
 
 .left-segment{
-    border-top:500px solid transparent;
-    border-left:500px solid rgb(25, 93, 51) ;
+    border-top:470px solid transparent;
+    border-left:470px solid rgb(25, 93, 51) ;
     opacity:0.5
 }
 

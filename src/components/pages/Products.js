@@ -16,7 +16,7 @@ export function Products(){
 
             <div style ={{flex:6}}>
 
-<div className ="card"  style ={{ height:"100%",background:"rgb(255, 254, 254)", opacity:0.7, fontSize:"30px", color:"black",}}>
+<div className ="card"  style ={{ height:"100%",background:"rgb(255, 254, 254)", opacity:0.7, fontSize:"26px", color:"black",}}>
 <div  style ={{ padding:"12px 12px 12px 12px"}}>
 
 <div>

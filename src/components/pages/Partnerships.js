@@ -32,22 +32,14 @@ export default function Partnerships(){
 
                        
                         </div>
-                        <div className ="focusPoint" style ={{flex:6}}>
-
-                        <div className = "___element" style ={{flex:6, marginTop:"10%", marginRight:"5%"}}>
-                      <div>
-                     
-                      </div>
-                        <span>Forging Strong Alliances for a Sustainable Agricultural Future. </span>
-
-                   
-                    </div>
-                        </div>
+                        
 
 
 
                  
                 </div>
+
+                <div style ={{flex:8}}></div>
            
 
                     <div style ={{flex:3}}>
@@ -60,6 +52,19 @@ export default function Partnerships(){
                        <div style ={{flex:6, padding:"12px 12px 12px 12px"}}> Partnerships </div>
                       
                     </div>
+
+
+                    <div className ="focusPoint" style ={{flex:6}}>
+
+                        <div className = "___element" style ={{flex:6, marginTop:"20%", marginRight:"5%"}}>
+                      <div>
+                     
+                      </div>
+                        <span>Forging Strong Alliances for a Sustainable Agricultural Future. </span>
+
+                   
+                    </div>
+                        </div>
 
 
                     </div>

@@ -117,7 +117,7 @@ export default function Services(){
         <div style ={{flex:6}}>
         
 
-        {width>=1000?<div className ="card"  style ={{display:"flex", flexDirection:"row", marginTop:"20%",height:"fit-content",background:"rgb(9, 48, 18)", opacity:0.8, fontSize:"28px", color:"whitesmoke"}}>
+        {width>=1000?<div className ="card"  style ={{display:"flex", flexDirection:"row", marginTop:"20%",height:"fit-content",background:"rgb(9, 48, 18)", opacity:0.8, fontSize:"30px", color:"whitesmoke"}}>
         <div  style ={{flex:6, padding:"12px 12px 12px 12px"}}>
 
             <div>
