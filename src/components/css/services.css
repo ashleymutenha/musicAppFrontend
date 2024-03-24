@@ -3,7 +3,7 @@
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
     background-image: url("./servicesImages/pexels-tomatoes.jpg");
-    height:fit-content;
+    height:550px;
     background-size: cover;
     mask-repeat: no-repeat;
     margin: 0;
