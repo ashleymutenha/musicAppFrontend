@@ -52,7 +52,7 @@ function toPage(url){
            <div className ="content" style ={{background:"#f8f9f3", display:"flex"}}>
             <div style={{flex:1, background:"white", padding:"12px"}}>
 
-              <img src = "/agval.png" alt ="logo" style={{height:"80px",width:"auto",background:"transparent",cursor:"pointer"}} />
+              <img src = "/agval.png" alt ="logo" style={{height:"100px",width:"auto",background:"transparent",cursor:"pointer"}} />
             </div>
 
            {width>1000?<div style ={{flex:6, padding:"18px"}}>
