@@ -13,7 +13,14 @@ export default function AboutUs(){
     return(
         <div>
             <Header/>
-            <div className="__top-content">
+            <div style ={{display:"flex"}}>
+            <div className ="lower" style ={{flex:5}}>
+            <div style ={{textAlign:"center", fontSize:30, marginBottom:"1%"
+            }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Company History</span> </div>
+            Founded in 2021, AgVal Networks (PTY) LTD has quickly emerged as a leading provider of services that strengthen the agricultural value chain. Our approach emphasizes the development of strategic information transmission services that add value to all stakeholders, from farmers to policy makers. With a strong presence in Botswana, our mission is to accelerate 
+            Africa's economic growth and upliftment of its people by supporting the agricultural industry.
+            </div>
+            <div className="__top-content" style ={{flex:6}}>
                <div style ={{flex:7}}></div>
 
                <div style ={{flex:3}}>
@@ -30,12 +37,10 @@ export default function AboutUs(){
 
             </div>
 
-            <div className ="lower">
-            <div style ={{textAlign:"center", fontSize:30, marginBottom:"1%"
-            }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Company History</span> </div>
-            Founded in 2021, AgVal Networks (PTY) LTD has quickly emerged as a leading provider of services that strengthen the agricultural value chain. Our approach emphasizes the development of strategic information transmission services that add value to all stakeholders, from farmers to policy makers. With a strong presence in Botswana, our mission is to accelerate 
-            Africa's economic growth and upliftment of its people by supporting the agricultural industry.
+           
             </div>
+
+           
 
             {width>=1000?<div style ={{display:"flex" ,background:"#ffff"}}>
                    <div style ={{flex:4,background:"rgb(241, 242, 237)",padding:"10px"}}>

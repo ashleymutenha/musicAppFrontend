@@ -6,20 +6,22 @@ import Footer from './bodyComponents/footer';
 import Header from './Header';
 import Waves from './bodyComponents/Waves';
 // import Areas from './bodyComponents/Areas';
-import { Bs1Circle, BsGearWideConnected } from 'react-icons/bs';
+import { Bs1Circle, BsGearWideConnected, BsInboxFill } from 'react-icons/bs';
 import {motion} from "framer-motion";
+
+import TopRight from './pages/TopRightContent';
 
 
 const Areas = lazy(() => import('./bodyComponents/Areas'));
 
 export default function Body(){
     const _Areas =lazy(()=>import('./bodyComponents/Areas'))
-    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-vegetables.jpg')", 
-    "url('/servicesImages/pexels-maize2.jpg')" ,"url('/servicesImages/vegetables.jpg')", 
+    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-market.jpg')", 
+    "url('/servicesImages/humanFarmer1.jpg')" ,"url('/servicesImages/pexels-tomatoes.jpg')", 
     "url('/servicesImages/farmer.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
-    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')"])        
+    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')","url('/servicesImages/pexels-vegetables.jpg')"])        
        
-       var background = Math.ceil(Math.random()*(7-0)+0)
+       var background = Math.ceil(Math.random()*(8-0)+0)
 
     // if(background==5 && background<0){
     //     background =0;
@@ -30,6 +32,7 @@ export default function Body(){
 
     const[currentItem ,setItem] = useState(1)
     const[width, setWidth] =useState(window.innerWidth)
+    const [decorator, showDecorator] =useState(false)
 
     useEffect(()=>{
         const Areas = React.lazy(()=>import("./bodyComponents/Areas"))
@@ -38,6 +41,12 @@ export default function Body(){
             ()=>{
                 setItem(2)
             },22000
+        )
+
+        setTimeout(
+          ()=>{
+           showDecorator(true)
+          },18000
         )
 
 
@@ -64,19 +73,9 @@ export default function Body(){
                
                 
 
-                <div  style ={{flex:1,borderBottomLeftRadius: "50%"}}>
-                
-              
+                <div  style ={{flex:5}}>
 
-                </div>
-
-                <div className =" right-container" style ={{flex:11}}>
-
-</div>
-
-            </div>
-
-            <div className = "_element">
+                <div className = "_element"  style ={{padding:"18px", width:"60%"}}>
                       <div>
                         <span style ={{color:"darkgreen", fontSize:18}}>___________  
                         <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
@@ -87,20 +86,6 @@ export default function Body(){
                     </div>
 
 
-                    <div className = "_decorator" style ={{display:"flex", opacity:0.8, overflow:"hidden", marginLeft:"-200px"}}>
-                      <div style ={{width:"4px", height:"680px", background:"beige", marginRight:"10px" }}>
-                             <span style ={{opacity:0}}>m</span>
-                      </div>
-                      <div style ={{width:"4px", height:"680px", background:"beige",marginRight:"10px"  }}>
-                             <span style ={{opacity:0}}>m</span>
-                      </div>
-
-
-                      <div style ={{width:"4px", height:"680px", background:"beige", }}>
-                             <span style ={{opacity:0}}>m</span>
-                      </div>
-                    </div>
-                    
                     <div className ="_carousel">
                     <div>
                     {currentItem!==1?<div className ="__element2" onClick={()=>
@@ -147,6 +132,53 @@ export default function Body(){
                     
                     
                     </div>
+                
+              
+
+                </div>
+
+                <div className =" right-container" style ={{flex:6}}>
+                 <TopRight/>
+                </div>
+
+            </div>
+
+            {/* <div className = "_element">
+                      <div>
+                        <span style ={{color:"darkgreen", fontSize:18}}>___________  
+                        <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span>
+                      </div>
+                        <span>Connecting You to Value Growth in Agriculture through Tech-Driven Insights and Tools!</span>
+
+                       
+                    </div> */}
+
+
+                  
+
+
+                    {decorator===true?<motion.div className = "_decorator" style ={{display:"flex", opacity:0.8, overflow:"hidden"}}
+
+                    initial={{marginLeft:"-200px"}}
+
+                    animate ={{marginLeft:"1200px"}}
+
+                    transition={{duration:3}}
+                    >
+                      <div style ={{width:"4px", height:"680px", background:"beige", marginRight:"10px" }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
+                      <div style ={{width:"4px", height:"680px", background:"beige",marginRight:"10px"  }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
+
+
+                      <div style ={{width:"4px", height:"680px", background:"beige", }}>
+                             <span style ={{opacity:0}}>m</span>
+                      </div>
+                    </motion.div>:null}
+                    
+                  
                    
         </div>:null}
 

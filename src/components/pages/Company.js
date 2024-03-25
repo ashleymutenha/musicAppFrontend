@@ -17,7 +17,19 @@ return(
 
     <div>
        <Header/>
-        {width>=1000?<div className ="topContent">
+       {width>=1000?<div style={{display:"flex"}}>
+
+       <div className ="lowerContent" style ={{flex:3}}>
+            <div style ={{textAlign:"center", fontSize:"30px",marginTop:"10px", marginBottom:"8px"
+           }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Our Vision</span></div>
+        <p style ={{fontSize:"18px"}}>
+            {homeInfo.Vision}
+        </p>
+
+
+     
+        </div>
+        <div className ="topContent" style ={{flex:6}}>
            
        <div style ={{display:"flex", height:"550px", flex:8}}>
 
@@ -75,6 +87,7 @@ return(
 
         </div>
 
+        </div>
         </div>:null}
 
 
@@ -93,34 +106,7 @@ return(
 
         </div>
 
-        <div className ="topContent-bottom" style ={{flex:4, background:"khaki", opacity:0.2}}>
-
-<div style ={{marginBottom:"10px"}}>
-    
-    
-
-    {/* <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Turn to us for all your 
-    agricultural needs and be guaranteed of exceptional value for your investment</div> */}
-
-   
-</div>
-
-
-<div style ={{}}>
-    
-
-    {/* <div style ={{marginTop:"5px",color:"#ffff", fontSize:"18px"}}>Interested in our work and want to partner?</div>
-    <div style ={{marginTop:"3px",color:"#ffff", fontSize:"18px"}}>Feel free to contact us</div> */}
-   
-</div>
-
-</div>
-        </div>
-        
-        :null}
-
-
-        <div className ="lowerContent">
+        <div className ="lowerContent" style ={{flex:3}}>
             <div style ={{textAlign:"center", fontSize:"30px",marginTop:"10px", marginBottom:"8px"
            }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Our Vision</span></div>
         <p style ={{fontSize:"18px"}}>
@@ -130,6 +116,17 @@ return(
 
      
         </div>
+
+
+        </div>
+        
+        :null}
+
+
+
+
+
+      
 
         <div className ="mission" style ={{background:"#ffff"}} >
 

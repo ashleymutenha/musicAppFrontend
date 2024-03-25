@@ -119,19 +119,18 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 <BsInboxesFill color='rgb(231, 232, 216)' size ={40}/> 
 </div>
 
-<div className ="submenu-heading">Products</div>
+<div className ="submenu-heading">Our Mandate</div>
 
 <div className ="submenu">
 
-Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability, and growth at every step of the value chain.
-
+We envision a future where the agricultural value chain in Africa and beyond operates with maximum efficiency, sustainability, and profitability. Our ultimate goal is to foster robust growth and development in the agricultural industry, and by extension, accelerate the economic upliftment of the people of Africa and the world.
 <div  style ={{marginTop:"12px"}}>
 <a
         className ="btn-view" 
  style ={{ border:"1px solid rgb(3, 59, 50)", 
 width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
  padding:"12px 12px 12px 12px", marginLeft:60}}
-       href ="/products"> <span className='bnm'>Read More</span></a>
+       href ="/company"> <span className='bnm'>Read More</span></a>
 
 </div>
 
@@ -239,12 +238,11 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 <BsInboxesFill color='rgb(231, 232, 216)' size ={40}/> 
 </div>
 
-<div className ="submenu-heading">Products</div>
+<div className ="submenu-heading">Our Mandate</div>
 
 <div className ="submenu">
 
-Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability, and growth at every step of the value chain.
-
+We envision a future where the agricultural value chain in Africa and beyond operates with maximum efficiency, sustainability, and profitability. Our ultimate goal is to foster robust growth and development in the agricultural industry, and by extension, accelerate the economic upliftment of the people of Africa and the world.
 
 <div  style ={{marginTop:"12px"}}>
 <a
@@ -252,7 +250,7 @@ Innovation meets agriculture. Our range of products is meticulously crafted to a
  style ={{ border:"1px solid rgb(3, 59, 50)", 
 width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
  padding:"12px 12px 12px 12px", marginLeft:60}}
-       href ="/products"> <span className='bnm'>Read More</span></a>
+       href ="/company"> <span className='bnm'>Read More</span></a>
 
 </div>
 

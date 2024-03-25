@@ -8,6 +8,12 @@
 }
 
 
+@keyframes decorator {
+    from{margin-left: -200px;}
+    to{margin-left: 900px;}
+}
+
+
 @keyframes smallScreen{
     from{ background-image: url("./servicesImages/vegetables.jpg");
     height:600px;
@@ -30,9 +36,9 @@
 }
 
 @keyframes motion  {
-    from {margin-left: 10%; font-weight: normal;opacity:0.1}
+    from {margin-left: 2%; font-weight: normal;opacity:0.1}
 
-    to {margin-left: 28%;}
+    to {margin-left: 8%;}
 }
 
 @keyframes colorChange{
@@ -63,10 +69,11 @@
     display:flex;
     flex-wrap: wrap;
     /* background-image: url("./servicesImages/pexels-vegetables.jpg"); */
-    height:550px;
+    height:fit-content;
     background-size: cover;
     mask-repeat: no-repeat;
     overflow: hidden;
+    /* padding:12px 12px 12px 12px; */
     
     background-position: center;
     
@@ -83,7 +90,7 @@
     mask-repeat: no-repeat;
     /* border-bottom-left-radius: 50%; */
     /* border-bottom-right-radius: 50%; */
-    /* opacity:0.6 */
+    opacity:0.9;
     overflow: hidden;
 
 }
@@ -112,14 +119,15 @@ overflow: hidden;
 }
 
 ._element{
-    top:50%;
-     transform:translate(0,-50%);
-     position: absolute;
-     font-size: 26px;
+    /* top:50%; */
+     /* transform:translate(0,-50%); */
+     /* position: absolute; */
+     font-size: 27px;
      font-weight: bold;
-     width:30%;
+     width:45%;
      opacity:0.8;
-     left: 5%;
+     /* left: 2%; */
+
 
      animation: motion;
      animation-duration: 2s;
@@ -127,15 +135,32 @@ overflow: hidden;
      animation-timing-function: steps(30, end);
      animation-fill-mode: forwards;
     color:black;
-     white-space: wrap;
-     background:rgb(236, 234, 215);
-     padding:12px 12px 12px 12px;
+     /* white-space: wrap; */
+     background:white;
+    
+
+     margin-top: 4%;
      
  }
 
 
+ /* ._topContentInfo{
+    display:flex;
+    top:100%;
+     transform:translate(0,-50%);
+     position: absolute;
+     font-size: 26px;
+     font-weight: bold;
+     width:30%;
+     opacity:0.8;
+     left: 5%;
+     padding:12px 12px 12px 12px;
+     
+ } */
+
+
  ._decorator{
-    top:95%;
+    top:40%;
      transform:translate(0,-50%);
      position: absolute;
      font-size: 30px;
@@ -147,7 +172,7 @@ overflow: hidden;
      animation-duration: 4s;
      animation-iteration-count: i;
      animation-delay: 16s;
-    /* color:white; */
+    color:white;
      white-space: wrap;
     
      
@@ -204,13 +229,14 @@ overflow: hidden;
    
 }
  ._carousel{
-    top:80%;
+    /* top:80%;
      transform:translate(0,-50%);
-     position: absolute;
+     position: absolute; */
      font-size: 39px;
      font-weight: bold;
      opacity:1;
-     margin-left: 50%;
+     margin-left: 30%;
+     margin-top:4%;
      display: flex;
      flex-wrap: wrap;
 
