@@ -48,14 +48,14 @@ function toPage(url){
     return(
 
         <div>
-          <div className ="header">
+          <div className ="header" style ={{background:"#f8f9f3"}}>
            <div className ="content" style ={{background:"#f8f9f3", display:"flex"}}>
-            <div style={{flex:1, background:"white", padding:"12px"}}>
+            <div style={{flex:2, background:"white", padding:"12px"}}>
 
               <img src = "/agval.png" alt ="logo" style={{height:"100px",width:"auto",background:"transparent",cursor:"pointer"}} />
             </div>
 
-           {width>1000?<div style ={{flex:6, padding:"18px"}}>
+           {width>1000?<div style ={{flex:8, padding:"18px"}}>
            <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold"}}> <BsHouseFill/> Home</span></a>
            <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsInfoSquareFill/> About Us</span></a>
              <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsMagic/> Mission & Vision</span></a>
@@ -67,6 +67,8 @@ function toPage(url){
 
             </div>:null}
 
+
+
            
             
 
@@ -74,15 +76,25 @@ function toPage(url){
            </div>
 
           
-           
+          
 
            
+           {width<1000?<div style ={{ padding:"18px",background:"#f8f9f3"}}>
+           <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold"}}>  Home</span></a>
+           <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> About Us</span></a>
+             <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Mission & Vision</span></a>
+             <a href='/services' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Services</span></a>
+             <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Partners</span></a>
+             <a href='/products' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Products</span></a>
 
+
+
+            </div>:null} 
         
 
 
-           {width<1000?<div><select  onChange={(e)=>{
-              // window.open(e.target.value)
+           {/* {width<1000?<div><select  onChange={(e)=>{
+             
 
               window.location.href = e.target.value;
 
@@ -99,26 +111,21 @@ function toPage(url){
             <option value ="/products"> Products</option>
 
           </select>
-          </div>:null}
+          </div>:null} */}
 
 
 
 
-           {width<=1000?<div className ="lower-content-sm">
+           {/* {width<=1000?<div className ="lower-content-sm">
            
 
           
 
         
 
-         <div style ={{flex:4,background:"rgb(20, 55, 38)"}}>
-
-              <span style ={{color:"white", fontSize:23, fontWeight:"bold"}}>AgVal Networks (Pty) Ltd <span style={{color:"goldenrod"}}>.</span></span>
-            </div>
 
 
-
-           </div>:null}
+           </div>:null} */}
 
            </div>
         </div>

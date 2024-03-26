@@ -199,10 +199,11 @@ export default function Body(){
         {width<1000?
         <div>
            {currentItem===1?<div>
-            {currentItem===1?<div className ='first-container-sm'> 
+            {currentItem===1?<div className ='first-container-sm'  > 
+           
+           {/* <div style ={{flex:2}}></div> */}
 
-
-            <div className = "_element-sm">
+            <div className = "_element-sm" style ={{flex:4, opacity:0.8}}>
                       <div>
                         <div>
                         <BsGearWideConnected color='darkgreen' size ={50}/>
@@ -216,7 +217,7 @@ export default function Body(){
                     </div>
 
 
-                    <div className ="_carousel-sm">
+                    <div className ="_carousel-sm" style ={{flex:4}}>
                     <div>
                     {currentItem!==1?<div className ="__element2-sm" onClick={()=>
                     setItem(1)}>

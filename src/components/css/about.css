@@ -29,15 +29,15 @@
 }
 
 
-@keyframes smallScreen{
-    from{ background-image: url("./servicesImages/barley.jpg");
-    height:900px;
+@keyframes _smallScreen{
+    from{ background-image: url("./servicesImages/pexels-cattle.jpg");
+    height:fit-content;
     background-size: cover;
     mask-repeat: no-repeat;
     
     }
-    to{ background-image: url("./servicesImages/vegetables.jpg") ;
-    height:900px;
+    to{ background-image: url("./servicesImages/pexels-cattle.jpg") ;
+    height:fit-content;
     background-size: cover;
     mask-repeat: no-repeat;
     
@@ -216,15 +216,16 @@
  
  
  .about-sm{
-    background-image: url("./servicesImages/femaleFarmer.jpg");
+    background-image: url("./servicesImages/pexels-tomatoes.jpg");
     mask-repeat: no-repeat;
-    height:600px;
+    height:fit-content;
     mask-repeat: no-repeat;
-    animation-name: smallScreen;
+    animation-name: _smallScreen;
     animation-duration: 16s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1s;
     padding:16px 16px 16px 16px;
    animation-direction:reverse;
+   background-size: cover;
 
 }
 

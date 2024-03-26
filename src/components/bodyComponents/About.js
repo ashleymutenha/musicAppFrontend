@@ -196,7 +196,7 @@ export default function About(){
         >
 
 <div >
-<div className = "_element-sm">
+<div className = "_element-sm" style ={{opacity:0.8}}>
 <div>
   <div>
   <BsMagic color='goldenrod' size ={50}/>
@@ -208,33 +208,40 @@ export default function About(){
 </div>
   <span> AgVal Networks is dedicated to strengthening the links in the agricultural value chain..... </span>
   
-  <div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-                        width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-                         padding:"12px 12px 12px 12px", marginLeft:60}}>
-                            Read More
-                        </div>
+  <div  style ={{marginTop:"12px"}}>
+<a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/company"> <span className='bnm'>Read More</span></a>
+
+</div>
  
 </div>
 
 
-<div className = "_element-sm" >
+<div className = "_element-sm" style ={{opacity:0.8}}>
 <div>
   <div>
   <BsWind color='darkgreen' size ={50}/>
   </div>
 
-  <div style ={{fontSize:"30px", color:"green"}}>Our Vission</div>
+  <div style ={{fontSize:"30px", color:"green"}}>Products</div>
   {/* <span style ={{color:"darkgreen", fontSize:23}}>___________  
   <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span> */}
 </div>
-  <span>At AgVal Networks, we envision a future where the agricultural value chain in Africa ....
+  <span>Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability ....
  </span>
-  
-  <div className ="btn-view" style ={{marginTop:8, border:"1px solid rgb(3, 59, 50)", 
-                        width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
-                         padding:"12px 12px 12px 12px", marginLeft:60}}>
-                            Read More
-                        </div>
+ <div  style ={{marginTop:"12px"}}>
+<a
+        className ="btn-view" 
+ style ={{ border:"1px solid rgb(3, 59, 50)", 
+width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
+ padding:"12px 12px 12px 12px", marginLeft:60}}
+       href ="/products"> <span className='bnm'>Read More</span></a>
+
+</div>
  
 </div></div>
 

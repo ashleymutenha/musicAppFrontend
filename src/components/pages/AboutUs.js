@@ -13,7 +13,7 @@ export default function AboutUs(){
     return(
         <div>
             <Header/>
-            <div style ={{display:"flex"}}>
+           {width>=1000? <div style ={{display:"flex"}}>
             <div className ="lower" style ={{flex:5}}>
             <div style ={{textAlign:"center", fontSize:30, marginBottom:"1%"
             }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Company History</span> </div>
@@ -38,7 +38,39 @@ export default function AboutUs(){
             </div>
 
            
+            </div>:null}
+
+
+
+            {width<1000? <div style ={{}}>
+          
+            <div className="__top-content" style ={{flex:6}}>
+               <div style ={{flex:7}}></div>
+
+               <div style ={{flex:3}}>
+               <div  className ="card" style ={{display:"flex", marginBottom:"30%",
+                         background:"whitesmoke", color:"black", opacity:0.7, fontSize:"30px", flexDirection:"row",border:"0px"}}>
+                        <div className ="card" style ={{width:"80px", background:"transparent", border:"0px",flex:1, border:"0px"}}>
+                       <div className ="_card3" ></div>
+                       </div>
+                       <div style ={{flex:6, padding:"12px 12px 12px 12px"}}> About Us </div>
+                      
+                    </div>
+               </div>
+
+
             </div>
+
+
+            <div className ="lower" style ={{flex:5}}>
+            <div style ={{textAlign:"center", fontSize:30, marginBottom:"1%"
+            }}><span style ={{ borderBottom:"2px solid goldenrod"}}>Company History</span> </div>
+            Founded in 2021, AgVal Networks (PTY) LTD has quickly emerged as a leading provider of services that strengthen the agricultural value chain. Our approach emphasizes the development of strategic information transmission services that add value to all stakeholders, from farmers to policy makers. With a strong presence in Botswana, our mission is to accelerate 
+            Africa's economic growth and upliftment of its people by supporting the agricultural industry.
+            </div>
+
+           
+            </div>:null}
 
            
 
