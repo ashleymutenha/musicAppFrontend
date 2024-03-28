@@ -16,7 +16,7 @@ export function Products(){
 
             <div style ={{flex:6}}>
 
-<div className ="card"  style ={{ height:"100%",background:"rgb(255, 254, 254)", opacity:0.7, fontSize:"26px", color:"black",}}>
+<div className ="card"  style ={{ height:"100%",background:"lightgrey", opacity:0.8, fontSize:"26px", color:"black",}}>
 <div  style ={{ padding:"12px 12px 12px 12px"}}>
 
 <div>
@@ -79,7 +79,7 @@ profitability, and growth at every step of the value chain.
                 <div style ={{marginLeft:"20px",marginRight:"20px", marginBottom:"20px", marginTop:"10%"}}>
                    <div style ={{textAlign:"center", fontSize:"28px"}}>
                     </div>
-                    <div class ="card" style ={{padding:"12px", background:"#fdfff5", opacity:0.9}}>
+                    <div class ="card" style ={{padding:"12px", background:"whitesmoke", opacity:0.9}}>
                     <div style ={{marginTop:"1%"}}>
                       <div style ={{fontSize:"22px"}}> <span style ={{color:"darkgreen"}}>Description:</span>
 

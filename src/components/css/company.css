@@ -71,12 +71,12 @@
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url("./servicesImages/pexels-africanFarmer.jpg");
-    
+    background-image: url("./servicesImages/pexels-african.jpg");
     background-size:cover;
     mask-repeat: no-repeat;
     background-repeat: no-repeat;
-    background-position-x: center;
+    /* background-position-x: center; */
+    background-position: left;
     margin: 0;
     padding: 0;
 /* 
@@ -98,7 +98,7 @@
  @keyframes pictureChange {
     from{background-image: url("./servicesImages/pexels-sheep.jpg");}
 
-    to{background-image: url("./servicesImages/pexels-maize3.jpg");background-position:center;}
+    to{background-image: url("./servicesImages/pexels-farm.jpg");background-position:center;}
 
 
     /* from{background-image: url("./servicesImages/maize.jpg");}

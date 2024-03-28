@@ -159,7 +159,7 @@ justify-items: flex-start;
 
 
 .__animals{
-    background-image: url("./servicesImages/pexels-tractor2.jpg");
+    background-image: url("./servicesImages/pexels-agric1.jpg");
     /* margin-top: 10px;
     width:inherit;
     mask-repeat: no-repeat;
@@ -169,7 +169,7 @@ justify-items: flex-start;
     /* border-radius: 12px;  */
     /* margin-right: 10px; */
  
-
+     background-position: center;
     animation:fourthSlidePicture;
     animation-duration: 8s;
     animation-iteration-count: infinite;

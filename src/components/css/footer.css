@@ -1,7 +1,7 @@
 .footer{
     
     
-    padding:30px 30px 30px 30px;
+  
     background-image: url("./servicesImages/pexels-sheep2.jpg");
     background-size: cover;
     mask-repeat: no-repeat;
@@ -57,7 +57,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
 
-    margin-right: 0;
+    /* margin-right: 10px; */
     background-color: rgb(7, 45, 18);
     opacity:0.8;
    

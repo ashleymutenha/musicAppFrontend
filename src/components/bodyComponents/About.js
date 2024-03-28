@@ -18,6 +18,12 @@ export default function About(){
     const[showInfo, setInfo] =useState(0)
     const[width, setWidth] =useState(window.innerWidth)
 
+    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-tractor2.jpg')","url('/servicesImages/pexels-tractor2.jpg')","url('/servicesImages/pexels-tractor.jpg')"
+    ,"url('/servicesImages/pexels-it.jpg","url('/servicesImages/pexels-it.jpg","url('/servicesImages/pexels-tractor.jpg')"])   
+
+    var background = Math.ceil(Math.random()*(4-0)+0)
+
+
 
     useEffect(()=>{
 
@@ -26,7 +32,7 @@ export default function About(){
             
              setItem(1)
     
-            },35000
+            },50000
             );
 
 
@@ -196,40 +202,22 @@ export default function About(){
         >
 
 <div >
-<div className = "_element-sm" style ={{opacity:0.8}}>
-<div>
-  <div>
-  <BsMagic color='goldenrod' size ={50}/>
+
+
+<div style ={{display:"flex", flexDirection:"column", opacity:0.8}}>
+  <div  style ={{backgroundImage:backgrounds[background], height:"340px", backgroundSize:"cover"}}>
+
+
   </div>
 
-  <div style ={{fontSize:"30px", color:"green"}}>Our Mission</div>
-  {/* <span style ={{color:"darkgreen", fontSize:23}}>___________  
-  <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span> */}
-</div>
-  <span> AgVal Networks is dedicated to strengthening the links in the agricultural value chain..... </span>
-  
-  <div  style ={{marginTop:"12px"}}>
-<a
-        className ="btn-view" 
- style ={{ border:"1px solid rgb(3, 59, 50)", 
-width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
- padding:"12px 12px 12px 12px", marginLeft:60}}
-       href ="/company"> <span className='bnm'>Read More</span></a>
-
-</div>
- 
-</div>
-
-
-<div className = "_element-sm" style ={{opacity:0.8}}>
+<div className = "__element-sm" style ={{ flex:8}}>
 <div>
   <div>
   <BsWind color='darkgreen' size ={50}/>
   </div>
 
   <div style ={{fontSize:"30px", color:"green"}}>Products</div>
-  {/* <span style ={{color:"darkgreen", fontSize:23}}>___________  
-  <span style ={{marginLeft:18}}>COMMITTED TO SUCCESS</span></span> */}
+
 </div>
   <span>Innovation meets agriculture. Our range of products is meticulously crafted to address the unmet needs of Africa's agriculture sector, ensuring sustainability, profitability ....
  </span>
@@ -243,7 +231,9 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 
 </div>
  
-</div></div>
+</div>
+</div>
+</div>
 
 
 <div className ="_carousel-sm">

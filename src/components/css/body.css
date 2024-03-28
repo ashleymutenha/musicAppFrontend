@@ -90,7 +90,7 @@
     mask-repeat: no-repeat;
     /* border-bottom-left-radius: 50%; */
     /* border-bottom-right-radius: 50%; */
-    opacity:0.9;
+    /* opacity:0.9; */
     overflow: hidden;
 
 }
@@ -258,13 +258,13 @@ overflow: hidden;
  /* small gudgets */
 
  .first-container-sm{
-    background-image: url("./servicesImages/maize.jpg");
+    /* background-image: url("./servicesImages/maize.jpg"); */
     mask-repeat: no-repeat;
     height:fit-content;
     mask-repeat: no-repeat;
-    animation-name: smallScreen;
+    /* animation-name: smallScreen;
     animation-duration: 16s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
     padding:16px 16px 16px 16px;
    animation-direction:reverse;
    background-size: cover;   

@@ -16,7 +16,7 @@ export default function Footer(){
           
           </div>:null}
 
-          {showMore===true?<div className ="footer">
+          {showMore===true?<div className ="footer" style ={{padding:"0px"}}>
        
           <div style ={{display:"flex"}}>
           
@@ -52,7 +52,7 @@ export default function Footer(){
              
             > 
                <motion.div class ="__icon-container"
-               initial ={{marginTop:"200px", marginRight:"200px"}} animate={{marginTop:"0px",marginRight:"0px" }}
+               initial ={{marginTop:"200px", marginRight:"200px"}} animate={{marginTop:"20px",marginRight:"0px" }}
                transition={{duration:1}}
                 onClick={()=>setMore(false)}>
                 <BsX color='#ffff' size ={40}/>
@@ -66,7 +66,7 @@ export default function Footer(){
                 </div> */}
 
 
-            <div className='container' id ="on-hover" style ={{width:"fit-content",marginTop:"12px",padding:"12px 12px 12px 12px",borderRadius:"12px", marginTop:"40px"}}>
+            <div className='container' id ="on-hover" style ={{width:"fit-content",marginTop:"12px",padding:"8px 8px 8px 8px",borderRadius:"12px", marginTop:"10%", marginLeft:"2%", marginRight:"2%"}}>
             <div className ="footer-card ">
                  <div className ="_icon-container" style ={{marginTop:"12px", marginBottom:"12px"}}>
                 <BsPhone color='white' size ={50} opacity={0.8}/>

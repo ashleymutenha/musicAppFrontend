@@ -4,12 +4,21 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 export default function TopRight(){
 
     const [showInfo, setShowInfo] = useState(1)
+    const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-agric1.jpg')","url('/servicesImages/pexels-instrument.jpg')"
+    ,"url('/servicesImages/pexels-it.jpg"])   
+    const [backgrounds2, setBackgrounds2] = useState(["url('/servicesImages/pexels-waterFarming.jpg')","url('/servicesImages/windmill.jpg')","url('/servicesImages/pexels-risk.jpg')"])      
+    
+
+    var background = Math.ceil(Math.random()*(3-0)+0)
+
+    var background2 = Math.ceil(Math.random()*(3-0)+0)
+    
     return (
         <div>
 
 {showInfo===1?<div style ={{display:"flex"}}>  
 <div className ="_collective" style ={{flex:12}}>
-<div className ="__animals" style ={{flex:8}}>
+<div className ="__animals" style ={{flex:8,backgroundImage:backgrounds[background]}}>
   
 <div style ={{opacity:0}}>At AgVal Networks, we deeply value the power of collaboration.
  We believe that by combining our strengths with those of our esteemed partners, 
@@ -17,7 +26,7 @@ export default function TopRight(){
   Our partners play an integral role in....</div>
   </div>
 
-  <div className ="__lowerCollection" style ={{flex:8}}>
+  <div className ="__lowerCollection" style ={{flex:8, opacity:0.8}}>
 
 {/* <div className ="icon-container">
 
@@ -46,7 +55,7 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 
   </div>
 
-  <div style ={{flex:1}} onClick={()=>{
+  <div style ={{flex:1, opacity:0.8}} onClick={()=>{
     setShowInfo(2)
   }}>
             <div className ="right-btn" style ={{ width:"fit-content", height:"fit-content", padding:"18px"}}>
@@ -60,14 +69,14 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 
   {showInfo===2?<div style ={{display:"flex"}}>  
 <div className ="_collective" style ={{flex:12}}>
-<div className ="__animals2" style ={{flex:8}}>
+<div className ="__animals2" style ={{flex:8,backgroundImage:backgrounds2[background2]}}>
   
 <div style ={{opacity:0}}> At AgVal Networks, we are committed to fortifying the agricultural value chain. 
                       Through our blend of innovative technology, extensive industry insights, and a commitment to sustainable growth, 
                       we aim to uplift Africa's agricultural sector, one solution at a time.</div>
   </div>
 
-  <div className ="__lowerCollection" style ={{flex:8}}>
+  <div className ="__lowerCollection" style ={{flex:8, opacity:0.8}}>
 
 {/* <div className ="icon-container">
 
@@ -97,7 +106,7 @@ width:"fit-content", borderRadius:"12px", fontSize:19, fontWeight:"bold",
 
   </div>
 
-  <div style ={{flex:1}}  onClick={()=>{
+  <div style ={{flex:1, opacity:0.8}}  onClick={()=>{
     setShowInfo(1)
   }}>
             <div className ="right-btn" style ={{ width:"fit-content", height:"fit-content", padding:"18px"}}>

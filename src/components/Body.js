@@ -18,10 +18,10 @@ export default function Body(){
     const _Areas =lazy(()=>import('./bodyComponents/Areas'))
     const [backgrounds, setBackgrounds] = useState(["url('/servicesImages/pexels-farm.jpg')","url('/servicesImages/pexels-market.jpg')", 
     "url('/servicesImages/humanFarmer1.jpg')" ,"url('/servicesImages/pexels-tomatoes.jpg')", 
-    "url('/servicesImages/farmer.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
-    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-agric1.jpg')","url('/servicesImages/pexels-vegetables.jpg')"])        
+    "url('/servicesImages/corn.jpg')","url('/servicesImages/crops.jpg')","url('/servicesImages/pexels-greenhouse2.jpg')",
+    "url('/servicesImages/pexels-oranges.jpg')","url('/servicesImages/pexels-maize.jpg')","url('/servicesImages/pexels-vegetables.jpg')"])        
        
-       var background = Math.ceil(Math.random()*(8-0)+0)
+       var background = Math.ceil(Math.random()*(9-0)+0)
 
     // if(background==5 && background<0){
     //     background =0;
@@ -40,13 +40,13 @@ export default function Body(){
         setTimeout(
             ()=>{
                 setItem(2)
-            },22000
+            },50000
         )
 
         setTimeout(
           ()=>{
            showDecorator(true)
-          },18000
+          },46000
         )
 
 
@@ -199,7 +199,7 @@ export default function Body(){
         {width<1000?
         <div>
            {currentItem===1?<div>
-            {currentItem===1?<div className ='first-container-sm'  > 
+            {currentItem===1?<div className ='first-container-sm' style ={{backgroundImage:backgrounds[background]}}  > 
            
            {/* <div style ={{flex:2}}></div> */}
 
