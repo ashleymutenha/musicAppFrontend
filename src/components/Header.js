@@ -1,5 +1,5 @@
-import './css/header.css'
-import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle, BsHouse, BsInfo, BsFile, BsClipboard, BsPeopleFill, BsBricks, BsInfoSquareFill, BsSnow, BsMagic, BsHouseFill} from'react-icons/bs'
+import '\../css/header.css'
+import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle, BsHouse, BsInfo, BsFile, BsClipboard, BsPeopleFill, BsBricks, BsInfoSquareFill, BsSnow, BsMagic, BsHouseFill, BsPersonCircle} from'react-icons/bs'
 import { BsJustify } from 'react-icons/bs';
 import { Dropdown } from 'react-bootstrap';
 
@@ -44,28 +44,32 @@ function toPage(url){
 
 
  const options =['Home', 'Mission & Vision', 'About Us']
+ const username =localStorage.getItem('username')
+ const url ="/home?username="+username
 
     return(
 
         <div>
           <div className ="header" style ={{background:"#f8f9f3"}}>
            <div className ="content" style ={{background:"#f8f9f3", display:"flex"}}>
-            <div style={{flex:2, background:"white", padding:"12px"}}>
+            <div style={{flex:2, background:"whitesmoke"}}>
 
-              <img src = "/agval.png" alt ="logo" style={{height:"100px",width:"auto",background:"transparent",cursor:"pointer"}} />
+              {/* <img src = "/servicesImages/pexels-ryan-holloway-243989.jpg" alt ="logo" style={{height:"200px",width:"200px",background:"transparent",cursor:"pointer"}} /> */}
+            </div>
+          <div style ={{flex:8, padding:"10px", display:"flex"}}>
+            <div style ={{flex:16}}>
+            <div style ={{fontSize:"28px", fontWeight:"bold", color:"rgb(47, 83, 47)"}}>Sound Inc.</div>
+         <div style ={{ padding:"18px"}}>
+           <a href={url} style ={{textDecoration:"none"}}><span style ={{color:"darkgreen", fontSize:24, fontWeight:"bold"}}> <BsHouseFill/> Home</span></a>
+           
+
+            </div>
             </div>
 
-           {width>1000?<div style ={{flex:8, padding:"18px"}}>
-           <a href='/' style ={{textDecoration:"none"}}><span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold"}}> <BsHouseFill/> Home</span></a>
-           <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsInfoSquareFill/> About Us</span></a>
-             <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsMagic/> Mission & Vision</span></a>
-             <a href='/services' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsSnow/> Services</span></a>
-             <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsPeopleFill/> Partners</span></a>
-             <a href='/products' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}><BsBricks/> Products</span></a>
-
-
-
-            </div>:null}
+            <div style ={{flex:2}}>
+                <BsPersonCircle size ={40} color ="grey"/>
+            </div>
+            </div>
 
 
 
@@ -84,7 +88,7 @@ function toPage(url){
            <a href='/about-us' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> About Us</span></a>
              <a href='/company' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Mission & Vision</span></a>
              <a href='/services' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Services</span></a>
-             <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Partners</span></a>
+             {/* <a href='/partnerships' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Partners</span></a> */}
              <a href='/products' style ={{textDecoration:"none"}}> <span style ={{color:"darkgreen", fontSize:20, fontWeight:"bold", marginLeft:18}}> Products</span></a>
 
 
@@ -93,30 +97,7 @@ function toPage(url){
         
 
 
-           {/* {width<1000?<div><select  onChange={(e)=>{
-             
-
-              window.location.href = e.target.value;
-
-
-          }
-          
-          
-          }    style ={{fontSize:"18px",background:"rgb(20, 55, 38)",border:"1px solid rgb(20, 55, 38)", color:"#ffff"}}>
-       <option value ="/">  Home</option>
-            <option value ="/about-us" >About Us</option>
-            <option value ="/company"> Mission and Vision</option>
-            <option value ="/partnerships"> Partners</option>
-            <option value ="/services"> Services</option>
-            <option value ="/products"> Products</option>
-
-          </select>
-          </div>:null} */}
-
-
-
-
-           {/* {width<=1000?<div className ="lower-content-sm">
+        
            
 
           
@@ -125,10 +106,10 @@ function toPage(url){
 
 
 
-           </div>:null} */}
+           </div>
 
            </div>
-        </div>
+        
     );
 }
 

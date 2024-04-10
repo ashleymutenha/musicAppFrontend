@@ -1,0 +1,29 @@
+._content{
+
+    background:lightgrey;
+
+    padding:20px 20px 20px 20px;
+    display:flex
+}
+
+
+
+.content-card{
+    padding:12px;
+    height:fit-content;
+    /* width:300px; */
+    border-radius: 12px;
+    display: flex;
+
+   
+}
+
+._img{
+    background-image: url('./servicesImages/pexels-cottonbro-studio-6875119.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 12px; */
+
+    height:300px;
+
+}

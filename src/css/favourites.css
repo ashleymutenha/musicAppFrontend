@@ -1,0 +1,77 @@
+._container{
+    /* background-image: url("./servicesImages/pexels-cottonbro-studio-4089501.jpg");
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding:12px; */
+   background:lightgrey
+
+}
+
+
+._card3::after{
+    border-top-right-radius: 50%  60%; 
+    border-bottom-right-radius: 50% 60%; 
+        position: absolute;
+        /* bottom: 0; */
+        content:" ";
+        right: 0;
+       height:100%;
+        width:100%; 
+        opacity:0.1;
+       /* user-select: none;   */
+       background-color: rgb(28, 82, 44);
+      
+     } 
+
+     .contentCard{
+        background-image: url("./servicesImages/pexels-jorge-fakhouri-filho-2701570.jpg");
+        height:300px;
+        width:300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        /* padding:12px; */
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+     }
+
+     ._contentCard{
+        background-image: url("./servicesImages/pexels-brett-sayles-2479312.jpg");
+        height:300px;
+        width:300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        /* padding:12px; */
+        margin-left: 3%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        
+     }
+
+
+     .goto:hover{
+     background:rgb(36, 55, 36);
+     color:white
+
+     }
+
+     .goto{
+      background: beige;
+
+     }
+     .__contentCard{
+        background-image: url("./servicesImages/pexels-martin-lopez-2240771.jpg");
+        height:300px;
+        width:300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        /* padding:12px; */
+        margin-left: 3%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        
+     }

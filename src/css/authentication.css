@@ -1,0 +1,22 @@
+.loginForm{
+
+    background:whitesmoke;
+    padding:30px 30px 30px 30px;
+    width:fit-content;
+    height:fit-content;
+    position: absolute;
+    top:40%;
+    left:40%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loginbutton:hover{
+   cursor: pointer;
+}
+
+.bn{
+    color:rgb(47, 83, 47)
+}

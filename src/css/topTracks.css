@@ -1,0 +1,39 @@
+.topSegment{
+
+    /* background-image: url('./servicesImages/pexels-esranur-kalay-12342980.jpg'); */
+    height:fit-content;
+
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: lightgrey;
+
+}
+
+
+.content-card{
+    padding:12px;
+    height:fit-content;
+    width:500px;
+    border-radius: 12px;
+    display: flex;
+
+   
+}
+
+.img{
+    background-image: url('./servicesImages/pexels-esranur-kalay-12342980.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 12px; */
+
+    height:300px;
+
+}
+
+.bn{
+    color:rgb(228, 233, 229)
+}

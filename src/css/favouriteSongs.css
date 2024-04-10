@@ -1,0 +1,14 @@
+.topContainer{
+    background:rgb(233, 233, 226)
+}
+
+
+.innerContent{
+    padding:15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bn{
+    color:rgb(217, 220, 217)
+}

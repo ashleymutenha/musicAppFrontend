@@ -1,0 +1,17 @@
+.topCont{
+    background:rgb(208, 208, 205);
+    padding:20px;
+    /* display: flex; */
+}
+
+._card-content{
+    /* padding:12px; */
+    background-image: url('./servicesImages/pexels-ryan-holloway-243989.jpg');
+    height:500px;
+    width:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}

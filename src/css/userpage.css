@@ -1,0 +1,101 @@
+.upperSection{
+    background-image: url("./servicesImages/pexels-philip-boakye-2614384.jpg");
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.upperSectionContent{
+    position: absolute;
+    top:23%;
+   
+}
+
+.mat{
+    /* background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"); */
+    background-size: cover;
+    mask-repeat: no-repeat;
+    height: 400px;
+    padding:12px 12px 12px 12px;
+    width:500px;
+    animation:mat;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
+
+ }
+
+ .view-more{
+    padding:12px 12px 12px 12px;
+    background:rgb(52, 81, 59);
+    color:white;
+    opacity:0.8;
+    width:fit-content;
+    /* border-radius: 12px; */
+    cursor:pointer;
+    font-size: 22px;
+    /* border: 2px solid gold; */
+ 
+ }
+
+.bn{
+    color:rgb(60, 51, 81);
+}
+
+.upperTop{
+    background-image: url("./servicesImages/pexels-pixabay-164693.jpg");
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    opacity: 1;
+
+}
+
+.bottomTop{
+    background:rgb(46, 77, 46);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    opacity:0.9
+
+}
+
+.bottomTop:hover{
+    cursor: pointer;
+    background-color: brown;
+   
+}
+
+.myFavourites{
+    height:400px;
+   width:400px;
+    /* background-image: url("./servicesImages/pexels-tractor.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+
+
+.form-controller{
+    padding:20px;
+    /* border-radius: 20px; */
+    /* border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; */
+    border: 0;
+    width:200%;
+    opacity:0.9
+}
+
+
+.form-controller:focus{
+    border: 0;
+}
