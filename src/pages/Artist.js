@@ -39,6 +39,7 @@ export default function Artist(){
         }).then((res)=>res.json()).
         then((_res)=>{
             getSinger(_res)
+            console.log(_res)
         })
 
 
@@ -138,7 +139,17 @@ export default function Artist(){
 
                    <div style ={{flex:4, background:"lightgrey", padding:"8px", fontSize:"19px"}}>
                     <div style ={{fontSize:"30px", color:"brown", }}>Biography</div>
-                           {singer!=undefined?<div>{singer.artist.bio.summary.split("<a")[0]}</div>:null}
+                           {singer!=undefined?<div>
+                            {singer.artist.bio.content!=""?<div>
+                            {singer.artist.bio.summary.split("<a")[0]}
+                            </div>:<div style ={{marginTop:"16%", 
+                            borderRadius:"12px", background:"beige", width:"fit-content", padding:"12px"}}> 
+                            <div>
+                                <BsLightning size={40} color ="darkgreen"/>
+                            </div>
+                            <div style={{marginTop:"2%", fontSize:"23px"}}>No Information Available</div>
+                            </div>}
+                            </div>:null}
                    </div>
                    </div>
                   

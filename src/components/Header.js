@@ -1,5 +1,5 @@
 import '\../css/header.css'
-import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle, BsHouse, BsInfo, BsFile, BsClipboard, BsPeopleFill, BsBricks, BsInfoSquareFill, BsSnow, BsMagic, BsHouseFill, BsPersonCircle} from'react-icons/bs'
+import {BsClock,BsFacebook,BsTwitter,BsLinkedin,BsGoogle, BsHouse, BsInfo, BsFile, BsClipboard, BsPeopleFill, BsBricks, BsInfoSquareFill, BsSnow, BsMagic, BsHouseFill, BsPersonCircle, BsBoxArrowInRight} from'react-icons/bs'
 import { BsJustify } from 'react-icons/bs';
 import { Dropdown } from 'react-bootstrap';
 
@@ -66,8 +66,18 @@ function toPage(url){
             </div>
             </div>
 
-            <div style ={{flex:2}}>
-                <BsPersonCircle size ={40} color ="grey"/>
+            <div style ={{flex:2, padding:"12px", background:"beige", borderRadius:"12px"}}>
+                <div style ={{fontSize:"20px"}}>{localStorage.getItem("username")}</div>
+
+                <div style ={{background:"brown", padding:"12px", width:"fit-content", color:"#ffff", 
+                fontSize:"18px", borderRadius:"12px", cursor:"pointer"
+              }}
+
+              onClick={()=>{
+                window.location.replace("/")
+              }}
+              
+              >Logout <BsBoxArrowInRight/></div>
             </div>
             </div>
 

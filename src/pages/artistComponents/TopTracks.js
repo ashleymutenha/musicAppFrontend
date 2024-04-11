@@ -82,7 +82,7 @@ export function TopTracks(){
                       height:"fit-content", borderRadius:"12px",background:"whitesmoke" , marginTop:"8%"}}>
                         <BsHeadset color ="darkgreen" size ={30}/>
                        <div style ={{fontSize:"23px", fontWeight:"bold",color:"rgb(88, 13, 68)"}}>Listen to This Song</div>
-                        <div style ={{padding:"3px", background:"khaki", width:"fit-content", height:"fit-content", borderRadius:"12px", fontSize:"23px"}}
+                        <div style ={{padding:"3px", background:"khaki", width:"fit-content", height:"fit-content", borderRadius:"12px", fontSize:"23px", cursor:"pointer"}}
                         onClick={()=>{
                             window.open(track.url)
                         }}

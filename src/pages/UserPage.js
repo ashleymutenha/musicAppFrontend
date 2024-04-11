@@ -86,6 +86,9 @@ export default function UserPage(){
         }
         return tracks
     }
+
+
+ 
    
     
     return(
@@ -125,7 +128,7 @@ export default function UserPage(){
                     
                     >
                      {getTop5Tracks().map((track)=>{return (<SwiperSlide >
-                    <div className ="mat" style ={{display:"flex", backgroundImage:'url(./servicesImages/mj.jpg)'}}>
+                    {track!=undefined?<div className ="mat" style ={{display:"flex", backgroundImage:'url(./servicesImages/pexels-andrea-piacquadio-3752835.jpg)'}}>
                  
                         <div style ={{flex:6}}>
                         <div className ="card" style ={{width:"fit-content", padding:"12px 12px 12px 12px", marginTop:"5%", marginBottom:"30%",
@@ -134,16 +137,16 @@ export default function UserPage(){
 
                         </div>
                             
-                            <div style ={{marginTop:"3%", borderRadius:"12px", background:"beige", padding:"13px"}}>
+                            <div style ={{marginTop:"3%", borderRadius:"12px", background:"beige", padding:"13px",opacity:0.8}}>
                                 <h4>Artist</h4>
 
                                 {track!=undefined?<div style ={{color:"brown", fontSize:"26px"}}>{track.artist.name}</div>:null}
                             </div>
 
 
-                        <div style ={{marginTop:"20%"}}  className ="view-more" onClick ={()=>toService(0)}>
+                        {/* <div style ={{marginTop:"20%"}}  className ="view-more" onClick ={()=>toService(0)}>
                              View More
-                        </div>
+                        </div> */}
 
                        
 
@@ -158,7 +161,7 @@ export default function UserPage(){
                         
 
 
-                    </div>
+                    </div>:null}
                     </SwiperSlide>)})}
 
                    

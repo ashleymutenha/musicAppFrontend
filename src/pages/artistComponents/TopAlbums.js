@@ -65,7 +65,7 @@ export function TopAlbums(){
                 <div style ={{flex:8, fontSize:"40px", color:"beige", marginLeft:"15%"}}>{album.name}</div>
 
 
-                <div style ={{flex:2, background:"brown", padding:"12px", cursor:"pointer"}}>
+                <div style ={{flex:2, background:"rgb(22, 61, 40)", padding:"12px", cursor:"pointer"}}>
                      <div  style ={{color:"white", fontSize:"23px", textAlign:"center"}}
 
                      onClick={()=>{
