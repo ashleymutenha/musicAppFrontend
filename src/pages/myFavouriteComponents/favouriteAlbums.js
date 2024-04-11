@@ -63,11 +63,11 @@ export default function FavouriteAlbums(){
                 
 
                <div className ="innerContent">
-                {faves!=undefined?<div style ={{display:"flex", flexWrap:"wrap"}}>
-               {faves.map((fave)=>{return <div style ={{display:"flex", marginRight:"10px"}}>
+                {faves!=undefined?<div style ={{display:"flex", flexWrap:"wrap",}}>
+               {faves.map((fave)=>{return <div style ={{display:"flex", marginRight:"10px",marginTop:"2%"}}>
                    <div  style ={{flex:4,display:"flex",flexDirection:"column",
                     backgroundImage:"url('/servicesImages/pexels-arturo-a-14466246.jpg')", 
-                    width:"200px", backgroundSize:"cover"}}>
+                    width:"200px",height:"", backgroundSize:"cover"}}>
                         <div style ={{flex:8}}> </div>
 
                         <div style ={{flex:1, background:"whitesmoke", padding:"12px", 
@@ -86,7 +86,7 @@ export default function FavouriteAlbums(){
 
                    </div>
 
-                   <div  style ={{flex:4, background:"beige",width:"320px",height:"400px", padding:"10px"}}>
+                   <div  style ={{flex:4, background:"beige",width:"320px",height:"430px", padding:"10px"}}>
                         <h1 style ={{color:"rgb(37, 59, 37)"}} >Album Details</h1>
 
                         <div style ={{padding:"8px", background:"rgb(217, 220, 217)", height:"fit-content",width:"300px"}}>

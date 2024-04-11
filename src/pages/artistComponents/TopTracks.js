@@ -30,7 +30,6 @@ export function TopTracks(){
 
             setTracks(response)
 
-            console.log(topTracks)
 
         })
 

@@ -27,7 +27,7 @@ export function TopAlbums(){
 
           setAlbums(response)
 
-          console.log(topAlbums)
+     
 
       })
 

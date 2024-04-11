@@ -1,6 +1,6 @@
 
 // function to show Website Section of Search Music Album's Information
-import { BsAlexa, BsArrowRight, BsCalendar2DateFill, BsHeadset, BsHeadsetVr, BsMusicNoteBeamed, BsPlusCircle, BsSoundwave, BsSpeaker } from "react-icons/bs";
+import { BsAlexa, BsArrowRight, BsCalendar2DateFill, BsHeadset, BsHeadsetVr, BsMusicNoteBeamed, BsPlusCircle, BsSoundwave, BsSpeaker, BsX } from "react-icons/bs";
 import Header from "../components/Header";
 import "../css/album.css"
 import { useState,useEffect } from "react";
@@ -11,6 +11,8 @@ export default function Album(){
     const artist =localStorage.getItem('artist')
 
     const [albumInfo, setAlbumInfo] = useState()
+    const [alreadyFav, setFav] = useState(false)
+
 
 
 
@@ -28,7 +30,7 @@ export default function Album(){
             }
         }).then((res)=>res.json())
         .then((response)=>{
-            console.log(response)
+           
 
             setAlbumInfo(response)
         })
@@ -121,6 +123,8 @@ height:"", width:"370px", backgroundSize:"cover", backgroundRepeat:"no-repeat"}}
 
 </div>:null}
 
+
+<div style ={{display:"flex", flexDirection:"column"}}>
 <div style ={{background:"whitesmoke", padding:"10px", width:"fit-content",
 height:"fit-content", fontSize:"23px", fontWeight:"bold", margin:"12px", borderRadius:"12px", cursor:"pointer"}}
 
@@ -145,16 +149,39 @@ fetch('http://localhost:8000/api/saveFavAlbum',{
     )
 }).then((response)=>response.json()).
 then((res)=>{
-    // if(res.message =="success"){
-    //     window.location.replace("/fav-artists")
-    // }
-    console.log(res)
+    if(res.message =="success"){
+        window.location.replace("/favourite-albums")
+    }
+
+    if(res.message=="duplicate"){
+        setFav(true)
+    }
+  
+  
 })
 
-console.log(data)
+
 }}
 
 > Save to Favourites <BsPlusCircle color ="navy" size ={40}/></div>
+
+
+{alreadyFav===true?<div style ={{background:"whitesmoke", padding:"10px", width:"fit-content",
+height:"fit-content", fontSize:"23px", fontWeight:"bold", margin:"12px", borderRadius:"12px", cursor:"pointer"}}
+>
+
+Already saved to favourites <BsX color ="navy" size ={40} 
+
+onClick={()=>{
+    setFav(false)
+}}
+
+/>
+</div>:null}
+
+</div>
+
+
 
             </div>
 
