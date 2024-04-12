@@ -1,6 +1,6 @@
 // function to show Website Section of User Favourite Albums
 
-import { BsCollectionPlay, BsMusicNote, BsMusicNoteList, BsMusicPlayerFill, BsPerson, BsSoundwave, BsSpeakerFill } from "react-icons/bs"
+import { BsCollectionPlay, BsMusicNote, BsMusicNoteList, BsMusicPlayerFill, BsPerson, BsSoundwave, BsSpeakerFill, BsTrash } from "react-icons/bs"
 import Header from "../../components/Header"
 import "../../css/favouriteSongs.css"
 import Waves from "../../components/Waves"
@@ -86,7 +86,7 @@ export default function FavouriteAlbums(){
 
                    </div>
 
-                   <div  style ={{flex:4, background:"beige",width:"320px",height:"430px", padding:"10px"}}>
+                   <div  style ={{flex:4, background:"beige",width:"320px",height:"fit-content", padding:"10px"}}>
                         <h1 style ={{color:"rgb(37, 59, 37)"}} >Album Details</h1>
 
                         <div style ={{padding:"8px", background:"rgb(217, 220, 217)", height:"fit-content",width:"300px"}}>
@@ -107,7 +107,41 @@ export default function FavouriteAlbums(){
                             <div style ={{color:"darkgreen",textAlign:"center", fontSize:"30px", fontWeight:"bold" }}><span style ={{borderBottom:"2px solid goldenrod"}}>AIbum</span></div>
                             <div style ={{fontSize:"27px"}}>{fave.album}</div>
                         </div>
+
+
+                        <div style ={{padding:"8px",marginTop:"6%", background:"beige", height:"fit-content"}}>
+                           
+                           <div style ={{background:"lightgrey", padding:'9px', borderRadius:"12px", marginTop:"3%", cursor:"pointer"}}
+                            onClick={()=>{
+                               fetch('http://localhost:8000/api/deleteFavAlbum',{
+                                   method:"POST",
+                                   headers:{
+                                       "content-type":"application/json",
+                                       "accept":"application/json"  
+                                   },
+                       
+                                   body:JSON.stringify({"username":localStorage.getItem("username"),
+                               "artist":fave.artist, "album":fave.album})
+                               }).then((res)=>res.json()).
+                               then((response)=>{
+                                   
+                       
+                                   console.log(response)
+                       
+                               })
+
+
+                            }}
+                           >
+                               <BsTrash size ={40} color ="brown" opacity={0.8}/>
+                           <h2 style ={{color:"Black"}} >Delete</h2> 
+                           </div>
+                                                  </div>
                    </div>
+
+
+                      
+               
                    </div>})}
                 </div>:null}
                 </div>

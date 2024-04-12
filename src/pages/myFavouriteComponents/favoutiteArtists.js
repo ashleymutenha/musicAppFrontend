@@ -1,5 +1,5 @@
 // function to show Website Section of Favourite Artists
-import { BsCollectionPlay, BsMotherboard, BsMusicNote, BsMusicNoteList, BsMusicPlayerFill, BsPerson, BsSoundwave, BsSpeakerFill } from "react-icons/bs"
+import { BsCollectionPlay, BsMotherboard, BsMusicNote, BsMusicNoteList, BsMusicPlayerFill, BsPerson, BsSoundwave, BsSpeakerFill, BsTrash } from "react-icons/bs"
 import Header from "../../components/Header"
 import "../../css/favouriteSongs.css"
 import Waves from "../../components/Waves"
@@ -62,14 +62,14 @@ export default function FavouriteArtists(){
                    
                    {faves.map((fave)=>{return <div style ={{display:"flex", marginRight:"3%", marginTop:"2%"}}>
                    <div  style ={{flex:4,
-                    backgroundImage:"url('/servicesImages/pexels-martin-lopez-2240771.jpg')", 
-                    width:"200px", backgroundSize:"cover", height:"400px"}}>
+                    backgroundImage:"url('/servicesImages/pexels-jorge-fakhouri-filho-2701570.jpg')", 
+                    width:"200px", backgroundSize:"cover", height:"500px"}}>
 
                    </div>
 
-                   <div  style ={{flex:4, background:"beige", width:"320px",height:"400px", }}>
+                   <div  style ={{flex:4, background:"beige", width:"320px",height:"500px", }}>
                    
-                   <div style ={{padding:"8px", background:"rgb(60, 51, 81)", height:"fit-content",}}>
+                   <div style ={{padding:"8px", background:"rgb(22, 61, 40)", height:"fit-content",}}>
                             <div style ={{padding:"12px", 
                             height:"fit-content", width:"fit-content", borderRadius:"50%", background:"beige"}}>
                                  <BsMusicNote size ={20} color ="brown"/>
@@ -84,7 +84,7 @@ export default function FavouriteArtists(){
                                  <BsMusicNoteList size ={20} color ="brown"/>
                             </div>
 
-                            <div style ={{background:"rgb(121, 32, 99)", padding:'9px', borderRadius:"12px", marginTop:"3%", cursor:"pointer"}}
+                            <div style ={{background:"purple", padding:'9px', borderRadius:"12px", marginTop:"3%", cursor:"pointer"}}
                              onClick={()=>{
                                 localStorage.setItem('artist', fave.artist)
                                 window.location.replace("/artist")
@@ -94,6 +94,38 @@ export default function FavouriteArtists(){
                             >
                                 <BsMotherboard size ={40} color ="whitesmoke" opacity={0.8}/>
                             <h2 style ={{color:"white"}} >View Details</h2> 
+                            </div>
+                                                   </div>
+
+
+                        
+                        
+                        <div style ={{padding:"8px",marginTop:"6%", background:"beige", height:"fit-content"}}>
+                           
+                            <div style ={{background:"lightgrey", padding:'9px', borderRadius:"12px", marginTop:"3%", cursor:"pointer"}}
+                             onClick={()=>{
+                                fetch('http://localhost:8000/api/deleteFavArtist',{
+                                    method:"POST",
+                                    headers:{
+                                        "content-type":"application/json",
+                                        "accept":"application/json"  
+                                    },
+                        
+                                    body:JSON.stringify({"username":localStorage.getItem("username"),
+                                "artist":fave.artist})
+                                }).then((res)=>res.json()).
+                                then((response)=>{
+                                    
+                        
+                                    console.log(response)
+                        
+                                })
+
+
+                             }}
+                            >
+                                <BsTrash size ={40} color ="brown" opacity={0.8}/>
+                            <h2 style ={{color:"Black"}} >Delete</h2> 
                             </div>
                                                    </div>
 
